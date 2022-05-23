@@ -1,4 +1,6 @@
 # Task :
+CAUTION
+Pastikan untuk melakukan screenshot step by step yang dilakukan, untuk digunakan sebagai dokumentasi tugas.
 
 # 1. Instruksi
 
