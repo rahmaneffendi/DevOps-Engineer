@@ -26,4 +26,5 @@ ket : menggunakan Versi 20 untuk pemula
 ![Img 1](Assets/6.png)
 
 3.Lalu tahapan selanjutnya masukan saja user dan password yang kalian inginkan.
+
 ![Img 1](Assets/7.png)
