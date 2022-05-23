@@ -108,5 +108,14 @@ Keterangan:
 19.Disini kita dapat memilih bagian Custom storage layout. Kenapa kita memilih Custom storage layout karena kita akan membuat 2 buah partisi, jika sudah kalian pilih setelah itu langsung saja klik Done.
 ![Img 1](Assets/23.png)
 
+20.Selanjutnya disini kita akan membuat 2 buah partisi untuk root dan swap. Langsung pilih saja di bagian /dev/sda lalu pilih di bagian Add GPT Partition. Untuk kapasitasnya kalian bisa samakan saja dengan gambar dibawah (kecuali untuk swap, kalian bisa setting semau kalian apabila merasa kurang).
 
+Keterangan :
+
+-root adalah tempat dimana sistem kita itu ter-install.
+
+-swap adalah suatu memory cadangan yang akan digunakan untuk server kita apabila memory utama sudah penuh.
+![Img 1](Assets/24.png)
+![Img 1](Assets/25.png)
+![Img 1](Assets/26.png)
 
