@@ -8,7 +8,10 @@ VMware Installation : https://www.vmware.com/products/workstation-player/worksta
 
 akan tampil 2 option
 ![Img 1](Assets/2.png)
+silahkan di pilih sesuai os
 
 Ubuntu Server 20.04 : https://ubuntu.com/download/server
+![Img 1](Assets/3.png)
+klik 1 dulu kemudian 2
 
 
