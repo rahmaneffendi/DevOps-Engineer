@@ -18,5 +18,12 @@ ket : menggunakan Versi 20 untuk pemula
 
 # Installation Ubuntu Server
 
-Buka Virtual machine kalian, untuk contohnya disini menggunakan VMware. Jika sudah langsung klik saja di bagian Create a new Virtual Machine.
-![Img 1](Assets/3.png)
+1.Buka Virtual machine kalian, untuk contohnya disini menggunakan VMware. Jika sudah langsung klik saja di bagian Create a new Virtual Machine.
+![Img 1](Assets/4.png)
+
+2.Jika sudah nanti akan masuk ke halaman seperti gambar dibawah. Disini kalian pilih saja di bagian use ISO image. Setelah itu masuk ke bagian browser lalu cari lokasi ISO ubuntu server yang sudah kalian download sebelumnya.
+![Img 1](Assets/5.png)
+![Img 1](Assets/6.png)
+
+3.Lalu tahapan selanjutnya masukan saja user dan password yang kalian inginkan.
+![Img 1](Assets/7.png)
