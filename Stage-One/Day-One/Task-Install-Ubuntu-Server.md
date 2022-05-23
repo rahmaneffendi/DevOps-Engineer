@@ -99,3 +99,11 @@ Keterangan:
 16.Jika konfigurasi sudah selesai maka akan ada perubahan di bagian DHCPv4 tadi menjadi static.
 ![Img 1](Assets/20.png)
 
+17.Pada tahap selanjutnya kalian bisa skip dengan klik Done.
+![Img 1](Assets/21.png)
+
+18.Pada tahap selanjutnya kalian bisa skip lagi dengan klik Done.
+![Img 1](Assets/22.png)
+
+
+
