@@ -127,3 +127,10 @@ Keterangan :
 
 23.Selanjutnya masukan informasi seperti nama, username, dan password untuk server yang kalian buat. Jika sudah klik saja Done.
 ![Img 1](Assets/29.png)
+
+skip aja bagian ini 
+![Img 1](Assets/30.png)
+
+24.Ditahapan ini jangan lupa untuk checklist bagian Install OpenSSH server gunanya adalah untuk me-remote server yang kita buat.
+![Img 1](Assets/31.png)
+
