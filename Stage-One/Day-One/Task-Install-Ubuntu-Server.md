@@ -137,3 +137,16 @@ skip aja bagian ini
 25.Pada tahap selanjutnya skip dengan klik Done.
 ![Img 1](Assets/32.png)
 
+26.Kita sudah selesai untuk tahapan instalasinya. Tunggu saja proses instalasi sampai selesai jika sudah selesai langsung saja klik Reboot Now.
+![Img 1](Assets/33.png)
+![Img 1](Assets/34.png)
+
+27.Jika tahapan installasi sudah selesai. Masukkan id beserta password yang sudah kalian set-up sebelumnya, Jika sudah maka kalian telah berhasil melakukan instalasi ubuntu server.
+![Img 1](Assets/35.png)
+
+28.Untuk make sure apakah server yang kalian buat ini sudah terhubung ke dalam internet bisa gunakan perintah dibawah ini
+
+ping google.com
+
+-Jika server kalian sudah terhubung ke dalam internet maka akan muncul seperti gambar dibawah ini.
+
