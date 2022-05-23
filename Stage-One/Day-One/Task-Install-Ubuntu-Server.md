@@ -119,3 +119,6 @@ Keterangan :
 ![Img 1](Assets/25.png)
 ![Img 1](Assets/26.png)
 
+21.Jika sudah disini kita sudah berhasil membuat 2 partisi untuk root dan swap. Jika sudah langsung saja klik Done.
+![Img 1](Assets/27.png)
+
