@@ -16,4 +16,7 @@ klik 1 dulu kemudian 2
 
 ket : menggunakan Versi 20 untuk pemula
 
+# Installation Ubuntu Server
 
+Buka Virtual machine kalian, untuk contohnya disini menggunakan VMware. Jika sudah langsung klik saja di bagian Create a new Virtual Machine.
+![Img 1](Assets/3.png)
