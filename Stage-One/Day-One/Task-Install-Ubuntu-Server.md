@@ -124,3 +124,6 @@ Keterangan :
 
 22.Lalu akan muncul notifikasi untuk mengkonfirmasi semua konfigurasi yang sudah kita buat. Jika sudah langsung klik saja Continue.
 ![Img 1](Assets/28.png)
+
+23.Selanjutnya masukan informasi seperti nama, username, dan password untuk server yang kalian buat. Jika sudah klik saja Done.
+![Img 1](Assets/29.png)
