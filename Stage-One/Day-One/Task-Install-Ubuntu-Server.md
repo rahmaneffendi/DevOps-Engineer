@@ -80,3 +80,22 @@ Kalau Menggunakan Bridge nantinya server yang kita buat akan mendapatkan IP dari
 ![Img 1](Assets/15.png)
 ![Img 1](Assets/16.png)
 
+15.Pilih di bagian ens33, setelah itu pada bagia IPv4 Method ubah dari yang awalnya automatic menjadi manual. Setelah itu masukan detail IP pada form yang tersedia(kalian bisa masukkan saja IP yang sudah tertera di bagian DHCPv4). Jika sudah langsung tekan saja Save.
+
+Keterangan:
+
+-Subnet : Istilah teknologi Informasi yang membedakan Network ID dan Host ID atau sebagai penentu porsi Network ID dan Host ID pada deretan kode biner
+
+-Address : Alamat IP yang akan digunakan untuk Virtual Machine yang akan kalian buat. (kalian dapat mengisi bagian ini dengan IP yang sudah ada di bagian DHCP)
+
+-Gateway : Perangkat komputer yang berfungsi untuk mengkoneksikan sebuah Jaringan komputer terhadap satu jaringan komputer yang lain.
+
+-Name servers : Dibagian Name servers ini kalian cukup memasukkan IP DNS dari google supaya dapat terhubung dengan browser.
+![Img 1](Assets/17.png)
+![Img 1](Assets/17.5.png)
+![Img 1](Assets/18.png)
+![Img 1](Assets/19.png)
+
+16.Jika konfigurasi sudah selesai maka akan ada perubahan di bagian DHCPv4 tadi menjadi static.
+![Img 1](Assets/20.png)
+
