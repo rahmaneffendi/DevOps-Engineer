@@ -63,11 +63,20 @@ kalau menggunakan NAT nantinya server yang kita buat ini akan mendapatkan IP yan
 Kalau Menggunakan Bridge nantinya server yang kita buat akan mendapatkan IP dari internet yang sedang kita gunakan.
 ![Img 1](Assets/11.png)
 
-setelah itu klik finish
+9.jika sudah lalu klik close
+
+10.Setelah nanti kalian akan di kembalikan ke halamannya sebelumnya, setelah itu tekan saja di bagian Finish.
 
 ![Img 1](Assets/10.png)
 
-lalu akan muncul tampilan ini
+11.Jika sudah nantinya kalian akan langsung di arahkan ke bagian installasi, disini kalian tunggu saja sampai prosesnya selesai.
 ![Img 1](Assets/12.png)
 ![Img 1](Assets/13.png)
+
+12.Jika sudah kalian akan muncul tampilan seperti gambar dibawah ini. Setelah itu pilih bahasa yang ingin digunakan English.
+![Img 1](Assets/14.png)
+
+13.Proses ini bisa langsung kalian skip dengan klik continue without updating lalu skip juga dengan Done.
+![Img 1](Assets/15.png)
+![Img 1](Assets/16.png)
 
