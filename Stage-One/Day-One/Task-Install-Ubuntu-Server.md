@@ -28,3 +28,7 @@ ket : menggunakan Versi 20 untuk pemula
 3.Lalu tahapan selanjutnya masukan saja user dan password yang kalian inginkan.
 
 ![Img 1](Assets/7.png)
+
+4.Tahapan selanjutnya adalah menentukan lokasi dimana Virtual machine kalian ingin disimpan.
+
+![Img 1](Assets/8.png)
