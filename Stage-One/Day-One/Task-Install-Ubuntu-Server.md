@@ -64,6 +64,7 @@ Kalau Menggunakan Bridge nantinya server yang kita buat akan mendapatkan IP dari
 ![Img 1](Assets/11.png)
 
 setelah itu klik finish
+
 ![Img 1](Assets/10.png)
 
 lalu akan muncul tampilan ini
