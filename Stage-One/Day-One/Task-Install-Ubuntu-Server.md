@@ -105,5 +105,8 @@ Keterangan:
 18.Pada tahap selanjutnya kalian bisa skip lagi dengan klik Done.
 ![Img 1](Assets/22.png)
 
+19.Disini kita dapat memilih bagian Custom storage layout. Kenapa kita memilih Custom storage layout karena kita akan membuat 2 buah partisi, jika sudah kalian pilih setelah itu langsung saja klik Done.
+![Img 1](Assets/23.png)
+
 
 
