@@ -6,6 +6,9 @@ Silahkan klik link dibawah untuk meng-unduh tools yang diperlukan.
 
 VMware Installation : https://www.vmware.com/products/workstation-player/workstation-player-evaluation.html
 
+akan tampil 2 option
+![Img 1](Assets/2.png)
+
 Ubuntu Server 20.04 : https://ubuntu.com/download/server
 
 
