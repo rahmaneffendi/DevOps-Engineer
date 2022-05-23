@@ -134,3 +134,6 @@ skip aja bagian ini
 24.Ditahapan ini jangan lupa untuk checklist bagian Install OpenSSH server gunanya adalah untuk me-remote server yang kita buat.
 ![Img 1](Assets/31.png)
 
+25.Pada tahap selanjutnya skip dengan klik Done.
+![Img 1](Assets/32.png)
+
