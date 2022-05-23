@@ -6,13 +6,10 @@ Setelah mempelajari terkait konfigurasi dan instalasi linux server, maka silakan
 ![Img 1](Assets/1.png)
 
 # VMware Environment
-Disk : 10 Gb
-
-Memory : 2 Gb
-
-Processors : 2 Cores
-
-Network : NAT
+-Disk : 10 Gb
+-Memory : 2 Gb
+-Processors : 2 Cores
+-Network : NAT
 
 # Ubuntu Settings
 Bahasa : English
