@@ -7,7 +7,7 @@ CAUTION
 Pastikan untuk melakukan screenshot step by step yang dilakukan, untuk digunakan sebagai dokumentasi tugas.
 
 Setelah mempelajari terkait perintah dasar linux, konfigurasi jaringan, hingga tunneling maka silakan buat dokumentasi medium dengan ketentuan sebagai berikut:
-
+![Img 1](assets/apache2.png)
 
 # Ketentuan
 
