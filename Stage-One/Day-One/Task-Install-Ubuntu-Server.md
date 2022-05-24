@@ -94,7 +94,7 @@ Keterangan:
 ![Img 1](Assets/17.png)
 ![Img 1](Assets/17.5.png)
 ![Img 1](Assets/18.png)
-![Img 1](Assets/19.png)
+![Img 1](Assets/ipbaru.png)
 
 16.Jika konfigurasi sudah selesai maka akan ada perubahan di bagian DHCPv4 tadi menjadi static.
 ![Img 1](Assets/20.png)
@@ -149,4 +149,5 @@ skip aja bagian ini
 ping google.com
 
 -Jika server kalian sudah terhubung ke dalam internet maka akan muncul seperti gambar dibawah ini.
+![Img 1](Assets/pingbridge.png)
 
