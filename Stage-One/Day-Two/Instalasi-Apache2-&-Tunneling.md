@@ -13,3 +13,16 @@ Akan muncul sebagai berikut lalu ubah IP nya
 2. Setelah selesai men-setting IP maka kita coba gunakan perintah `ping google.com` untuk mengetes koneksi dan jika berhasil maka akan muncul seperti gambar berikut
 
 ![Img 1](assets/3.png)
+
+# Step 2
+
+## Apache2 Installation
+
+1. Untuk mengecek IP yang sudah kita ubah tadi kita akan coba dengan remote server. Caranya dengan perintah berikut 
+
+```
+ssh are2@192.168.134.254
+```
+Untuk san kalian ganti dengan username Ubuntu Server kalian sendiri, jika ssh berhasil maka akan muncul seperti gambar berikut:
+
+![Img 1](assets/3.JPG)
