@@ -63,7 +63,7 @@ kalau menggunakan NAT nantinya server yang kita buat ini akan mendapatkan IP yan
 Kalau Menggunakan Bridge nantinya server yang kita buat akan mendapatkan IP dari internet yang sedang kita gunakan.
 ![Img 1](Assets/11.png)
 
-disini, dikarenakan saya masih blum bisa pake Nat, jadi saya beralih dulu ke bridge
+disini, dikarenakan saya masih blum bisa pake Nat, jadi pada akhirnya saya beralih dulu ke bridge
 
 ![Img 1](Assets/alih-ke-bridge.png)
 
