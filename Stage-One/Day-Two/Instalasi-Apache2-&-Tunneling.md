@@ -98,3 +98,58 @@ npm -v
 ![Img 1](assets/11.png)
 
 
+
+Selanjutnya kita akan melakukan instalasi localtunnel menggunakan npm yang sudah kita install.
+
+```
+npm install -g localtunnel
+```
+
+![Img 1](assets/12.png)
+
+Sekarang kita akan melakukan instalasi Nginx yang sama seperti pertemuan sebelumnya.
+
+```
+sudo apt install apache2
+```
+
+Lalu nanti akan muncul notifikasi Do you want to continue? [Y/n] kalian ketik saja Y. Jika sudah maka instalasi akan berjalan.
+
+![Img 1](assets/13.png)
+
+Jika instalasi kalian telah selesai melakukan instalasi Nginx, Selanjutnya kita coba untuk mengakses nginx di web browser kita untuk mengecek apakah Nginx kita sudah berjalan atau belum.
+
+Coba kalian akses di web browser kalian, lalu masukkan IP dari server kalian.
+
+![Img 1](assets/14.png)
+
+Sekarang kita coba untuk menggunakan localtunel untuk aplikasi apache2 yang sudah kita install.
+
+Untuk menjalankan localtunel kalian dapat mengikuti perintah di bawah ini.
+
+```
+lt --port 80
+```
+
+![Img 1](assets/14.5.png)
+
+keterangan : pastikan dibagian port telah sesuai dengan aplikasi kalian. Karena setiap aplikasi pasti mempunyai port yang berbeda-beda, kita ambil contoh saja dari aplikasi node.js, aplikasi node.js biasanya berjalan di atas port 3000.
+
+Jika sudah copy url yang ada di terminal kalian.
+
+Setelah itu coba kalian akses menggunakan Web.browser kalian.
+
+![Img 1](assets/15.png)
+
+Jika sudah klik tombol Click to Continue.
+
+Selanjutnya kalian akan di arahkan ke aplikasi kalian. Dan aplikasi kalian sekarang sudah dapat di akses oleh public.
+
+![Img 1](assets/16.png)
+
+tampilan hp
+
+![Img 1](assets/17.jpg)
+
+
+
