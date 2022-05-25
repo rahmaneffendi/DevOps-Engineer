@@ -18,7 +18,7 @@ Akan muncul sebagai berikut lalu ubah IP nya
 
 ## Apache2 Installation
 
-1. Untuk mengecek IP yang sudah kita ubah tadi kita akan coba dengan remote server. Caranya dengan perintah berikut 
+1. Untuk mengecek IP yang sudah kita ubah tadi kita akan coba dengan remote server. Caranya masuk ke terminal lokal kalian dan masukan perintah berikut 
 
 ```
 ssh are2@192.168.134.254
