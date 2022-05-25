@@ -59,3 +59,42 @@ sudo systemctl status apache2
 Sekarang coba buka browser kalian, lalu masukkan IP dari server kalian.
 
 ![Img 1](assets/8.png)
+
+Dan instalasi Apache2 BERHASIL
+
+
+# Step 3 - LocalTunnel
+
+Pertama-tama yang kita lakukan adalah instalalsi node.js menggunakan nvm untuk melakukan instalasi kalian dapat mengikuti langkah-langkah dibawah ini.
+
+```
+sudo apt install curl
+```
+
+![Img 1](assets/9.png)
+
+```
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.1/install.sh | bash
+```
+
+![Img 1](assets/10.png)
+
+```
+exec bash
+```
+
+```
+nvm install 14
+```
+
+```
+node -v
+```
+
+```
+npm -v
+```
+
+![Img 1](assets/11.png)
+
+
