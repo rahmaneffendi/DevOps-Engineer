@@ -196,6 +196,67 @@ Jika sudah jalankan aplikasi dengan menggunakan perintah berikut.
 
 Selamat, Praktek Golang Sudah Selesai
 
+# Step 3 - Instalasi, Build dan Run Aplikasi Python3
+
+Aplikasi python telah di install secara default pada Ubuntu, maka kita tidak perlu mendownload nya lagi, untuk mengecek apakah python3 sudah ada gunakan perintah berikut:
+
+```
+python3 --version
+```
+
+![Img 1](assets/18.png)
+
+Sekarang kita install package manager dari python3. Kalian dapat menggunakan perintah berikut ini.
+
+```
+sudo apt install python3-pip
+```
+
+![Img 1](assets/19.png)
+
+```
+pip install flask
+```
+
+![Img 1](assets/20.png)
+
+PIP adalah sebuah package management system yang biasa digunakan untuk mengatur dan menginstall package yang berisi modul-modul Python. PIP digunakan untuk menginstall Flask karena Flask ditulis dan dikembangkan dengan bahasa dan modul-modul pemrograman Python. Dengan menggunakan PIP, semua hal yang dibutuhkan untuk instalasi Flask akan diunduh dan dipasang dalam satu perintah.
+
+Sekarang kita akan membuat aplikasi sederhana menggunakan Python3.
+
+Kalian buat terlebih dahulu file dengan nama index.py. Lalu masukan script dibawah ini.
+
+```
+nano index.py
+```
+
+didalamnya masukan script ini 
+
+```
+from flask import Flask
+app = Flask(__name__)
+@app.route("/")
+def helloworld():
+    return "Hello World"
+if __name__ == "__main__":
+    app.run() 
+```    
+
+Jika sudah sekarang jalankan aplikasi dengan menggunakan perintah berikut ini.
+
+```
+python3 index.py
+```
+
+![Img 1](assets/21.1.png)
+
+![Img 1](assets/21.2.png)
+
+Sekarang coba akses web browser kalian setelah itu kalian coba akses dengan localhost:5000
+
+
+
+
 
 
 
