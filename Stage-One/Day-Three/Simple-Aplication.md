@@ -94,7 +94,7 @@ Jika sudah sekarang kita akan coba untuk menjalankan aplikasi sederhana yang sud
 ```
 node index.js
 ```
-
+ 
 ![Img 1](assets/8.png)
 
 
