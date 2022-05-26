@@ -254,6 +254,96 @@ python3 index.py
 
 Sekarang coba akses web browser kalian setelah itu kalian coba akses dengan localhost:5000
 
+![Img 1](assets/22.png)
+
+# Step 4 - Menjalankan Aplikasi Secara Daemon Menggunakan PM2
+
+Lakukan instalasi PM2 dengan perintah berikut:
+
+```
+npm install pm2 -g
+```
+
+![Img 1](assets/23.png)
+
+
+Kemudian masuk ke directory NodeJS dan start aplikasi NodeJS kita secara daemon dengan perintah berikut:
+
+```
+pm2 start index.js
+```
+
+![Img 1](assets/24.png)
+
+Dan aplikasi NodeJS kita berhasil dijalankan di PM2 secara daemon seperti gambar berikut:
+
+![Img 1](assets/25.png)
+
+
+
+Sekarang kita akan menjalankan aplikasi python kita dengan cara masuk terlebih dahulu ke directory python dan masukkan perintah berikut:
+
+```
+pm2 start index.py --interpreter python3
+```
+
+Dan aplikasi Python3 kita berhasil dijalankan di PM2 secara daemon seperti gambar berikut:
+
+![Img 1](assets/26.png)
+
+
+
+Sekarang kita akan masuk ke aplikasi Golang kita dan menjalankannya secara daemon dengan perintah berikut:
+
+```
+pm2 start index.go
+```
+
+![Img 1](assets/27.png)
+
+
+Sekarang kita akan mengecek status keseluruhan dengan perintah berikut apakah berjalan dengan baik atau tidak
+
+```
+pm2 status
+```
+
+![Img 1](assets/28.png)
+
+
+
+# Step 5 - Localtunnel
+
+install localtunnel dengan perintah berikut
+
+```
+npm install -g localtunnel 
+```
+
+Untuk Aplikasi python disini menggunakan port 5000 dengan perintah:
+
+```
+lt --port 5000
+```
+
+Untuk Aplikasi NodeJS disini menggunakan port 3000 dengan perintah:
+
+```
+lt --port 3000
+```
+
+![Img 1](assets/29.png)
+
+# DONE
+
+
+
+
+
+
+
+
+
 
 
 
