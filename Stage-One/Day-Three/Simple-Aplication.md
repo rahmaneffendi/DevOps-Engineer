@@ -101,7 +101,7 @@ Sekarang coba akses web browser kalian setelah itu kalian coba akses dengan loca
 
 ![Img 1](assets/9.png)
 
-Dari Sini Selesai Dulu Untuk Node.js nya
+Selamat Praktek Nodejsnya Sudah Selesai
 
 
 
