@@ -56,6 +56,16 @@ Diatas adalah private key untuk terhubung ke server
 
 Diatas adalah Key untuk penghubung ke github , gitlab dll.
 
+4.Jika Sudah kita copas private penghubung tersebut ke github kita dengan cara masuk ke setting, kemudian masuk ke bagian ``` ssh key ``` kemudian buat ssh key yang baru, dan nantinya kita save , sehingga ter-save seperti gambar dibawah ini :
+
+![Img 1](assets/6.png)
+
+5.Setelah itu kita cek apakah sudah terkoneksi lokal kita dengan Github dengan perintah berikut :
+
+```
+
+```
+
 
 
 
