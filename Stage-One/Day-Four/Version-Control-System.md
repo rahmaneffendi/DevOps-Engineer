@@ -50,7 +50,6 @@ Jika kalian sudah menjalankan perintah sebelumnya maka kalian sudah berhasil unt
 ```
 cat .ssh/id_rsa.pub
 ```
-
 ![Img 1](assets/3.png)
 
 ## Add new SSH to github settings
