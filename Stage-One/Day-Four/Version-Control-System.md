@@ -42,29 +42,45 @@ ssh-keygen
 
 ![Img 1](assets/2.png)
 
-2.kemudian kita liat list yang ada 
+
+## SSH key Location
+
+Jika kalian sudah menjalankan perintah sebelumnya maka kalian sudah berhasil untuk men-generate SSH key yang akan kalian gunakannya. Untuk lokasi SSH key yang sudah kalian generate tadi berada di .ssh/id_rsa.pub. Jika sudah lakukan copy pada SSH-key tersebut.
+
+```
+cat .ssh/id_rsa.pub
+```
 
 ![Img 1](assets/3.png)
 
-3.Di bagian Username saya, ada private key dan key penghubung 
+## Add new SSH to github settings
+
+Tahap selanjutnya setelah kalian melakukan copy SSH-key adalah memasukkannya kedalam config github dengan membuka https://github.com/settings/keys.
+
+Jika sudah langsung tekan saja di bagian New SSH key.
 
 ![Img 1](assets/4.png)
 
-Diatas adalah private key untuk terhubung ke server
+Setelah itu masukkan saja SSH key yang sudah kalian copy tadi kebagian key. Jika sudah Langsung saja save dengan menge-klik bagian Add SSH key.
 
 ![Img 1](assets/5.png)
 
-Diatas adalah Key untuk penghubung ke github , gitlab dll.
-
-4.Jika Sudah kita copas private penghubung tersebut ke github kita dengan cara masuk ke setting, kemudian masuk ke bagian ``` ssh key ``` kemudian buat ssh key yang baru, dan nantinya kita save , sehingga ter-save seperti gambar dibawah ini :
-
 ![Img 1](assets/6.png)
 
-5.Setelah itu kita cek apakah sudah terkoneksi lokal kita dengan Github dengan perintah berikut :
+## Check Connection
+
+Jika kalian sudah melakukan semua step di atas maka kalian sudah berhasil meng-koneksikan local kalian dengan Github.
+
+Untuk make sure apakah sudah terkoneksi kita bisa menggunakan perintah di bawah ini.
 
 ```
-
+ssh -T git@github.com
 ```
+
+![Img 1](assets/7.png)
+
+Jika muncul teks seperti gambar diatas. maka kalian sudah berhasil mengkoneksikan local kalian dengan Github.
+
 
 
 
