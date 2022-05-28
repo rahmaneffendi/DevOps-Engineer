@@ -57,7 +57,6 @@ cat .ssh/id_rsa.pub
 Tahap selanjutnya setelah kalian melakukan copy SSH-key adalah memasukkannya kedalam config github dengan membuka https://github.com/settings/keys.
 
 Jika sudah langsung tekan saja di bagian New SSH key.
-
 ![Img 1](assets/4.png)
 
 Setelah itu masukkan saja SSH key yang sudah kalian copy tadi kebagian key. Jika sudah Langsung saja save dengan menge-klik bagian Add SSH key.
