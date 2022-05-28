@@ -1,6 +1,6 @@
 # Task Day 4 = Version Control System
 
-# 14.1 Instruksi
+# Instruksi
 CAUTION
 Pastikan untuk melakukan screenshot step by step yang dilakukan, untuk digunakan sebagai dokumentasi tugas.
 
@@ -8,20 +8,21 @@ Setelah mempelajari bagaimana cara menginstall git, mengkonfigurasi serta menggu
 
 ![Img 1](assets/task4.png)
 
-#Ketentuan
+# Ketentuan
 
 Siapkan 3 buah repository untuk masing-masing aplikasi Node.js, Python dan Go yang telah dibuat
 Buatlah 3 buah branch pada masing-masing aplikasi tersebut yaitu development, staging dan production
 Pada setiap aplikasi tersebut lakukan push ke semua repository yang telah dibuat
 
-14.2 Pengumpulan#
+# Pengumpulan
 Pastikan untuk mengerjakan tugas mingguan pada medium.com.
 Tulis step-by-step yang telah Anda lakukan secara detail dan sertakan screenshot setiap prosesnya.
 Setelah menyelesaikan tugas, silakan publish artikel yang sudah dibuat.
 Referensi:
 
-Medium
-#14.3 Project Management
+
+# Project Management
+
 Tambahkan deskripsi berikut ke dalam kanban pada project management Anda
 
 Melakukan versioning menggunakan git pada semua aplikasi (NodeJS, Python dan Go).
@@ -35,5 +36,5 @@ Referensi:
 Membuat GitHub Project
 Manage GitHub Issue
 
-#14.4 Diskusi
+# Diskusi
 Silakan diskusikan terkait kendala atau kesulitan selama pembelajaran pada platform diskusi (slack/talk.ink) dengan membuat thread, misalnya "Introduction DevOps: problem cannot connect to network in VMware"
