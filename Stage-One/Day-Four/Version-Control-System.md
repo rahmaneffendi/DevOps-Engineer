@@ -218,6 +218,43 @@ git branch -a
 
 ![Img 1](assets/21.png)
 
+10. Setelahnya, Kita akan push ke semua branch, 
+
+kita bisa berpindah branch dengan perintah 
+
+```
+git checkout (name branch)
+```
+
+Pertama Development 
+
+![Img 1](assets/22.png)
+
+
+Ke-2 Staging
+
+![Img 1](assets/23.png)
+
+
+ke-3
+
+![Img 1](assets/24.png)
+
+
+11. Setelah selesai membuat branch dan push ke semua branch, sekarang kita akan cek di github kita apakah sudah berjalan sesuai rencana
+
+![Img 1](assets/25.png)
+
+dari gambar diatas, sudah terbukti bahwan branch nya sudah ada semua.
+
+![Img 1](assets/26.png)
+
+![Img 1](assets/27.png)
+
+![Img 1](assets/28.png)
+
+dari 3 gambar diatas, sudah terbukti bahwa di masing-masing branch, sudah ter-push juga semua filenya.
+
 
 
 
