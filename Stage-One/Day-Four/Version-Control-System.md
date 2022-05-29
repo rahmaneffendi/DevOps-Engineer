@@ -258,6 +258,19 @@ dari 3 gambar diatas, sudah terbukti bahwa di masing-masing branch, sudah ter-pu
 ## Tugas NodeJs Sudah selesai, Sekarang kita akan melakukan hal yang sama untuk aplikasi Golang dan Python.
 
 
+Gambar Dibawah ini Bukti untuk aplikasi Python
+
+![Img 1](assets/30.png)
+
+
+Gambar dibawah ini bukti Untuk aplikasi Golang
+
+![Img 1](assets/29.png)
+
+
+
+#Selesai 
+
 
 
 
