@@ -255,6 +255,11 @@ dari gambar diatas, sudah terbukti bahwan branch nya sudah ada semua.
 
 dari 3 gambar diatas, sudah terbukti bahwa di masing-masing branch, sudah ter-push juga semua filenya.
 
+## Tugas NodeJs Sudah selesai, Sekarang kita akan melakukan hal yang sama untuk aplikasi Golang dan Python.
+
+
+
+
 
 
 
