@@ -81,7 +81,142 @@ Jika muncul teks seperti gambar diatas. maka kalian sudah berhasil mengkoneksika
 
 
 
-## Step 3 - 
+## Step 3 - Membuat 3 Buah Repository Untuk apk NodeJs, Golang & python
+
+1. Pertama kita buat Repository NodeJs Terlebih dahulu dengan membuat direktorinya terlebih dahulu kemudian inisiasi git didalamnya menggunakan perintah berikut :
+
+```
+mkdir app-node-js
+```
+
+```
+cd app-node-js
+```
+
+```
+git init
+```
+
+![Img 1](assets/8.png)
+
+2. Setelahnya kita membuat repository pada github juga, dengan masuk ke profile github dan klik "new repository" dibagian kanan kemudian beri nama repository nya dan klik "create new repository" di bagian bawahnya 
+
+![Img 1](assets/9.png)
+
+![Img 1](assets/10.png)
+
+3. Jika muncul gambar dibawah ini berarti anda berhasil membuat repository NodeJs di Github, Kemudian Copy link " git remote add origin https://github.com/rahmaneffendi/app-node-js.git " untuk me-remote github dari lokal kita : 
+
+![Img 1](assets/11.png)
+
+4. Sekarang kita remote dengan perintah dibawah ini dengan paste kan link ssh tadi
+
+```
+git remote add origin https://github.com/rahmaneffendi/app-node-js.git
+```
+
+dan masukan perintah di bawah ini untuk mengecek nya 
+
+```
+git remote -v
+```
+
+![Img 1](assets/12.png)
+
+nah, karena kita disni sudah belajar menggunakan ssh, kita akan remotenya menggunakan ssh, kita ganti yang tadinya menggunakan "https" menjadi ssh dengan perintah berikut :
+
+```
+git remote set-url origin git@github.com:rahmaneffendi/app-node-js.git
+```
+
+link diatas diambil dari github dengan cara klik pilihan "ssh" nya
+
+![Img 1](assets/13.png)
+
+![Img 1](assets/14.png)
+
+5. Setelah Selesai me-remote, kita akan menambahkan file, aplikasi dan lain sebagainya ke dalam github melalui git,
+
+ada 3 tahapan dalam git, yaitu : modify, staging dan commit.
+
+
+tahap pertama yaitu modify, kita buat file yang akan kita tambahkan, apabila ada yang tidak perlu ditambahkan ke github, kita bisa menggunakan ".gitignore" dengan cara menuliskan nama filenya dalam git.ignore
+
+![Img 1](assets/15.png)
+
+![Img 1](assets/16.png)
+
+Setelahnya Kita bisa cek Status Nya menggunakan"git status" apakah semuanya berjalan sesuai rencana :
+
+![Img 1](assets/17.png)
+
+6. Setelah Modify semua file, kita masuk ke tahap staging, 
+
+sekarang kita add semua file yang ada dengan perintah 
+
+```
+git add .
+```
+
+setelah nya kita cek statusnya
+
+![Img 1](assets/18.png)
+
+7. Kemudian untuk tahapan selanjutnya yaitu commit atau production, kita akan menggunakan perintah berikut :
+
+```
+git commit -m "................"
+```
+
+titik-titik diatas diisi dengan pesan apa yang akan kita isi
+
+```
+git status
+```
+
+sebelum melakukan push, perintah diatas berfungsi juga untuk mengetahui pada branch apa kita berada
+
+
+```
+git push origin master
+```
+
+karena kita berada di branch master, kita push ke branch itu :
+
+![Img 1](assets/19.png)
+
+nah, dari gambar tersebut, dapat disimpulkan bahwa kita berhasil melakukan push
+
+8. Kemudian kita cek github kita pakah benar sudah ter-push 
+
+![Img 1](assets/20.png)
+
+dan dari gambar tersebut itu berarti kita berhasil , yey.
+
+
+9. Tahap Selanjutnya, kita akan membuat 3 buah branch baru, yaitu : Development, Staging, dan Production
+
+Untuk Membuat Branch, Kita gunakan perintah :
+
+```
+git branch development
+```
+
+```
+git branch staging
+```
+
+```
+git branch production
+```
+
+dan perintah berikut untuk mengecek branch yang tersedia :
+
+```
+git branch -a
+```
+
+![Img 1](assets/21.png)
 
 
 
