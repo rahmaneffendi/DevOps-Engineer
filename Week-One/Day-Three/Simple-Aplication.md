@@ -2,8 +2,8 @@
 # Build dan Running aplikasi NodeJS, Golang dan Python3 dan Jalankan Secara Daemon Menggunakan PM2
 
 Apa Itu Aplikasi ?
-![Img 1](assets/apk.png)
-![Img 1](assets/apk1.png)
+![Img 1](assets/apk.jpg)
+![Img 1](assets/apk1.jpg)
 
 aplikasi merupakan suatu sub-class perangkat lunak yang menjalankan beberapa tugas dan fungsi untuk memudahkan user dalam suatu hal.
 
