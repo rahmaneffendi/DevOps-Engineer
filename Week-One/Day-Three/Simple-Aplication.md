@@ -252,9 +252,7 @@ python3 index.py
 
 ![Img 1](assets/21.2.png)
 
-Sekarang coba akses web browser kalian setelah itu kalian coba akses dengan localhost:5000
 
-![Img 1](assets/22.png)
 
 # Step 4 - Menjalankan Aplikasi Secara Daemon Menggunakan PM2
 
