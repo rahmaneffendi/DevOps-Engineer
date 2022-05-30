@@ -83,6 +83,10 @@ Jika muncul teks seperti gambar diatas. maka kalian sudah berhasil mengkoneksika
 
 ## Step 3 - Membuat 3 Buah Repository Untuk apk NodeJs, Golang & python
 
+apa itu Repository?
+Repositori atau repo adalah direktori penyimpanan file proyek. Di sini, Anda bisa menyimpan apa pun yang berkaitan dengan proyek yang sedang Anda buat, misalnya file kode, gambar, atau audio. Repo sendiri bertempat di penyimpanan atau storage GitHub atau repositori lokal di komputer Anda
+
+
 1. Pertama kita buat Repository NodeJs Terlebih dahulu dengan membuat direktorinya terlebih dahulu kemudian inisiasi git didalamnya menggunakan perintah berikut :
 
 ```
