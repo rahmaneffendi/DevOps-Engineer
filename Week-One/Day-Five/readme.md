@@ -7,7 +7,7 @@ Pastikan untuk melakukan screenshot step by step yang dilakukan, untuk digunakan
 
 Setelah mempelajari terkait CI/CD serta melakukan konfigurasi CI/CD menggunakan Cloudflare Pages, maka silakan jalankan aplikasi dengan ketentuan sebagai berikut:
 
-imggggggggggggggggg
+![Img 1](assets/task5.png)
 
 # Kententuan
 
