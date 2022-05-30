@@ -1,6 +1,13 @@
 # Day 3
 # Build dan Running aplikasi NodeJS, Golang dan Python3 dan Jalankan Secara Daemon Menggunakan PM2
 
+Apa Itu Aplikasi ?
+![Img 1](assets/apk.png)
+![Img 1](assets/apk1.png)
+
+aplikasi merupakan suatu sub-class perangkat lunak yang menjalankan beberapa tugas dan fungsi untuk memudahkan user dalam suatu hal.
+
+
 ## Step 1 -  Instalasi, Build dan Run Aplikasi NodeJS
 
 1. Install terlebih dahulu engine NodeJS dengan cara perintah berikut:
