@@ -32,8 +32,8 @@ Server Name : (your-name)
 OpenSSH : True
 
 # 2 Pengumpulan
-Pastikan untuk mengerjakan tugas mingguan pada medium.com.
+Pastikan untuk mengerjakan tugas mingguan pada Github.
 
 Tulis step-by-step yang telah Anda lakukan secara detail dan sertakan screenshot setiap prosesnya.
 
-Setelah menyelesaikan tugas, silakan publish artikel yang sudah dibuat.
+Setelah menyelesaikan tugas, silakan publish yang sudah dibuat.
