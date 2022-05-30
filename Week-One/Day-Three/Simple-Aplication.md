@@ -263,6 +263,8 @@ python3 index.py
 
 # Step 4 - Menjalankan Aplikasi Secara Daemon Menggunakan PM2
 
+PM2 adalah manajer proses untuk JavaScript runtime Node.js. Pada 2016, PM2 mendapat peringkat sebagai proyek JavaScript terpopuler ke-82 di GitHub.
+
 Lakukan instalasi PM2 dengan perintah berikut:
 
 ```
