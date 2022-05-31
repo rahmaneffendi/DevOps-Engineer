@@ -37,3 +37,18 @@ Melakukan konfigurasi CI/CD menggunakan Cloudflare Pages.
 
 # Diskusi
 Silakan diskusikan terkait kendala atau kesulitan selama pembelajaran pada platform diskusi (slack/talk.ink) dengan membuat thread, misalnya "Introduction DevOps: problem cannot connect to network in VMware"
+
+
+
+
+
+
+
+
+
+
+
+
+link yang dikasih selama meet
+
+https://github.com/dumbwaysdev/dumbflix-frontend
