@@ -51,4 +51,8 @@ Silakan diskusikan terkait kendala atau kesulitan selama pembelajaran pada platf
 
 link yang dikasih selama meet
 
+1.Sumber Apk
 https://github.com/dumbwaysdev/dumbflix-frontend
+
+2.Contoh Tugas
+https://batch12-cicd.pages.dev/
