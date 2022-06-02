@@ -2,8 +2,8 @@
 
 ## Instruksi
 
-CAUTION
-Pastikan untuk melakukan screenshot step by step yang dilakukan, untuk digunakan sebagai dokumentasi tugas.
+`CAUTION
+Pastikan untuk melakukan screenshot step by step yang dilakukan, untuk digunakan sebagai dokumentasi tugas.`
 
 Setelah mempelajari terkait text editor, text manipulation, monitoring, service management hingga network firewall, maka silakan buat dokumentasi dengan ketentuan sebagai berikut:
 
@@ -21,6 +21,7 @@ Tulis step-by-step yang telah Anda lakukan secara detail dan sertakan screenshot
 Setelah menyelesaikan tugas, silakan publish artikel yang sudah dibuat.
 
 Referensi:
+
 Medium : https://ebook-devops.vercel.app/Getting-Started/Medium/Medium
 
 ## Project Management
@@ -36,7 +37,9 @@ Konfigurasi environment dan instalasi linux server, dimana server tersebut dapat
 - [ ] Buat sebuah file bash serderhana yang bertugas untuk membuat firewall port 22, 80 dan 443 
 
 Referensi:
+
 Membuat GitHub Project : https://ebook-devops.vercel.app/Getting-Started/Project-Management/Make-Project-Management
+
 Manage GitHub Issue : https://ebook-devops.vercel.app/Getting-Started/Project-Management/Issue-Dan-Status-Project
 
 Diskusi
