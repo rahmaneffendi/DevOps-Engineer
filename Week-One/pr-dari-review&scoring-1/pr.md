@@ -4,4 +4,9 @@ Sebelum dualboot, saya pake windows dalam menjalankan servernya, Kemudian saya i
 
 Berikut Bukti saya sudah bisa menjalankan Nat 
 
+![Img 1](assets/NAT.jpg)
+
+Berikut Bukti saya sudah bisa menjalankan Nat 
+
+![Img 1](assets/Docker.png)
 
