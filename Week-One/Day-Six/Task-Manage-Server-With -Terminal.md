@@ -75,9 +75,14 @@ maka akan muncul berikut
 
 ![image](https://user-images.githubusercontent.com/99697182/171658964-51400bbd-d434-4f25-aec3-82287c2bd303.png)
 
-kita 
+5.kita bisa mengeceknya dengan `sudo ufw status`
+
+![image](https://user-images.githubusercontent.com/99697182/171661729-06369144-70ef-44fb-b671-dd8eac9561e7.png)
 
 
+# Selesai
+
+# Sekian Dan terimakasih 
 
 
 
