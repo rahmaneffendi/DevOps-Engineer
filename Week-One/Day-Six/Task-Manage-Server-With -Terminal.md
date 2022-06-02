@@ -45,7 +45,7 @@ ada echo yang muncul `beres`
 
 2.masukan script didalamnya
 
-3. berikan izin dengan perintah `chmod +x (nama file)`
+3.berikan izin dengan perintah `chmod +x (nama file)`
 
 4.jalankan dengan `./`
 
@@ -53,3 +53,31 @@ ada echo yang muncul `beres`
 
 
 ## Buat sebuah file bash serderhana yang bertugas untuk membuat firewall port 22, 80 dan 443
+
+pertama , install firewall terlebih dahulu :
+
+![image](https://user-images.githubusercontent.com/99697182/171659661-eea990ec-34b2-4040-87e7-3ddd9695bf72.png)
+
+
+1.Buat Sebuah file terlebih dahulu
+
+2.masukan script kedalamnya
+
+![image](https://user-images.githubusercontent.com/99697182/171658571-a8f1e550-a64c-41fb-98ac-1dad37b469fe.png)
+
+3.berikan izin dengan perintah `chmod +x (nama file)`
+
+4.jalankan dengan `./`
+
+![image](https://user-images.githubusercontent.com/99697182/171658790-9fb8cf3b-580a-474d-be86-558ff1eeb169.png)
+
+maka akan muncul berikut
+
+![image](https://user-images.githubusercontent.com/99697182/171658964-51400bbd-d434-4f25-aec3-82287c2bd303.png)
+
+kita 
+
+
+
+
+
