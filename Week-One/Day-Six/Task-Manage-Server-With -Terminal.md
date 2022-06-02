@@ -41,13 +41,21 @@ ada echo yang muncul `beres`
 
 ## Buat sebuah file bash sederhana yang bertugas untuk mencari file bernama sysctl.conf
 
-1.Buat file terlebih dahulu
+1.buat file sysctl.conf dan taruh di dalam suatu directory
+
+![image](https://user-images.githubusercontent.com/99697182/171678010-acf4e9ba-ef26-410f-b305-e875d5119b82.png)
+
+2.Buat file bash nya untuk mencari
 
 2.masukan script didalamnya
+
+![image](https://user-images.githubusercontent.com/99697182/171678631-0593b696-7877-4371-a0ba-fe0894c911f8.png)
 
 3.berikan izin dengan perintah `chmod +x (nama file)`
 
 4.jalankan dengan `./`
+
+
 
 
 
