@@ -55,6 +55,18 @@ ada echo yang muncul `beres`
 
 4.jalankan dengan `./`
 
+![image](https://user-images.githubusercontent.com/99697182/171679135-459cb53e-43b6-45e7-aac0-7f4a4d64295e.png)
+
+karena ada yang salah dalam script nya maka muncul keterangan dalam gambar di atas
+
+5.kita edit kembali scriptnya :
+
+![image](https://user-images.githubusercontent.com/99697182/171679650-bcc68f77-0054-4cb1-817f-5fa53a0362c4.png)
+
+![image](https://user-images.githubusercontent.com/99697182/171679594-b871f88c-7d4c-4119-8126-3a8242d7358c.png)
+
+akhirnya script nya berjalan dan  kita menemukan file yang kita cari
+
 
 
 
