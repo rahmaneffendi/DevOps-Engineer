@@ -12,8 +12,6 @@ Kita install Virtual Machine kita terlebih dahulu, disini saya mencoba menggunak
 
 Kemudian Kita buat servernya menggunakan perintah `multipass launch --name foo`
 
-![image](https://user-images.githubusercontent.com/99697182/171836768-e9525dc4-48ec-4f94-bac8-5d9cf88515e3.png)
-
 ![image](https://user-images.githubusercontent.com/99697182/171837821-a2a2e59a-ce50-41e8-8725-d96abdd04cfd.png)
 
 
