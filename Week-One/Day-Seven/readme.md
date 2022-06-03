@@ -46,6 +46,7 @@ Konfigurasi web server dengan reverse proxy dan load balancing hingga dapat di a
 Referensi:
 
 Membuat GitHub Project = https://ebook-devops.vercel.app/Getting-Started/Project-Management/Make-Project-Management
+
 Manage GitHub Issue = https://ebook-devops.vercel.app/Getting-Started/Project-Management/Issue-Dan-Status-Project
 
 # Diskusi
