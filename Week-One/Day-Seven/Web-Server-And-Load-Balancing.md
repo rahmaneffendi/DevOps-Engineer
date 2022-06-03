@@ -21,3 +21,4 @@ Buatlah sebuah konfigurasi reverse proxy pada server gateway (nginx)
 Buatlah sebuah konfigurasi load balancing pada server gateway (nginx)
 
 Aplikasi dapat di akses menggunakan domain virtual dan otomatis load balance ke 2 aplikasi tersebut
+
