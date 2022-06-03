@@ -14,6 +14,10 @@ Kemudian Kita buat servernya menggunakan perintah `multipass launch --name foo`
 
 ![image](https://user-images.githubusercontent.com/99697182/171837821-a2a2e59a-ce50-41e8-8725-d96abdd04cfd.png)
 
+kemudian kita switch atau berpindah ke servernya dengan perintah `multipass shell .....`
+
+![image](https://user-images.githubusercontent.com/99697182/171840561-d40dc4fa-4bc2-477b-86b0-d826f38fcf7e.png)
+
 
 
 
