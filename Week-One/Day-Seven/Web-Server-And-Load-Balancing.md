@@ -268,8 +268,27 @@ sudo apt install npm
 
 keterangan : perintah di atas ini bertujuan untuk meng-install module dari aplikasi `node.js`
 
+kita boleh cek dulu versi npm dan node nya `npm -v` dan `node -v`
+
+![image](https://user-images.githubusercontent.com/99697182/172003680-08c28bdd-f008-4ea7-95eb-35dce7c41777.png)
+
+
+18. kemudian kita coba jalankan apknya
+
 ```
 npm start
 ```
+perintah diatas untuk menjalankan aplikasinya
 
+![image](https://user-images.githubusercontent.com/99697182/172003752-ca7b8920-ee4f-4eec-a6eb-fe1a622ab981.png)
+
+dari gambar diatas, menunjukan error 
+
+![image](https://user-images.githubusercontent.com/99697182/172004345-fc9dd2e8-8bb8-4b23-ac66-289431086743.png)
+
+diatas  saya mencoba untuk install npm lagi dengan perintah `npm i`
+
+![image](https://user-images.githubusercontent.com/99697182/172004521-8fbfe282-3b02-44f3-b55e-c0816f521ad2.png)
+
+dari gambar diatas sudah terlihat bahwa package node_modules nya sudah ada 
 
