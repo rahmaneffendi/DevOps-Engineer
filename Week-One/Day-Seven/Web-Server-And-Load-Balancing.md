@@ -118,13 +118,6 @@ sudo mkdir dumbways
 
 ![image](https://user-images.githubusercontent.com/99697182/171996818-77e82d6d-b48b-4d06-afd1-09a8492e3952.png)
 
-
-
-![image](https://user-images.githubusercontent.com/99697182/171996893-88a63cdc-a9d9-4842-9eb7-f3e1cb9477a8.png)
-
-
-
-
 2.Setelah itu masuk ke directory yang sudah kalian buat, setelah itu buat suatu file dengan nama `my.reverse-proxy.conf`
 
 ```
@@ -136,11 +129,24 @@ sudo nano my.reverse-proxy.conf
 ```
 
 
-
+![image](https://user-images.githubusercontent.com/99697182/171996893-88a63cdc-a9d9-4842-9eb7-f3e1cb9477a8.png)
 
 Setelah itu masukkan konfigurasi berikut:
 
+```
+server { 
+    server_name mydomain.xyz; 
+  
+    location / { 
+             proxy_pass http://127.0.0.1:3000;
+    }
+}
+```
 
+`
+INFO
+pastikan port 3000 di ganti sesuai aplikasi yang digunakan.
+`
 
 
 
