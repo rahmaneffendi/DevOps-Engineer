@@ -254,35 +254,22 @@ selanjutnya masukan ip nya di lokal server dan masukan nama yang diinginkan
 
 16. Jika kita lihat disini adalah kita mendapatkan 502 Bad Gateway kenapa? karena kita belum menjalankan aplikasi kita. Sekarang kita coba untuk menjalankan aplikasi wayshub yang sudah pernah kita pakai sebelumnya. Untuk menjalankan aplikasi wayshub kalian dapat mengikuti langkah-langkah berikut ini.
 
+17. Masuk ke server1 yang sudah kita clone aplikasi wayshub tadi
+
+kemudian masuk ke file nya
+
+kemudian install npm nya 
+
 ```
-git clone https://github.com/dumbwaysdev/dumbflix-frontend.git
+sudo apt install npm
 ```
 
+![image](https://user-images.githubusercontent.com/99697182/172003075-8266b664-aefb-4db8-8a04-263d44083329.png)
 
+keterangan : perintah di atas ini bertujuan untuk meng-install module dari aplikasi `node.js`
 
+```
+npm start
+```
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-# Ketentuan
-
-Jalankan 1 aplikasi yang sama pada 2 buah server
-
-Buatlah sebuah konfigurasi reverse proxy pada server gateway (nginx)
-
-Buatlah sebuah konfigurasi load balancing pada server gateway (nginx)
-
-Aplikasi dapat di akses menggunakan domain virtual dan otomatis load balance ke 2 aplikasi tersebut
 
