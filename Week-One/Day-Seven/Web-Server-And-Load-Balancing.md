@@ -119,7 +119,7 @@ sudo mkdir wayshub
 ![image](https://user-images.githubusercontent.com/99697182/171999870-5e8c0e2e-ed81-48ec-af36-e1e9e7cd41ac.png)
 
 
-2.Setelah itu masuk ke directory yang sudah kalian buat, setelah itu buat suatu file dengan nama `my.reverse-proxy.conf`
+2.Setelah itu masuk ke directory yang sudah kalian buat, setelah itu buat suatu file dengan nama `frontend.conf`
 
 ```
 cd wayshub
