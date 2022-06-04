@@ -113,29 +113,29 @@ cd /etc/nginx
 ![image](https://user-images.githubusercontent.com/99697182/171996781-2533fa5b-3451-43a8-acf7-fdbf8476ca13.png)
 
 ```
-sudo mkdir dumbways
+sudo mkdir wayshub
 ```
 
-![image](https://user-images.githubusercontent.com/99697182/171996818-77e82d6d-b48b-4d06-afd1-09a8492e3952.png)
+![image](https://user-images.githubusercontent.com/99697182/171999870-5e8c0e2e-ed81-48ec-af36-e1e9e7cd41ac.png)
+
 
 2.Setelah itu masuk ke directory yang sudah kalian buat, setelah itu buat suatu file dengan nama `my.reverse-proxy.conf`
 
 ```
-cd dw
+cd wayshub
 ```
 
 ```
-sudo nano my.reverse-proxy.conf
+sudo nano frontend.conf
 ```
 
+![image](https://user-images.githubusercontent.com/99697182/171999935-ac94b67a-e4e0-4e74-bed8-8a0f3df6e477.png)
 
-![image](https://user-images.githubusercontent.com/99697182/171996893-88a63cdc-a9d9-4842-9eb7-f3e1cb9477a8.png)
-
-Setelah itu masukkan konfigurasi berikut:
+3. Setelah itu masukkan konfigurasi berikut:
 
 ```
 server { 
-    server_name mydomain.xyz; 
+    server_name dumbways.xyz; 
   
     location / { 
              proxy_pass http://127.0.0.1:3000;
@@ -143,28 +143,120 @@ server {
 }
 ```
 
+dan jangan lupa menamakan domainnya dengan `dumbways.xyz`
+
+![image](https://user-images.githubusercontent.com/99697182/172000262-4b411829-a180-4fc0-a1a9-f0fb24896b90.png)
+
+
 `
 INFO
 pastikan port 3000 di ganti sesuai aplikasi yang digunakan.
 `
 
+`
+ket : 127.0.0.1  nya diganti dengan ip dimana aplikasinya berada
+`
 
-
-
-
-
-
-
-# Step 4 - Instalasi NodeJs pada server 1 & 2
-
-1.Pertama kita clone apilkasinya di server 1 dengan perintah ini :
+4.Untuk mendapatkan ip dimana aplikasi nya berada, kita pindah dulu ke server1 dan  kita clone apilkasinya dengan perintah ini :
 
 ```
 git clone https://github.com/dumbwaysdev/wayshub-frontend
 ```
 
+![image](https://user-images.githubusercontent.com/99697182/172000135-18c24a67-8afc-4379-8492-86a065a1b36d.png)
 
+5.Kemudian Kita masuk ke folder aplikasinya dan ketik `ip a` untuk meng-copy ip nya
 
+![image](https://user-images.githubusercontent.com/99697182/172000212-48609984-3769-441c-b1f6-cb3939bc539f.png)
+
+6.Setelah itu kita masuk lagi gateaway-server, lalu ke file `frontend.conf` dan paste ip aplikasinya kemudian save 
+
+![image](https://user-images.githubusercontent.com/99697182/172000318-b931433d-605a-46f4-aa88-38850c28773d.png)
+
+7. Selanjutnya keluar dari directory `wayshub`, setelah itu masuk ke dalam file `nginx.conf`.
+
+![image](https://user-images.githubusercontent.com/99697182/172000481-14d98c4e-d6a6-42cb-b4ea-139870bfdedc.png)
+
+```
+sudo nano nginx.conf
+```
+
+![image](https://user-images.githubusercontent.com/99697182/172000508-6370a848-d361-49dd-8503-f2c012c2c3e4.png)
+
+8. Selanjutnya pergi ke-bagian include, setelah itu masukan lokasi dari directory yang bersi konfigutasi yang sudah kalian buat tadi.
+
+![image](https://user-images.githubusercontent.com/99697182/172000570-60c6b0dc-3d69-451c-89d3-24c4d9ad52e6.png)
+
+`
+INFO
+/*; menandakan file nginx.conf akan membaca seluruh file yang berada di dalam directory wayshub
+`
+
+9. Beberapa proses tadi adalah cara untuk membuat reverse proxy untuk aplikasi kita, kemudian pastikan untuk melakukan pengecekan konfigurasi dengan menjalankan perintah :
+
+```
+sudo nginx -t
+```
+
+![image](https://user-images.githubusercontent.com/99697182/172000669-c60b9a25-aba3-402c-9236-1626fb78bf9b.png)
+
+ket : Disini saya mengalami fail karena typo pada file `frontend.conf`, oleh karena nya saya akan memperbaikinya :
+
+![image](https://user-images.githubusercontent.com/99697182/172000730-512898c8-1de6-4c29-beb1-05beea36c384.png)
+
+saya akan menambahkan `a` 
+
+![image](https://user-images.githubusercontent.com/99697182/172000748-e4897148-f73f-485c-8845-9e1cfb1f9572.png)
+
+setelah itu kita cek lagi 
+
+![image](https://user-images.githubusercontent.com/99697182/172000762-db14d9bc-75d7-43ad-ba28-b75eab02a0a3.png)
+
+nah disini dikatakan kalau syntax kita ok
+
+10. Jika sudah sekarang kita tinggal melakukan restart/reload Nginx kita.
+
+```
+sudo systemctl restart nginx
+```
+
+![image](https://user-images.githubusercontent.com/99697182/172000855-e91abbaf-bb2d-4000-bf2b-684b02eba18c.png)
+
+11. kita akan melakukan cek status 
+
+![image](https://user-images.githubusercontent.com/99697182/172000927-21501301-d822-458e-abbf-ec16c322cdf7.png)
+
+12. kita akan melakukan reload juga 
+
+![image](https://user-images.githubusercontent.com/99697182/172000945-c888bf3f-efee-4d1e-9a22-4ab5605eaa9a.png)
+
+13. Sekarang kita akan membuat sebuah virtual host. Untuk membuat virtual host kita harus masuk ke local server kita setelah itu masuk ke dalam file `/etc/hosts`.
+
+```
+sudo nano /etc/hosts
+```
+
+![image](https://user-images.githubusercontent.com/99697182/172001022-356d50fa-2430-4c16-85c4-2fa7409849c9.png)
+
+14. Setelah itu masukkan IP server kita selanjutnya masukkan nama domain yang kalian inginkan.
+
+untuk mengecek ip server kita, kita masuk ke gateaway server, kemudian ketik `ip a`
+
+![image](https://user-images.githubusercontent.com/99697182/172001257-08c78883-b876-4214-85a2-de56b580ec41.png)
+
+selanjutnya masukan ip nya di lokal server dan masukan nama yang diinginkan
+
+![image](https://user-images.githubusercontent.com/99697182/172001198-4c76d645-3c9c-446a-8a0b-f5de632451e4.png)
+
+15. Jika sudah sekarang coba buka web browser kalian setelah itu coba akses nama domain kalian.
+
+![image](https://user-images.githubusercontent.com/99697182/172001318-8680686e-b804-4298-80bb-608f5b8dcb5b.png)
+
+16. Jika kita lihat disini adalah kita mendapatkan 502 Bad Gateway kenapa? karena kita belum menjalankan aplikasi kita. Sekarang kita coba untuk menjalankan aplikasi wayshub yang sudah pernah kita pakai sebelumnya. Untuk menjalankan aplikasi wayshub kalian dapat mengikuti langkah-langkah berikut ini.
+
+```
+git clone https://github.com/dumbwaysdev/dumbflix-frontend.git
+```
 
 
 
