@@ -292,3 +292,41 @@ diatas  saya mencoba untuk install npm lagi dengan perintah `npm i`
 
 dari gambar diatas sudah terlihat bahwa package node_modules nya sudah ada 
 
+19. Kemudian Kita jalankan lagi dengan perintah `npm start`
+
+![image](https://user-images.githubusercontent.com/99697182/172005070-79be6202-2ac4-4ee7-bcf7-0df0939b8432.png)
+
+
+![image](https://user-images.githubusercontent.com/99697182/172005000-879469cb-72ab-4652-90f0-b874f1c64aeb.png)
+
+![image](https://user-images.githubusercontent.com/99697182/172005107-e3d59e2b-dbf4-48fc-9d78-08f07a9ac517.png)
+
+20. Kemudian kita refresh browser apk kita
+
+dan disini saya masih mengalami error :
+
+![image](https://user-images.githubusercontent.com/99697182/172005034-cb4d4ca1-a2e7-4cc7-bbc6-e14dcf772073.png)
+
+21. disini saya coba lagi dengan install ulang ngine node js nya 
+
+```
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.38.0/install.sh | bash
+```
+
+![image](https://user-images.githubusercontent.com/99697182/172005711-71a232c9-f776-4385-b7d7-4a0dd5754f38.png)
+
+```
+exec bash
+```
+
+![image](https://user-images.githubusercontent.com/99697182/172005796-6f9947f5-6e69-4de3-bfd6-aa7c0a5fa2dd.png)
+
+![image](https://user-images.githubusercontent.com/99697182/172005993-41033ead-42d0-454d-8ef0-91056ccc7056.png)
+
+Selanjutnya kita coba untuk me-refresh web browser kita.
+
+![image](https://user-images.githubusercontent.com/99697182/172006014-52777224-0a7a-49c3-b11a-ea2545d08469.png)
+
+dan diatas masih menunjukan blum berjalan
+
+22. 
