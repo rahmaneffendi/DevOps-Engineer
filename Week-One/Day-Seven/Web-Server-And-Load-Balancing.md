@@ -79,7 +79,83 @@ nginx -v
 
 Keterangan : Apabila muncul seperti gambar diatas artinya web server nginx sudah berhasil diinstall dan sudah berjalan
 
-# Step 3 - Instalasi NodeJs pada server 1 & 2
+
+# Step 3 - Membuat Konfigurasi Reverse Proxy
+
+## Apa itu Reverse Proxy?
+
+Reverse proxy adalah konfigurasi standar yang digunakan untuk mengubah jalur traffic, misalkan aplikasi menggunakan port 3000 tetapi agar dapat di akses melalui port 80 maka harus menggunakan reverse proxy.
+
+Berikut adalah konfigurasi dari revese proxy :
+
+```
+server { 
+    server_name domain.com; 
+    
+    location / { 
+             proxy_pass http://127.0.0.1:3000;
+    }
+}
+```
+
+## Kenapa Harus Reverse Proxy?
+Untuk mengamankan aplikasi yang berjalan pada server maka kita perlu untuk melakukan reverse proxy, supaya pengguna tidak dapat mengakses aplikasi kita secara langsung.
+
+## Membuat Konfigurasi Revese Proxy​
+Untuk membuat reverse proxy dapat mengikuti langkah-langkah berikut :
+
+1. Pertama-tama masuk ke folder nginx setelah itu buat suatu directory baru telebih dahulu.
+
+```
+cd /etc/nginx
+```
+
+![image](https://user-images.githubusercontent.com/99697182/171996781-2533fa5b-3451-43a8-acf7-fdbf8476ca13.png)
+
+```
+sudo mkdir dumbways
+```
+
+![image](https://user-images.githubusercontent.com/99697182/171996818-77e82d6d-b48b-4d06-afd1-09a8492e3952.png)
+
+
+
+![image](https://user-images.githubusercontent.com/99697182/171996893-88a63cdc-a9d9-4842-9eb7-f3e1cb9477a8.png)
+
+
+
+
+2.Setelah itu masuk ke directory yang sudah kalian buat, setelah itu buat suatu file dengan nama `my.reverse-proxy.conf`
+
+```
+cd dw
+```
+
+```
+sudo nano my.reverse-proxy.conf
+```
+
+
+
+
+Setelah itu masukkan konfigurasi berikut:
+
+
+
+
+
+
+
+
+
+
+# Step 4 - Instalasi NodeJs pada server 1 & 2
+
+1.Pertama kita clone apilkasinya di server 1 dengan perintah ini :
+
+```
+git clone https://github.com/dumbwaysdev/wayshub-frontend
+```
 
 
 
@@ -99,7 +175,8 @@ Keterangan : Apabila muncul seperti gambar diatas artinya web server nginx sudah
 
 
 
-# Step 2 - 
+
+
 
 # Ketentuan
 
