@@ -404,7 +404,7 @@ server {
     server_name loadbalance.dumbways.xyz; 
   
     location / { 
-             proxy_pass http://dwayshub;
+             proxy_pass http://wayshub;
     }
 }
 ```
