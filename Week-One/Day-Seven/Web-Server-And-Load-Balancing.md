@@ -329,4 +329,7 @@ Selanjutnya kita coba untuk me-refresh web browser kita.
 
 dan diatas masih menunjukan blum berjalan
 
-22. 
+22. kemudian jika saya cek browser menggunakan ip nya, aplikasinya berjalan :
+
+![image](https://user-images.githubusercontent.com/99697182/172030202-19fdb143-f5b1-4ede-a4d4-5f6067a64f23.png)
+
