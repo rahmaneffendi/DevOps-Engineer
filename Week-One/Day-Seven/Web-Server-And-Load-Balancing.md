@@ -448,5 +448,47 @@ sudo apt install npm
 npm i
 ```
 
+![image](https://user-images.githubusercontent.com/99697182/172034978-255b58b4-065f-418b-b1da-4ed8c4a282c2.png)
+
+-langsung kita start 
+
+![image](https://user-images.githubusercontent.com/99697182/172035011-89521943-f578-4762-8702-fc553e816643.png)
+
+7. Jika sudah sekarang coba buka web browser kalian setelah itu coba akses nama domain kalian.
+
+![image](https://user-images.githubusercontent.com/99697182/172035042-da6de369-6530-4b2d-a7bc-8df664c776bc.png)
+
+nah diatas kita bisa melihat bahwa ada yang salah 
+
+8. saya akan mencoba mengganti nama hostnya
+
+![image](https://user-images.githubusercontent.com/99697182/172035165-77f60c84-25db-4730-b717-c73d3083c437.png)
+
+![image](https://user-images.githubusercontent.com/99697182/172035189-34106225-0689-47e9-97a8-848917f90884.png)
+
+9. dan setelah mengganti nama hostnya aplikasinya nya berjalan
+
+![image](https://user-images.githubusercontent.com/99697182/172035223-344465da-df76-45ad-bd3d-c3ddf5d5db85.png)
+
+10.  Untuk make sure apakah load balancing yang sudah kita buat tadi berjalan dengan baik atau tidak, kita coba untuk mematikan satu aplikasi kita.
+
+- Kita masuk ke dalam salah satu server aplikasi kita, setelah itu kalian hentikan aplikasi kalian CTRL + C.
+
+![image](https://user-images.githubusercontent.com/99697182/172035249-624db315-4c5d-422e-bef8-0cc0d5e5b2e2.png)
+
+11. Sekarang kita coba akses web browser kita lagi setelah itu akses nama domain kalian.
+
+![image](https://user-images.githubusercontent.com/99697182/172035266-3854315b-65ba-43f0-a7f7-c59220e4078f.png)
+
+`
+INFO :
+
+Jika aplikasi kalian masih bisa di akses berarti konfigurasi Load Balance kalian berhasil dan tidak ada error
+`
+
+
+# Done
+
+# Sekian Dan Terimakasih
 
 
