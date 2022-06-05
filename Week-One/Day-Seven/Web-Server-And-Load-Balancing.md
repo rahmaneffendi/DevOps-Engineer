@@ -335,6 +335,20 @@ dan diatas masih menunjukan blum berjalan
 
 dikarenakan masih tidak terhubung, disini saya masih mau cek kembali dari langkah awal
 
+23. Disini saya menemukan kesalahannya yaitu pada ip nya `130`
+
+![image](https://user-images.githubusercontent.com/99697182/172035711-90c0eabb-062a-41fa-8a13-b8c24eafe4b4.png)
+
+- kemudian saya ganti dengan yang betul `230`
+
+![image](https://user-images.githubusercontent.com/99697182/172035716-1e9ec8d3-97a2-4b56-9735-6cf5f207b0f6.png)
+
+24.Kemudian Mari kita cek browser lagi
+
+![image](https://user-images.githubusercontent.com/99697182/172035803-b2946612-9dd8-4fa0-8cf3-5d3237e03237.png)
+
+dan **Selamat** Anda Bisa menjalankan Reverse Proxy 🥳🥳🥳
+
 
 # Step 4 - Membuat konfigurasi load balancing pada server gateway yang mengarah ke server aplikasi2 dengan domain loadbalance.dumbways.xyz
 
