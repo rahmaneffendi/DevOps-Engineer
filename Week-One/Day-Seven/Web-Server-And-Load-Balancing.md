@@ -333,3 +333,4 @@ dan diatas masih menunjukan blum berjalan
 
 ![image](https://user-images.githubusercontent.com/99697182/172030202-19fdb143-f5b1-4ede-a4d4-5f6067a64f23.png)
 
+disini saya masih mau cek kembali dari langkah awal
