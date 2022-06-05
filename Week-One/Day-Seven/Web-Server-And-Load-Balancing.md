@@ -80,7 +80,7 @@ nginx -v
 Keterangan : Apabila muncul seperti gambar diatas artinya web server nginx sudah berhasil diinstall dan sudah berjalan
 
 
-# Step 3 - Membuat Konfigurasi Reverse Proxy
+# Step 3 - Membuat Konfigurasi Reverse Proxy pada server gateway yang mengarah ke server aplikasi1 dengan domain dumbways.xyz
 
 ## Apa itu Reverse Proxy?
 
@@ -101,7 +101,7 @@ server {
 ## Kenapa Harus Reverse Proxy?
 Untuk mengamankan aplikasi yang berjalan pada server maka kita perlu untuk melakukan reverse proxy, supaya pengguna tidak dapat mengakses aplikasi kita secara langsung.
 
-## Membuat Konfigurasi Revese Proxy​
+## Membuat Konfigurasi Revese Proxy 
 Untuk membuat reverse proxy dapat mengikuti langkah-langkah berikut :
 
 1. Pertama-tama masuk ke folder nginx setelah itu buat suatu directory baru telebih dahulu.
@@ -333,4 +333,4 @@ dan diatas masih menunjukan blum berjalan
 
 ![image](https://user-images.githubusercontent.com/99697182/172030202-19fdb143-f5b1-4ede-a4d4-5f6067a64f23.png)
 
-disini saya masih mau cek kembali dari langkah awal
+dikarenakan masih tidak terhubung, disini saya masih mau cek kembali dari langkah awal
