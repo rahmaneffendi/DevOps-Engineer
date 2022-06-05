@@ -334,3 +334,102 @@ dan diatas masih menunjukan blum berjalan
 ![image](https://user-images.githubusercontent.com/99697182/172030202-19fdb143-f5b1-4ede-a4d4-5f6067a64f23.png)
 
 dikarenakan masih tidak terhubung, disini saya masih mau cek kembali dari langkah awal
+
+
+# Step 4 - Membuat konfigurasi load balancing pada server gateway yang mengarah ke server aplikasi2 dengan domain loadbalance.dumbways.xyz
+
+## Apa itu Load Balancing?
+
+Load Balancing adalah suatu jaringan komputer yang menggunakan metode untuk mendistribusikan beban kerjaan pada dua atau bahkan lebih suatu koneksi jaringan secara seimbang agar pekerjaan dapat berjalan optimal dan tidak overload (kelebihan) beban pada salah satu jalur koneksi.
+
+## Kenapa Harus Load Balancing?
+
+Jika kita memiliki website atau aplikasi yang telah digunakan hingga ribuan, ratusan atau bahkan jutaan pengguna maka kita harus melakukan load balancing pada aplikasi tersebut agar tidak down, karena beban akses pengguna dibagi ke beberapa server sekaligus.
+
+## Membuat Konfigurasi Load Balancing
+
+1. Untuk membuat Load Balancing kalian harus membuat server baru lagi. Untuk cara membuat server kalian ikuti saja step by step seperti saat pertemuan Fundamental DevOps : https://ebook-devops.vercel.app/Fundamental-DevOps/Install-Ubuntu-Server
+
+2. Jika server kalian sudah terbuat maka buatlah aplikasi sederhana sama seperti pertemuan sebelumnya (node.js). setelah itu jalankan aplikasi tersebut.
+
+- disini saya memakai server2 yang telah saya buat
+
+![image](https://user-images.githubusercontent.com/99697182/172033637-ec48dc55-4294-411a-8064-8f619f6785a2.png)
+
+![image](https://user-images.githubusercontent.com/99697182/172033682-950a0e7f-212c-4133-92b7-fda8759e202b.png)
+
+![image](https://user-images.githubusercontent.com/99697182/172033838-37c9e140-dc62-4108-b1f1-25dad867508e.png)
+
+![image](https://user-images.githubusercontent.com/99697182/172034103-8b006ce6-def1-4c25-956d-b2b50d3e7feb.png)
+
+![image](https://user-images.githubusercontent.com/99697182/172034136-f24147c3-564c-4aa5-8337-b0f5d93db49b.png)
+
+![image](https://user-images.githubusercontent.com/99697182/172034142-5fd7a121-a79c-4c49-ac6a-2dde20dbf541.png)
+
+![image](https://user-images.githubusercontent.com/99697182/172034160-1ed815c0-92e5-4451-b415-38e6edfaed2e.png)
+
+- Sekarang kita sudah mempunyai 2 buah server untuk aplikasi kita.
+
+- Sekarang kita akan coba untuk membuat konfigurasi load balancing.
+
+3. Kemudian kita masuk ke dalam konfigurasi reverse proxy yang sudah kita buat sebelumnya di server gateaway
+
+```
+sudo nano sudo nano /etc/nginx/wayshub/frontend.conf
+```
+![image](https://user-images.githubusercontent.com/99697182/172034345-419a7d64-8829-4d8a-950c-87270f424c58.png)
+
+4. Selanjutnya kita akan tambahkan konfigurasi ke dalam file frontend.conf. Sekarang kita akan coba tambahkan beberapa konfigurasi, kalian dapat menggunakan konfigurasi di bawah ini.
+
+```
+upstream wayshub { 
+    server 10.109.135.6:3000;
+    server 10.109.171.2:3000;
+}
+server { 
+    server_name loadbalance.dumbways.xyz; 
+  
+    location / { 
+             proxy_pass http://dwayshub;
+    }
+}
+```
+
+
+
+pada gambar dibawah ini, kita bisa liat ip server-server kita :
+
+![image](https://user-images.githubusercontent.com/99697182/172034453-62e342b4-610a-4e3c-87fa-8da5deea550b.png)
+
+kemudian :
+
+![image](https://user-images.githubusercontent.com/99697182/172034550-abdda0b5-11eb-4381-bf83-923d182d620f.png)
+
+keterangan :
+
+- Pada bagian upstream kalian dapat mengganti nama domain dengan nama yang kalian inginkan.
+
+- Pada bagian server masukan IP dari server kalian, setelah itu diikuti dengan port aplikasi.
+
+- Selanjutnya pada bagian proxy_pass ubah dari yang sebelumnya adalah alamat IP dari aplikasi kalian, sekarang kalian samakan dengan nama upstream yang ada di konfigurasi kalian.
+
+- Jika sudah sekarang kita coba cek apakah konfigurasi yang sudah kita buat tadi itu error atau tidak.
+
+```
+sudo nginx -t
+```
+
+![image](https://user-images.githubusercontent.com/99697182/172034598-8ad7f0c4-1612-463d-9191-4fee82ccac3a.png)
+
+5. Jika tidak ada error jalankan perintah restart nginx untuk merestart nginx kita, karena kita sudah menambahkan suatu konfigurasi baru di dalam file reverse proxy kita.
+
+```
+sudo systemctl restart nginx
+```
+
+![image](https://user-images.githubusercontent.com/99697182/172034623-136c6d0d-cd1a-4451-a125-24472f24e7df.png)
+
+6. Selanjutnya jalankan aplikasi kita yang ada di server kita.
+
+-kita clone , install npm dan jalankan 
+
