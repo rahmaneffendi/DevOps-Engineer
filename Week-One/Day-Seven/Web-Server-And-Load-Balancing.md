@@ -433,3 +433,20 @@ sudo systemctl restart nginx
 
 -kita clone , install npm dan jalankan 
 
+```
+git clone https://github.com/dumbwaysdev/wayshub-frontend
+```
+
+![image](https://user-images.githubusercontent.com/99697182/172034698-e216fc3a-d5bd-4168-a227-a14ebbae9e16.png)
+
+```
+sudo apt install npm
+```
+![image](https://user-images.githubusercontent.com/99697182/172034718-786be8c4-2fd1-4e63-9a08-fedccda1a763.png)
+
+```
+npm i
+```
+
+
+
