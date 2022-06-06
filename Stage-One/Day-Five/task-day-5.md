@@ -97,6 +97,10 @@ Pertama kita masuk ke repository yang kita fork tadi, kemudian masuk ke file `pu
 
 ![Img 1](assets/16.png)
 
+dari yang sebelumnya hanya wayshub saja
+
+![image](https://user-images.githubusercontent.com/99697182/172080513-3c97319e-55e6-4ca2-8885-9b3f96029a06.png)
+
 ## Selesai
 
 ## Sekian Dan Terimakasih
