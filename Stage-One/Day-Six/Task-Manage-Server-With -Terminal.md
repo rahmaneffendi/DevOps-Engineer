@@ -10,7 +10,9 @@ Menurut saya terminal merupakan interface yang berfungsi sebagai penerjemah anta
 
 ## Jelaskan keuntungan menguasai Terminal
 
-Menurut saya, sangat penting menguasai terminal, karena di sini saya sebagai pelajar devops harus bisa mengatur os berdasarkan printah yang berbasis CLI seperti ini, juga jika sudah bisa menguasainya, nantinya akan lebih mudah dalam menjalankan tugas sebagai devops dseperti meremote server dls.
+Menurut saya, sangat penting menguasai terminal, karena di sini saya sebagai pelajar devops harus bisa mengatur os berdasarkan printah yang berbasis CLI (Command Line Interface) seperti ini, juga jika sudah bisa menguasainya, nantinya akan lebih mudah dalam menjalankan tugas sebagai devops dseperti meremote server dls.
+
+CLI Merupakan Program yang memungkinkan pengguna mengetik perintah teks yang memerintahkan komputer untuk melakukan tugas tertentu.
 
 ## Buat sebuah file bash sederhana yang bertugas untuk update dan upgrade sistem
 1. Kita meremoter server kita terlebih dahulu,
