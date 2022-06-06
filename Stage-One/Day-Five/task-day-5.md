@@ -8,6 +8,16 @@ Cloudflare adalah suite keamanan dan kinerja terintegrasi untuk aplikasi berbasi
 
 Cloudflare ini Mempunyai fitur CI/CD didalamnya, dimana kita bisa memanfaatkannya Untuk Konfigurasi Aplikasi Kita.
 
+## apa itu CI/CD ?
+
+https://www.dicoding.com/blog/wp-content/uploads/2021/10/Blog_Apa_Itu_CICD_IT_Developer_Harus_Tau.jpg
+
+CI/CD itu merupakan dua proses yang digabung menjadi satu kesatuan yaitu Continuous Integration dan Continuous Deployment. CI/CD akan menjembatani antara sisi pengembangan dengan sisi operasi yang setidaknya ada beberapa aktifitas akan bekerja diantaranya test dan deployment untuk kebutuhan release.
+
+Continuous integration (CI) adalah pengintegrasian kode ke dalam repositori kode kemudian menjalankan pengujian secara otomatis, cepat, dan sering. Kamu dapat melakukan CI ini dengan menggunakan perintah  commit.
+
+Sementara continous delivery atau continuous deployment (CD) adalah praktik yang dilakukan setelah proses CI selesai dan seluruh kode berhasil terintegrasi, sehingga aplikasi bisa dibangun lalu dirilis secara otomatis.
+
 # Step 1 -Fork aplikasi 
 
 1.Kita langsung klik link ini https://github.com/dumbwaysdev/wayshub-frontend
