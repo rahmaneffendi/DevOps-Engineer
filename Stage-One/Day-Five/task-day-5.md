@@ -4,13 +4,15 @@
 
 ## Sebelumnya Apa itu Cloudflare? 
 
+![image](https://user-images.githubusercontent.com/99697182/172082402-d17bd47e-59a2-47f0-aaf9-6090b2050f38.png)
+
 Cloudflare adalah suite keamanan dan kinerja terintegrasi untuk aplikasi berbasis web. Layanan ini Cloudflare mencoba menghilangkan masalah umum dalam jaringan internet yakni latensi dan keamanan data. Dibuat pada tahun 2007 oleh Matthew Prince, Lee Holloway dan Michelle Zatlyn, Cloudflare bertujuan menawarkan layanan keamanan ke situs web.
 
 Cloudflare ini Mempunyai fitur CI/CD didalamnya, dimana kita bisa memanfaatkannya Untuk Konfigurasi Aplikasi Kita.
 
 ## apa itu CI/CD ?
 
-https://www.dicoding.com/blog/wp-content/uploads/2021/10/Blog_Apa_Itu_CICD_IT_Developer_Harus_Tau.jpg
+![image](https://user-images.githubusercontent.com/99697182/172082311-6a6304c2-bfa2-44fb-85e4-187d6799a2f0.png)
 
 CI/CD itu merupakan dua proses yang digabung menjadi satu kesatuan yaitu Continuous Integration dan Continuous Deployment. CI/CD akan menjembatani antara sisi pengembangan dengan sisi operasi yang setidaknya ada beberapa aktifitas akan bekerja diantaranya test dan deployment untuk kebutuhan release.
 
