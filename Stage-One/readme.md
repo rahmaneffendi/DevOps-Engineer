@@ -1,1 +1,1 @@
-Training Stage 1, Week 1
+Training Stage 1, Stage 1
