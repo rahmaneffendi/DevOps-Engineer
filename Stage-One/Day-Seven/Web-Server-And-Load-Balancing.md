@@ -501,6 +501,19 @@ Jika aplikasi kalian masih bisa di akses berarti konfigurasi Load Balance kalian
 `
 
 
+# Cat Error :
+
+![image](https://user-images.githubusercontent.com/99697182/172098775-015fbe01-2842-4edc-b2d0-fe28e9707f23.png)
+
+Jika tidak bisa diakses kembali, itu karena ada duplicate file seperti diatas, Solusinya :
+
+1. Hapus filenya
+
+2. Restart Komputer kembali
+
+
+
+
 # Done
 
 # Sekian Dan Terimakasih
