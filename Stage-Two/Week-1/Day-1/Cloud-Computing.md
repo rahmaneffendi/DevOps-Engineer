@@ -40,5 +40,11 @@ Menurut Saya Cloud Computing Merupakan Suatu pengiriman layanan yang berbeda-bed
 4. Saas (Software as a Service) 
    
    Seperti : Fb, Yt, Wa, Tiktok, Photoshop dls.
+   
+# step 1 - 
+
+![image](https://user-images.githubusercontent.com/99697182/172397565-921cbff3-63b2-4626-85fe-4af58e92f141.png)
+
+   
 
 
