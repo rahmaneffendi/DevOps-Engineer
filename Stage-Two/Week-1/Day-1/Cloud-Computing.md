@@ -1,6 +1,6 @@
 # Cloud Computing
 
-![Img 1](assets/1.png)
+![image](https://user-images.githubusercontent.com/99697182/172390865-2a05120d-c06e-461c-afbb-cf00b115a506.png)
 
 ## Apa itu Cloud Computing?
 
