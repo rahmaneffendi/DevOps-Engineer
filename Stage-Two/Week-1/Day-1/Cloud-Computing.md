@@ -85,12 +85,28 @@ lalu, Disini Klik `Compute` dan klik `New` Untuk mulai membuat server nya
 
 <li>Resource Name : Bebas, Disini saya Grouping</li>
 
-Kemudian Klik Create
+
+Kemudian Klik `Create`
 
 ![image](https://user-images.githubusercontent.com/99697182/172440114-5d4702e4-16c0-4bb8-b119-921738caac96.png)
 
+kemudian kita tunggu proses Building aplikasi servernya hingga selesai :
 
-floating ip : Dimana nanti server kita mempunyai 2 ip address yang bersifat public dan private
+![image](https://user-images.githubusercontent.com/99697182/172440426-fb395d60-e669-4787-bc6a-5e389dcfc663.png)
+
+Penjelasan Tambahan : 
+<li>
+<li>Vpc = Virtual Private CLoud, Suatu layanan yang disediakan untuk sejumlah orang tertentu aja, Biasanya diterapkan dalam suatu perusahaan yang mempunyai sejumlah data yang besar juga bisa bersifat rahasia
+ 
+ <li>cara konek ke vpc yaitu menggunakan VPN, dan biasanya di setup oleh orang lapangan</li>
+
+<li>karakter private cloud ini dapat di scale secara mandiri dengan pengetahuan teknis, biasanya dilakukan oleh orang lapangan dan manajemen datanya hanya bisa di akses oleh orang-orang tertentu, dan tidak perlu membayar layanan karena sudah ada secara default</li>
+
+<li>Private Cloud</li>
+
+<li>Public Cloud</li>
+
+<li>floating ip : Dimana nanti server kita mempunyai 2 ip address yang bersifat public dan private</li>
 
    
 
