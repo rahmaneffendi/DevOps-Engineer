@@ -47,7 +47,17 @@ Menurut Saya Cloud Computing Merupakan Suatu pengiriman layanan yang berbeda-bed
 
 ![image](https://user-images.githubusercontent.com/99697182/172397565-921cbff3-63b2-4626-85fe-4af58e92f141.png)
 
-Disana Klik `Compute` dan klik `New` Untuk mulai membuat server nya
+kemudian ke bagian profile di sebelah kanan, kemudian klik profile (kita akan ganti akun), kemudian klik acces user d sebelah bawah
+
+![image](https://user-images.githubusercontent.com/99697182/172439384-1eb7e6d5-b8d2-4d72-9311-7a038a48448f.png)
+
+kemudian klik start
+
+![image](https://user-images.githubusercontent.com/99697182/172439535-ab10fb6a-c986-494e-b777-84c15367e8c5.png)
+
+lalu, Disini Klik `Compute` dan klik `New` Untuk mulai membuat server nya
+
+![image](https://user-images.githubusercontent.com/99697182/172439607-838a0160-5575-48d2-85dc-ec8f6935d24a.png)
 
 2. kemudian kita pilih :
 
@@ -57,7 +67,7 @@ Disana Klik `Compute` dan klik `New` Untuk mulai membuat server nya
 
 <li>Location nya : Indonesia</li>
 
-![image](https://user-images.githubusercontent.com/99697182/172432034-4e2d57b6-7c17-49b0-aecf-ac33190fe627.png)
+![image](https://user-images.githubusercontent.com/99697182/172439851-30306c5f-f99a-441c-a08e-523c52de8112.png)
 
 <li>Size nya : Disesuaikan Dengan Kebutuhan, Untuk pembelajaran disini Saya pakai `1 CPU` `1GB RAM` `20GB Disk` `50k/month`</li>
 
@@ -69,13 +79,15 @@ Disana Klik `Compute` dan klik `New` Untuk mulai membuat server nya
 
 <li>pw : bebas</li>
 
-![image](https://user-images.githubusercontent.com/99697182/172435891-515aec47-d402-4f28-912b-6780eb03e377.png)
+![image](https://user-images.githubusercontent.com/99697182/172440036-1f50c515-29c1-4937-920d-4400a0f5305a.png)
 
 <li>SSH : Boleh Digunakan Boleh tidak</li>
 
 <li>Resource Name : Bebas, Disini saya Grouping</li>
 
-![image](https://user-images.githubusercontent.com/99697182/172436413-b5b7ce78-0660-4a10-834c-4436813f9d5d.png)
+Kemudian Klik Create
+
+![image](https://user-images.githubusercontent.com/99697182/172440114-5d4702e4-16c0-4bb8-b119-921738caac96.png)
 
 
 floating ip : Dimana nanti server kita mempunyai 2 ip address yang bersifat public dan private
