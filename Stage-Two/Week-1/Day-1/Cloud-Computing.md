@@ -1,5 +1,6 @@
 # Cloud Computing
 
+![Img 1](assets/1.png)
 
 ## Apa itu Cloud Computing?
 
