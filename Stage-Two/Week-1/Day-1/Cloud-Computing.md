@@ -9,17 +9,17 @@ Menurut Saya Cloud Computing Merupakan Suatu pengiriman layanan yang berbeda-bed
 
 ### Mengapa Menggunakan Cloud Computing ?
 
-1. Perusahaan Besar bahkan startup Sudah menggunakan cloud computing
+<li>Perusahaan Besar bahkan startup Sudah menggunakan cloud computing</li>
 
-2. mempermudah pembuatan server dan management bisnis
+<li>mempermudah pembuatan server dan management bisnis</li>
 
-3. menghemat biaya
+<li>menghemat biaya</li>
 
-4. Efisiensi Kecepatan dan keamanan datanya Bagus
+<li>Efisiensi Kecepatan dan keamanan datanya Bagus</li>
 
-5. Lokasi data centernya bisa dimanapun
+<li>Lokasi data centernya bisa dimanapun</li>
 
-6. Adanya fitur Recovery dan Backup data 
+<li>Adanya fitur Recovery dan Backup data</li>
 
 
 
