@@ -274,6 +274,20 @@ nginx -v
 
 Seharusnya pada server Gateway ini otomatis terinstall nginx
 
+![image](https://user-images.githubusercontent.com/99697182/172560234-56c1e3d8-7867-4ffd-b815-853e54dd9b82.png)
+
+6. Sebelumnya Disini saya akan membuat user yang lain sebagai utama dengan cara sebelumnya :
+
+
+
+
+
+Selanjutnya buat direktori baru pada /etc/nginx , saya akan membuat direktori baru bernama wayshub dengan perintah
+
+```
+sudo mkdir wayshub
+```
+
 
 
 
