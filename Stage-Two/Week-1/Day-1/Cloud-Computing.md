@@ -430,7 +430,58 @@ pm2 start ecosystem.config.js
 
 Disitu Meskipun kita keluar dari aplikasinya, statusnya masih tetap berjalan karena kita menggunakan pm2
 
-# Step 4 -
+# Step 4 - Membuat DNS (Domain Name Server)
+
+Singkatnya, DNS adalah sebuah sistem yang mengubah URL website ke dalam bentuk IP Address. Tanpa DNS, Anda harus mengetikkan IP Address secara lengkap ketika ingin mengunjungi sebuah website
+
+Disini saya akan membuat DNS pada aplikasi frontend wayshub menggunakan cloudflare
+
+1. Daftar atau login terlebih dahulu di website [CloudFlare](https://dash.cloudflare.com/)
+
+disini klik Studentnya
+
+![image](https://user-images.githubusercontent.com/99697182/172581627-f57a3877-528d-40f9-9de3-06473964a362.png)
+
+kemudian klik DNS
+
+![image](https://user-images.githubusercontent.com/99697182/172581957-6a0fbeb6-ff4d-4528-bdd6-7eece2bf1613.png)
+
+klik add record dan isi 
+
+![image](https://user-images.githubusercontent.com/99697182/172582332-68bdf65a-8b20-4ee3-890d-bb44f129d2b5.png)
+
+Isi nama dan ipv4(ip gateway) kemudian save
+
+Domain yang saya buat : rahman.studentdumbways.id
+
+![image](https://user-images.githubusercontent.com/99697182/172582666-6c03e869-1ba9-42fe-8880-4ac4b64e7f8b.png)
+
+![image](https://user-images.githubusercontent.com/99697182/172582902-f1aa6ea8-a458-4536-8cb2-634ad39889ba.png)
+
+2. Kemudian Masuk ke terminal lagi server gateway dan melakukan konfigurasi baru pada /etc/nginx/wayshub
+
+```
+server { 
+        server_name rahman.studentdumbways.my.id; 
+
+        location /{
+        proxy_pass http://103.176.78.23:3000;
+        }
+}
+```
+
+![image](https://user-images.githubusercontent.com/99697182/172585142-96bef1b4-ae2c-4295-814c-a3fddb6f4e13.png)
+
+![image](https://user-images.githubusercontent.com/99697182/172585300-65147124-7a72-4fb8-a68a-1d88d700b877.png)
+
+3. Kemudian kita cek di browser kita 
+
+```
+rahman.studentdumbways.my.id
+```
+
+
+
 
 
 
