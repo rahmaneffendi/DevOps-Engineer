@@ -41,7 +41,7 @@ Menurut Saya Cloud Computing Merupakan Suatu pengiriman layanan yang berbeda-bed
    
    Seperti : Fb, Yt, Wa, Tiktok, Photoshop dls.
    
-# step 1 - 
+# step 1 - Membuat Server Aplikasi
 
 1. Pertama kita klik [link ini](https://console.idcloudhost.com/user/abdulrahmaneffendi789@gmail.com/lab) untuk masuk kedalam hal id cloud hostnya, kemudian akan tampil gambar di bawah ini :
 
@@ -173,7 +173,67 @@ ssh anya@103.176.78.23
 
 ![image](https://user-images.githubusercontent.com/99697182/172515170-22aa6020-8d19-452f-8d47-24ae5f9d7cde.png)
 
-8. 
+8. Kemudian disini Saya akan mulai menjalankan aplikasi frontend wayshub 
+
+Karena disini saya akan mendeploy aplikasi frontend dengan konfigurasi node js jadi terlebih dahulu saya akan menginstall NPM (Node Package Manager) dan NVM (Node Version Manager) terlebih dahulu
+
+```
+sudo apt install npm
+```
+
+![image](https://user-images.githubusercontent.com/99697182/172549100-5a591536-b98f-4622-b442-2e706dfdf373.png)
+
+selanjutnya saya akan install engine node.js nya 
+
+```
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.38.0/install.sh | bash
+```
+
+```
+exec bash
+```
+
+![image](https://user-images.githubusercontent.com/99697182/172551129-b18eb58c-c643-4df4-9665-850696339432.png)
+
+
+```
+nvm i 14
+```
+
+```
+nvm -v
+```
+
+npm -v
+
+![image](https://user-images.githubusercontent.com/99697182/172551797-f6b83956-a036-4e4f-9669-15600a39d9d1.png)
+
+Selanjutnya cloning fork https://github.com/dumbwaysdev/wayshub-frontend menggunakan perintah :
+
+```
+git clone https://github.com/dumbwaysdev/wayshub-frontend
+```
+
+![image](https://user-images.githubusercontent.com/99697182/172552686-cd0f3d80-c8d0-418b-8297-776b78ae9697.png)
+
+Setelah itu jalankan perintah npm i untuk node_modulesnya
+
+```
+npm i
+```
+![image](https://user-images.githubusercontent.com/99697182/172552928-ff8d28c0-7e9a-4e3e-b3a3-e30659d38492.png)
+
+# Step 2 - Membuat Gateaway-Server dan konfigurasi proxynya
+
+
+
+
+
+
+
+
+
+
 
 
 
