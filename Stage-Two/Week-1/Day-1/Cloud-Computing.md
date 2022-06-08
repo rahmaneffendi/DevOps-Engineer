@@ -458,6 +458,8 @@ Domain yang saya buat : rahman.studentdumbways.id
 
 ![image](https://user-images.githubusercontent.com/99697182/172582902-f1aa6ea8-a458-4536-8cb2-634ad39889ba.png)
 
+diatas, kita edit menjadi dns only 
+
 2. Kemudian Masuk ke terminal lagi server gateway dan melakukan konfigurasi baru pada /etc/nginx/wayshub
 
 ```
@@ -477,10 +479,12 @@ server {
 3. Kemudian kita cek di browser kita 
 
 ```
-rahman.studentdumbways.my.id
+http://rahman.studentdumbways.my.id/
 ```
 
+![image](https://user-images.githubusercontent.com/99697182/172586725-7f63f52a-3d59-4813-b614-eeaf339e691e.png)
 
+Apabila berhasil akan tampil aplikasi frontend menggunakan domain http://rahman.studentdumbways.my.id/
 
 
 
