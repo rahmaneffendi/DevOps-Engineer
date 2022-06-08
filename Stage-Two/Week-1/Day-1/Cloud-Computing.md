@@ -94,21 +94,22 @@ kemudian kita tunggu proses Building aplikasi servernya hingga selesai :
 
 ![image](https://user-images.githubusercontent.com/99697182/172440426-fb395d60-e669-4787-bc6a-5e389dcfc663.png)
 
-`
+
 Penjelasan Tambahan : 
 
-<li>Vpc = Virtual Private CLoud, Suatu layanan yang disediakan untuk sejumlah orang tertentu aja, Biasanya diterapkan dalam suatu perusahaan yang mempunyai sejumlah data yang besar juga bisa bersifat rahasia</li>
+<li>Vpc = Virtual Private CLoud, Suatu layanan yang disediakan untuk sejumlah orang tertentu aja, Biasanya diterapkan/digunakan dalam suatu perusahaan yang mempunyai sejumlah data yang besar juga bisa bersifat rahasia</li>
  
- <li>cara konek ke vpc yaitu menggunakan VPN, dan biasanya di setup oleh orang lapangan</li>
-
-<li>karakter private cloud ini dapat di scale secara mandiri dengan pengetahuan teknis, biasanya dilakukan oleh orang lapangan dan manajemen datanya hanya bisa di akses oleh orang-orang tertentu, dan tidak perlu membayar layanan karena sudah ada secara default</li>
+ <li>karakter private cloud ini dapat di scale secara mandiri dengan pengetahuan teknis, biasanya dilakukan oleh orang lapangan dan manajemen datanya hanya bisa di akses oleh orang-orang tertentu, dan tidak perlu membayar layanan karena sudah ada secara default, dan angka ipnya biasanya rapi</li>
+ 
+ <li>cara konek ke vpc yaitu menggunakan VPN, dan biasanya di setup oleh orang lapangan(orang yang hidup di data center)</li>
 
 <li>Private Cloud</li>
 
 <li>Public Cloud</li>
 
 <li>floating ip : Dimana nanti server kita mempunyai 2 ip address yang bersifat public dan private</li>
-`
-   
+
+ ![image](https://user-images.githubusercontent.com/99697182/172511005-be350bdc-b54c-4121-ac5c-eede83162560.png)
+  
 
 
