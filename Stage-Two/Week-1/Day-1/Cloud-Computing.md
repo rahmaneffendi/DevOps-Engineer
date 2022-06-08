@@ -94,7 +94,12 @@ kemudian kita tunggu proses Building aplikasi servernya hingga selesai :
 
 ![image](https://user-images.githubusercontent.com/99697182/172440426-fb395d60-e669-4787-bc6a-5e389dcfc663.png)
 
+jika sudah akan muncul seperti ini :
 
+![image](https://user-images.githubusercontent.com/99697182/172512025-6b22234b-297b-457a-9a7d-7a16cf8fad5e.png)
+
+
+________________________________________________________________________________________________________________________________________________________
 Penjelasan Tambahan : 
 
 <li>Vpc = Virtual Private CLoud, Suatu layanan yang disediakan untuk sejumlah orang tertentu aja, Biasanya diterapkan/digunakan dalam suatu perusahaan yang mempunyai sejumlah data yang besar juga bisa bersifat rahasia</li>
@@ -103,13 +108,46 @@ Penjelasan Tambahan :
  
  <li>cara konek ke vpc yaitu menggunakan VPN, dan biasanya di setup oleh orang lapangan(orang yang hidup di data center)</li>
 
-<li>Private Cloud</li>
-
-<li>Public Cloud</li>
-
 <li>floating ip : Dimana nanti server kita mempunyai 2 ip address yang bersifat public dan private</li>
 
  ![image](https://user-images.githubusercontent.com/99697182/172511005-be350bdc-b54c-4121-ac5c-eede83162560.png)
   
+________________________________________________________________________________________________________________________________________________________
 
+3. Setelah pembuatan servernya selesai, kita akan mengaksesnya dari lokal kita, cara nya sama seperti sebelumnya 
+
+```
+ssh user@.....ip.....
+```
+
+![image](https://user-images.githubusercontent.com/99697182/172512766-7dada765-a8f2-4dd5-af20-c6d83a0b969b.png)
+
+4. Setelahnya kita melakukan update
+
+```
+sudo apt update; sudo apt upgrade
+```
+
+![image](https://user-images.githubusercontent.com/99697182/172512897-f59017c8-a087-4482-9b06-94e430719667.png)
+
+5. Kemudian Kita menambahkan user lagi, selaku user utama 
+
+![image](https://user-images.githubusercontent.com/99697182/172513579-72a2247e-7ec1-4c3b-9765-36e21e63e0dd.png)
+
+user : anya
+pw : anya123
+
+untuk fullname sampai other di skip aja
+
+6. setelah nya kita akan menyalakan `pubkeyauthenticationyes` dan `passwordauntheticationyes`nya
+
+```
+sudo nano /etc/ssh/sshd_config
+```
+
+![image](https://user-images.githubusercontent.com/99697182/172513954-79776b4e-b331-46ad-b1b9-1f9bd69e3d7d.png)
+
+![image](https://user-images.githubusercontent.com/99697182/172514186-9911015c-e788-40b3-adcf-b398ad219c52.png)
+
+7. 
 
