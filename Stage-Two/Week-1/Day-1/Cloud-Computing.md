@@ -283,6 +283,8 @@ sudo adduser nginx
 ```
 ![image](https://user-images.githubusercontent.com/99697182/172562413-4a5faf6a-ba32-4358-9851-abe86bbe6c35.png)
 
+disini user : nginx, pw nya : nginx123
+
 ```
 sudo nano /etc/ssh/sshd_config
 ```
@@ -382,6 +384,10 @@ npm install pm2 -g
 2. Kemudian Kita akan membuat ekosistem pm2 ,
 
 ```
+pm2 init simple
+```
+
+```
 pm2 ecosystem simple
 ```
 ![image](https://user-images.githubusercontent.com/99697182/172569691-49f31ccb-1dc3-488e-9741-0c43abf5c30f.png)
@@ -416,6 +422,15 @@ pm2 start ecosystem.config.js
 
 5. dan kita cek browser kita 
 
+```
+103.176.78.23:3000
+```
+
+![image](https://user-images.githubusercontent.com/99697182/172572352-81e71726-c0e5-4ee5-94bf-e4169f631750.png)
+
+Disitu Meskipun kita keluar dari aplikasinya, statusnya masih tetap berjalan karena kita menggunakan pm2
+
+# Step 4 -
 
 
 
