@@ -45,6 +45,10 @@ Menurut Saya Cloud Computing Merupakan Suatu pengiriman layanan yang berbeda-bed
 
 1. Pertama kita klik [link ini](https://console.idcloudhost.com/user/abdulrahmaneffendi789@gmail.com/lab) untuk masuk kedalam hal id cloud hostnya, kemudian akan tampil gambar di bawah ini :
 
+![image](https://user-images.githubusercontent.com/99697182/172544922-f1ca4570-5a62-48a9-95f6-a102bea7a112.png)
+
+kemudian akan muncul tampilan ini
+
 ![image](https://user-images.githubusercontent.com/99697182/172397565-921cbff3-63b2-4626-85fe-4af58e92f141.png)
 
 kemudian ke bagian profile di sebelah kanan, kemudian klik profile (kita akan ganti akun), kemudian klik acces user d sebelah bawah
