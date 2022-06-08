@@ -352,15 +352,71 @@ lalu save
 
 ![image](https://user-images.githubusercontent.com/99697182/172566109-0f30ae79-af0c-43b3-ba67-67a7dbb2f2a4.png)
 
-11. Untuk mengecek konfigurasi file reverse proxy kalian bisa menggunakan perintah
+11. Kemudian Cek dan reload
 
 ```
 sudo nginx -t
 ```
 
+```
+sudo systemctl reload nginx
+```
+
+```
+sudo systemctl status nginx
+```
+
 ![image](https://user-images.githubusercontent.com/99697182/172566671-35f8715e-b3b1-46de-b4e7-5a923190260f.png)
 
-# Step 3 - 
+
+# Step 3 - Menjalankan Aplikasinya
+
+1. Pertama-tama kita beralih ke user aplikasi yang sudah kita buat di awal , kemudian masuk ke direktori aplikasinya , dan kita  akan menginstall PM2 yang tujuannya yaitu supaya aplikasi dapat berjalan pada background
+
+```
+npm install pm2 -g
+```
+
+![image](https://user-images.githubusercontent.com/99697182/172569491-c19b5330-dd09-43b3-af90-ba1ed1ef80f0.png)
+
+2. Kemudian Kita akan membuat ekosistem pm2 ,
+
+```
+pm2 ecosystem simple
+```
+![image](https://user-images.githubusercontent.com/99697182/172569691-49f31ccb-1dc3-488e-9741-0c43abf5c30f.png)
+
+![image](https://user-images.githubusercontent.com/99697182/172569779-78a7612d-5c04-40cf-9242-27c0aca6868b.png)
+
+3. Kemudian masuk ke file ecosystem.config.js 
+
+![image](https://user-images.githubusercontent.com/99697182/172570117-66ba98b0-b1a0-4e28-83c2-f8610ab289f7.png)
+
+dan sesuaikan dengan script ini
+
+```
+module.exports = {
+  apps : [{
+    name   : "frontend-wayshub",
+    script : "npm start"
+  }]
+}
+```
+kemudian save dan exit
+
+![image](https://user-images.githubusercontent.com/99697182/172570391-437d523e-0787-4538-8225-916353f2d5f9.png)
+
+4. kemudian kita jalan kan aplikasinya 
+
+```
+pm2 start ecosystem.config.js
+```
+
+![image](https://user-images.githubusercontent.com/99697182/172570809-2aa0455f-3dd4-46fd-90b3-b853ff5aba5c.png)
+
+5. dan kita cek browser kita 
+
+
 
 
 
