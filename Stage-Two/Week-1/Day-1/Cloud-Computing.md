@@ -460,6 +460,9 @@ Domain yang saya buat : rahman.studentdumbways.id
 
 diatas, kita edit menjadi dns only 
 
+![image](https://user-images.githubusercontent.com/99697182/172587185-121df429-01d9-4e3f-bca3-053e66727719.png)
+
+
 2. Kemudian Masuk ke terminal lagi server gateway dan melakukan konfigurasi baru pada /etc/nginx/wayshub
 
 ```
@@ -485,6 +488,21 @@ http://rahman.studentdumbways.my.id/
 ![image](https://user-images.githubusercontent.com/99697182/172586725-7f63f52a-3d59-4813-b614-eeaf339e691e.png)
 
 Apabila berhasil akan tampil aplikasi frontend menggunakan domain http://rahman.studentdumbways.my.id/
+
+# Step 4 - Menggunakan SSL CertBot untuk mengamankan website
+
+## Apa itu SSL ?
+
+SSL adalah singkatan dari Secure Socket Layer, salah satu komponen penting yang harus dimiliki website. Dengan SSL, transfer data di dalam website menjadi lebih aman dan terenkripsi. Bahkan saking pentingnya, Google Chrome melabeli website tanpa sertifikat SSL sebagai Not Secure.
+
+Apabila sistem keamanan ini ditambahkan pada website Anda, maka URL website akan berubah menjadi HTTPS. Tujuan utama pemasangan SSL adalah sebagai pengaman pertukaran data yang terjadi melalui jaringan internet.
+
+1. Langkah pertama masuk ke gateaway server, dan instalasi certbot
+
+```
+sudo snap install core; sudo snap refresh core
+```
+
 
 
 
