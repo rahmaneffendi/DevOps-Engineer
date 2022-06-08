@@ -278,11 +278,38 @@ Seharusnya pada server Gateway ini otomatis terinstall nginx
 
 6. Sebelumnya Disini saya akan membuat user yang lain sebagai utama dengan cara sebelumnya :
 
+```
+sudo adduser nginx
+```
+![image](https://user-images.githubusercontent.com/99697182/172562413-4a5faf6a-ba32-4358-9851-abe86bbe6c35.png)
 
+```
+sudo nano /etc/ssh/sshd_config
+```
 
+![image](https://user-images.githubusercontent.com/99697182/172562554-e6ca0ca3-31c2-4aab-8baa-b21179b3b2cb.png)
 
+![image](https://user-images.githubusercontent.com/99697182/172562664-284a82ac-9316-4806-a6d5-b9153ceed221.png)
 
-Selanjutnya buat direktori baru pada /etc/nginx , saya akan membuat direktori baru bernama wayshub dengan perintah
+```
+sudo systemctl reload sshd
+```
+
+```
+sudo usermod -aG sudo nginx
+```
+
+```
+logout
+```
+
+```
+ssh nginx@103.55.37.95
+```
+
+![image](https://user-images.githubusercontent.com/99697182/172563045-23bf47c1-b607-41e6-9aed-89f22ace5e51.png)
+
+7. Selanjutnya buat direktori baru pada /etc/nginx , saya akan membuat direktori baru bernama wayshub dengan perintah
 
 ```
 sudo mkdir wayshub
