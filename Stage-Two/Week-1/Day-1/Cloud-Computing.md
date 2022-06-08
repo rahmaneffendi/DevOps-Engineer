@@ -493,16 +493,61 @@ Apabila berhasil akan tampil aplikasi frontend menggunakan domain http://rahman.
 
 ## Apa itu SSL ?
 
-SSL adalah singkatan dari Secure Socket Layer, salah satu komponen penting yang harus dimiliki website. Dengan SSL, transfer data di dalam website menjadi lebih aman dan terenkripsi. Bahkan saking pentingnya, Google Chrome melabeli website tanpa sertifikat SSL sebagai Not Secure.
+SSL adalah singkatan dari Secure Socket Layer, salah satu komponen penting yang harus dimiliki website. Dengan SSL, transfer data di dalam website menjadi lebih aman dan terenkripsi. Bahkan saking pentingnya, Google Chrome melabeli website tanpa sertifikat SSL sebagai Not Secure. 
+
+SSL ini bersifat opensource dan gamapang konfigurasinya 
 
 Apabila sistem keamanan ini ditambahkan pada website Anda, maka URL website akan berubah menjadi HTTPS. Tujuan utama pemasangan SSL adalah sebagai pengaman pertukaran data yang terjadi melalui jaringan internet.
 
-1. Langkah pertama masuk ke gateaway server, dan instalasi certbot
+1. langkah pertama masuk ke clouflare dulu , klik myprofile
+
+![image](https://user-images.githubusercontent.com/99697182/172668637-d8dfb8ad-b948-40d9-9163-1d9f75200a77.png)
+
+klik API token
+
+![image](https://user-images.githubusercontent.com/99697182/172668784-bb8d6e63-d042-4e65-92ba-14ec5e5a24c3.png)
+
+klik View DI global API key, dan masukan password cloudflare nya
+
+![image](https://user-images.githubusercontent.com/99697182/172669084-7b991a17-34f5-4526-b289-4f1750613c4f.png)
+
+kemudian copy tokennya
+
+![image](https://user-images.githubusercontent.com/99697182/172669213-eb7997b4-9f2e-4828-bf06-2dee3de8de6c.png)
+
+2. Kemudian balik ke gateway server dan buat direktori `.secret`, dan buat konfigurasi untuk cloudflare didalamnya 
+
+![image](https://user-images.githubusercontent.com/99697182/172669789-03042613-ae4c-4c15-a7cd-66addf9cebbf.png)
+
+masukan script berikut dan pastekan token didalamnya
+
+```
+dns_cloudflare_email = "abdulrahmaneffendi789@gmail.com"
+dns_cloudflare_api_key = "dadd0433b3e3faf6a822472c0a7193e881169"
+
+```
+
+![image](https://user-images.githubusercontent.com/99697182/172670096-82c9941b-c944-478e-80a6-6bdf5e54a52a.png)
+
+kemudian agar lebih aman kita akan mengatur izinnya agar hanya bisa di read aja
+
+```
+chmod 400 nginx.ini
+```
+
+![image](https://user-images.githubusercontent.com/99697182/172670806-9a73556b-bdc6-4fc6-983d-e4125eef7f5d.png)
+
+jika sudah , maka cloudflare kita sudah terhubung dengan gateaway server kita
+
+3. Langkah selanjutnya masuk ke gateaway server, dan instalasi certbot
 
 ```
 sudo snap install core; sudo snap refresh core
 ```
 ![image](https://user-images.githubusercontent.com/99697182/172592350-19862911-6012-4beb-9b65-1248ed4ffca7.png)
+
+![image](https://user-images.githubusercontent.com/99697182/172664736-dd4e2f93-b04a-4c52-8905-814c55c1daa6.png)
+
 
 
 
