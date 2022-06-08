@@ -502,6 +502,7 @@ Apabila sistem keamanan ini ditambahkan pada website Anda, maka URL website akan
 ```
 sudo snap install core; sudo snap refresh core
 ```
+![image](https://user-images.githubusercontent.com/99697182/172592350-19862911-6012-4beb-9b65-1248ed4ffca7.png)
 
 
 
