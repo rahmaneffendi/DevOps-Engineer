@@ -149,5 +149,27 @@ sudo nano /etc/ssh/sshd_config
 
 ![image](https://user-images.githubusercontent.com/99697182/172514186-9911015c-e788-40b3-adcf-b398ad219c52.png)
 
-7. 
+7. Kemudian Kita reload dulu, kemudian izinkan user yang sudah kita buat dapat mengakses menggunakan perintah sudo, dan kita logout dari akun kita kemudian kita masuk ke user utama yang sudah kita buat tadi 
+
+```
+sudo systemctl reload sshd
+```
+
+```
+sudo usermod -aG sudo anya
+```
+
+```
+logout
+```
+
+```
+ssh anya@103.176.78.23
+```
+
+![image](https://user-images.githubusercontent.com/99697182/172515170-22aa6020-8d19-452f-8d47-24ae5f9d7cde.png)
+
+8. 
+
+
 
