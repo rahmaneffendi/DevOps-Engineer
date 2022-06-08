@@ -237,7 +237,7 @@ Untuk type pilih app catalog dan Os nya Nginx
 
 ![image](https://user-images.githubusercontent.com/99697182/172554728-6faa9698-7efd-47b2-bd15-25926abd8ae8.png)
 
-Kemudian isi username password dan resource name , untuk ssh ini opsional kemudian pilih create
+Kemudian isi username password dan resource name , untuk ssh ini opsional kemudian pilih create, untuk lokasi, saya pindah ke north jakarta, dikarenakan di pertengahan ada error
 
 ![image](https://user-images.githubusercontent.com/99697182/172554915-ee0c9ae8-e03c-4a57-bf0f-94326ff2b167.png)
 
@@ -247,8 +247,32 @@ tunggu hingga selesai
 
 ![image](https://user-images.githubusercontent.com/99697182/172555218-e8946bbe-1012-47a3-9f24-26a8f368d43f.png)
 
+jika sudah selesai, maka akan muncul ini 
 
+![image](https://user-images.githubusercontent.com/99697182/172556402-32ee94b2-164e-4f4b-a299-2f3ca02bd42f.png)
 
+3. Kemudian Kita akan remote server nya dari lokal kita :
+
+```
+ssh ubuntu@103.55.37.95
+```
+![image](https://user-images.githubusercontent.com/99697182/172556945-51d62286-1a54-4477-ac45-a23143f07956.png)
+
+4. Kita  akan melakukan update dan upgrade pada server Gateway agar selalu terupdate 
+
+```
+sudo apt update ; sudo apt upgrade
+```
+
+![image](https://user-images.githubusercontent.com/99697182/172557303-65829e7e-3683-4c2a-b9e9-7414c2e78dc1.png)
+
+5. Kemudian check versi nginx dengan menggunakan perintah
+
+```
+nginx -v
+```
+
+Seharusnya pada server Gateway ini otomatis terinstall nginx
 
 
 
