@@ -41,7 +41,7 @@ Menurut Saya Cloud Computing Merupakan Suatu pengiriman layanan yang berbeda-bed
    
    Seperti : Fb, Yt, Wa, Tiktok, Photoshop dls.
    
-# step 1 - Membuat Server Aplikasi
+# step 1 - Membuat Server Aplikasi Menggunakan IdCloudHost
 
 1. Pertama kita klik [link ini](https://console.idcloudhost.com/user/abdulrahmaneffendi789@gmail.com/lab) untuk masuk kedalam hal id cloud hostnya, kemudian akan tampil gambar di bawah ini :
 
@@ -204,7 +204,9 @@ nvm i 14
 nvm -v
 ```
 
+```
 npm -v
+```
 
 ![image](https://user-images.githubusercontent.com/99697182/172551797-f6b83956-a036-4e4f-9669-15600a39d9d1.png)
 
@@ -223,9 +225,27 @@ npm i
 ```
 ![image](https://user-images.githubusercontent.com/99697182/172552928-ff8d28c0-7e9a-4e3e-b3a3-e30659d38492.png)
 
-# Step 2 - Membuat Gateaway-Server dan konfigurasi proxynya
+# Step 2 - Membuat Gateaway-Server Menggunakan Idcloudhost dan konfigurasi proxynya
 
+1. Pertama kita Login ke akun idclouhost kita di [sini](https://console.idcloudhost.com/user/abdulrahmaneffendi789@gmail.com/lab)
 
+![image](https://user-images.githubusercontent.com/99697182/172554380-c7eded5a-cf75-4bc0-8d39-a7740846b343.png)
+
+2. Kemudian pilih menu Compute di kiri pojok dan pilih create new resource
+
+Untuk type pilih app catalog dan Os nya Nginx
+
+![image](https://user-images.githubusercontent.com/99697182/172554728-6faa9698-7efd-47b2-bd15-25926abd8ae8.png)
+
+Kemudian isi username password dan resource name , untuk ssh ini opsional kemudian pilih create
+
+![image](https://user-images.githubusercontent.com/99697182/172554915-ee0c9ae8-e03c-4a57-bf0f-94326ff2b167.png)
+
+![image](https://user-images.githubusercontent.com/99697182/172555125-935edb51-749b-4432-867c-53a6dc66aedc.png)
+
+tunggu hingga selesai
+
+![image](https://user-images.githubusercontent.com/99697182/172555218-e8946bbe-1012-47a3-9f24-26a8f368d43f.png)
 
 
 
