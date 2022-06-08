@@ -309,16 +309,58 @@ ssh nginx@103.55.37.95
 
 ![image](https://user-images.githubusercontent.com/99697182/172563045-23bf47c1-b607-41e6-9aed-89f22ace5e51.png)
 
+![image](https://user-images.githubusercontent.com/99697182/172564239-9d3b895e-edd9-471e-a6ff-698b66d72759.png)
+
+
 7. Selanjutnya buat direktori baru pada /etc/nginx , saya akan membuat direktori baru bernama wayshub dengan perintah
 
 ```
 sudo mkdir wayshub
 ```
 
+![image](https://user-images.githubusercontent.com/99697182/172564764-02fdf6c7-00b1-4cf2-b29a-f3ecc2de7026.png)
 
+8. Selanjutnya saya akan membuat file untuk menyimpan konfigurasi dari reverse proxy
 
+```
+sudo nano proxy.conf
+```
 
+9. Kemudian masukan script dibawah ini 
 
+```
+server {
+        server_name wayshub.xyz;
+
+        location / {
+                proxy_pass http://10.71.15.131:3000;
+        }
+}
+```
+
+![image](https://user-images.githubusercontent.com/99697182/172565437-c1a5a0d5-c0c2-46b7-877d-4729c5133814.png)
+
+Keterangan : server_name adalah nama server , proxy_pass isi dengan ip dari aplikasi
+
+lalu save 
+
+![image](https://user-images.githubusercontent.com/99697182/172565608-b52e7315-9cf1-4082-8736-9f0caed7b20f.png)
+
+10. Kemudian masuk ke file nginx.conf untuk menambahkan konfigurasi proxypass
+
+![image](https://user-images.githubusercontent.com/99697182/172565893-558df0a9-9de4-436e-a669-6f598dda7831.png)
+
+![image](https://user-images.githubusercontent.com/99697182/172566109-0f30ae79-af0c-43b3-ba67-67a7dbb2f2a4.png)
+
+11. Untuk mengecek konfigurasi file reverse proxy kalian bisa menggunakan perintah
+
+```
+sudo nginx -t
+```
+
+![image](https://user-images.githubusercontent.com/99697182/172566671-35f8715e-b3b1-46de-b4e7-5a923190260f.png)
+
+# Step 3 - 
 
 
 
