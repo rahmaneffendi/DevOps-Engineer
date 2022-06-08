@@ -94,9 +94,10 @@ kemudian kita tunggu proses Building aplikasi servernya hingga selesai :
 
 ![image](https://user-images.githubusercontent.com/99697182/172440426-fb395d60-e669-4787-bc6a-5e389dcfc663.png)
 
+`
 Penjelasan Tambahan : 
-<li>
-<li>Vpc = Virtual Private CLoud, Suatu layanan yang disediakan untuk sejumlah orang tertentu aja, Biasanya diterapkan dalam suatu perusahaan yang mempunyai sejumlah data yang besar juga bisa bersifat rahasia
+
+<li>Vpc = Virtual Private CLoud, Suatu layanan yang disediakan untuk sejumlah orang tertentu aja, Biasanya diterapkan dalam suatu perusahaan yang mempunyai sejumlah data yang besar juga bisa bersifat rahasia</li>
  
  <li>cara konek ke vpc yaitu menggunakan VPN, dan biasanya di setup oleh orang lapangan</li>
 
@@ -107,7 +108,7 @@ Penjelasan Tambahan :
 <li>Public Cloud</li>
 
 <li>floating ip : Dimana nanti server kita mempunyai 2 ip address yang bersifat public dan private</li>
-
+`
    
 
 
