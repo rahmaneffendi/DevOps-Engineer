@@ -556,6 +556,21 @@ saya ganti dan buat lagi os = nginx ubuntu 20, dan 2 user, sebagai user utamanya
 
 ![Img 1](assets/8.png)
 
+kemudian saya coba lagi untul instalasi certbot 
+
+![Img 1](assets/9.png)
+
+setelahnya masukan perintah :
+
+```
+sudo snap install --classic certbot
+```
+
+![Img 1](assets/10.png)
+
+
+
+
 
 
 
