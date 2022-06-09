@@ -104,4 +104,36 @@ scp id_rsa.pub anya@103.176.78.23:/home/anya/.ssh/
 
 ![image](https://user-images.githubusercontent.com/99697182/172891212-64b7d005-2ad4-4cf9-b1fb-43adc206e03f.png)
 
-6. 
+6. kemudian kita cek apakah sudah ter-migrasi ke frontend-server
+
+![image](https://user-images.githubusercontent.com/99697182/172892182-902da92c-6b2f-492c-9655-d2d9adc7c906.png)
+
+kemudian kita buat authorized key juga dan pastekan key nya 
+
+![image](https://user-images.githubusercontent.com/99697182/172892720-cefbc6cd-628e-4fdf-b45b-b28308090d00.png)
+
+![image](https://user-images.githubusercontent.com/99697182/172893003-e08cdbf6-a619-4c29-8a8b-34f7bd6f211c.png)
+
+7. Kemudian kita coba login ke server frontend  dari server gateway tanpa password
+
+dan disini kita berhasil
+
+![image](https://user-images.githubusercontent.com/99697182/172893329-ad71cce5-6ebc-4ce7-8c38-63a1ef0a07d3.png)
+
+8. Kemudian lakukan hal serupa pada server lainnya
+
+![image](https://user-images.githubusercontent.com/99697182/172894696-e52f3b91-dcc1-43bc-8725-a61a1d374797.png)
+
+disini bisa masuk ke backend
+
+![image](https://user-images.githubusercontent.com/99697182/172895147-997d2596-da3d-4078-a829-5e6537d5503c.png)
+
+disini bisa masuk ke database
+
+![image](https://user-images.githubusercontent.com/99697182/172895418-946893f7-cef2-41d3-8ade-f704721cdcd7.png)
+
+
+
+
+
+
