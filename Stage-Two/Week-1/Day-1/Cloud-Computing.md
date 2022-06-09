@@ -458,7 +458,7 @@ Domain yang saya buat : rahman.studentdumbways.id
 
 ![image](https://user-images.githubusercontent.com/99697182/172582902-f1aa6ea8-a458-4536-8cb2-634ad39889ba.png)
 
-diatas, kita edit menjadi dns only 
+diatas, kita edit menjadi dns only , agar nantinya kita bisa mengakses htpps
 
 ![image](https://user-images.githubusercontent.com/99697182/172587185-121df429-01d9-4e3f-bca3-053e66727719.png)
 
@@ -541,6 +541,8 @@ jika sudah , maka cloudflare kita sudah terhubung dengan gateaway server kita
 
 3. Langkah selanjutnya masuk ke gateaway server, dan instalasi certbot
 
+kita pastikan dulu kalau snapd kita ter update
+
 ```
 sudo snap install core; sudo snap refresh core
 ```
@@ -568,12 +570,27 @@ sudo snap install --classic certbot
 
 ![Img 1](assets/10.png)
 
+4. Kemudian Masukan perintah berikut agar certbet bisa di akses menggunakan coment 
 
+```
+sudo ln -s /snap/bin/certbot /usr/bin/certbot
+```
 
+![Img 1](assets/11.png)
 
+5. Jalankan certbot menggunakan perintah
 
+```
+sudo certbot 
+```
 
+pertama di minta email dari cloudflare 
 
+kedua klik y untuk sertifikat nya 
+
+ketiga optional kalau sertifikatnya mau expired, akan ada email berisikan pemberitahuan expired 
+
+keempat masukan nama domain yang akan di gunakan 
 
 
 
