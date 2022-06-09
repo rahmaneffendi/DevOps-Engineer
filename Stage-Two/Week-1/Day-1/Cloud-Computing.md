@@ -608,7 +608,12 @@ kemudian Sukses
 
 ![Img 1](assets/15.png)
 
-6. 
+6. dan kita cek 
+
+![Img 1](assets/16.png)
+
+disini sepertinya ada yang salah
+
 
 
 
