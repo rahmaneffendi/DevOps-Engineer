@@ -646,7 +646,7 @@ namun masih tetap sama
 
 ![Img 1](assets/24.png)
 
-10. Disini saya menonaltifkan sites-enabled di folder nginx, kemudian saya rapikan file rahman.studentdumbways.my.id, lalu saya atur ulang sertifikatnya dan berhasil 
+10. Disini saya menonaltifkan include/.../sites-enabled di folder nginx.conf, kemudian saya rapikan file rahman.studentdumbways.my.id, lalu saya atur ulang sertifikatnya dan berhasil 
 
 ![Img 1](assets/26.png)
 
