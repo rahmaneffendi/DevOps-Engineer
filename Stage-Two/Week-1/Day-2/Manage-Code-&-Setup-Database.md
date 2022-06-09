@@ -58,7 +58,7 @@ disini saya akan menambakhkan user, user : enye, pw : enye
 
 Jika DI total dengan pertemuan kemarin, Saya punya 4 Server , berikut ilustrasinya :
 
-![image](https://user-images.githubusercontent.com/99697182/172879546-3bfa242a-4133-470c-89a1-b825f861070d.png)
+![image](https://user-images.githubusercontent.com/99697182/172882892-4b4c53d0-8825-4973-aa7e-95723f58eb3a.png)
 
 # Generate SSH Key dan transfer ke semua server
 
@@ -66,5 +66,5 @@ Jika DI total dengan pertemuan kemarin, Saya punya 4 Server , berikut ilustrasin
 
 SSH adalah protokol secure yang digunakan untuk mengelola hosting atau server secara remote. Dengan menggunakan protokol ini, Anda tidak perlu mendatangi lokasi fisik server, karena pengelolaan bisa dilakukan secara remote dari lokasi manapun. 
 
-
+1
 
