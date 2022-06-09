@@ -144,13 +144,15 @@ sudo apt-get install mysql-server
 
 Untuk instalasi baru MySQL, Anda akan menjalankan skrip keamanan DBMS yang disertakan. Skrip ini mengubah beberapa opsi asali yang kurang aman untuk hal-hal seperti log masuk root jarak jauh dan pengguna sampel.
 
+2. lalu jangan lupa jalankan script keamanan dan masukan password baru yang lebih kuat
+
 ```
 sudo mysql_secure_installation
 ```
 
 ![image](https://user-images.githubusercontent.com/99697182/172899225-39b69f7f-a664-437b-84d7-80a939334260.png)
 
-2. Untuk melihat versi gunakan perintah
+3. Untuk melihat versi gunakan perintah
 
 ```
 mysql --version
@@ -164,4 +166,4 @@ sudo mysql -u root
 
 ![image](https://user-images.githubusercontent.com/99697182/172899738-5dfe28f7-734e-40d8-a34e-1b81463a26ed.png)
 
-3. 
+
