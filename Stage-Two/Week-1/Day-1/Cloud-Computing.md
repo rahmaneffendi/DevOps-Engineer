@@ -612,7 +612,25 @@ kemudian Sukses
 
 ![Img 1](assets/16.png)
 
-disini sepertinya ada yang salah
+disini sepertinya ada yang salah, dan kesalahannya adalah belum membuat reverse proxy di server nginx baru unyu ini. 
+
+7. Kemudian saya menambahkan proxy dan membuat sertifikat lagi 
+
+disini saya menginstall ulang certifikatnya
+
+![Img 1](assets/17.png)
+
+namun masih belum berubah
+
+![Img 1](assets/18.png)
+
+8. Kemudian saya coba untuk renew dan replace sertifikatnya 
+
+![Img 1](assets/19.png)
+
+dan masih tetap sama
+
+![Img 1](assets/20.png)
 
 
 
