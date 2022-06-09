@@ -193,3 +193,42 @@ SELECT user, FROM mysql.user
 ```
 
 ![image](https://user-images.githubusercontent.com/99697182/172905900-6705511f-378a-47e9-aa88-160b20543b3f.png)
+
+# Membuat database wayshub pada mysql
+
+```
+CREATE DATABASE wayshub;
+```
+
+Untuk melihat isi dari database gunakan perintah
+```
+show databases;
+```
+
+![image](https://user-images.githubusercontent.com/99697182/172906587-776e8675-8097-441a-b0dc-830a13f3160d.png)
+
+# Mengganti bind address
+
+Fungsi melakukan bind address yaitu supaya database dapat di akses oleh client
+
+![image](https://user-images.githubusercontent.com/99697182/172907397-7078a956-b891-47b2-9bf9-cc196ced2f00.png)
+
+```
+bind-address            = 0.0.0.0  
+mysqlx-bind-address     = 0.0.0.0 
+```
+
+![image](https://user-images.githubusercontent.com/99697182/172907514-02f530f5-2fcc-48dd-95fb-b9d574c49419.png)
+
+Lalu restart mysql
+
+```
+systemctl restart mysql.service
+```
+
+![image](https://user-images.githubusercontent.com/99697182/172907743-0a9c774d-c26a-4fb8-96d6-682ee8697ff4.png)
+
+
+# Dapat meremote database dari client
+
+# Memberikan Akses Kepada User
