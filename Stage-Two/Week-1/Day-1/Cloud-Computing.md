@@ -632,6 +632,20 @@ dan masih tetap sama
 
 ![Img 1](assets/20.png)
 
+9. Kemudian saya tambahkan proxy lain 
+
+![Img 1](assets/21.png)
+
+![Img 1](assets/22.png)
+
+dan saya coba  replace certificatenya
+
+![Img 1](assets/23.png)
+
+namun masih tetap sama
+
+![Img 1](assets/24.png)
+
 
 
 
