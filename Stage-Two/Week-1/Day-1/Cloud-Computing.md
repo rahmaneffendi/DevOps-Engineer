@@ -548,6 +548,19 @@ sudo snap install core; sudo snap refresh core
 
 ![image](https://user-images.githubusercontent.com/99697182/172664736-dd4e2f93-b04a-4c52-8905-814c55c1daa6.png)
 
+disini, server saya done, dan akan membuatnya kembali 
+
+![Img 1](assets/7.png)
+
+saya ganti dan buat lagi os = nginx ubuntu 20, dan 2 user, sebagai user utamanya "unyu" pw = unyu 
+
+![Img 1](assets/8.png)
+
+
+
+
+
+
 
 
 
