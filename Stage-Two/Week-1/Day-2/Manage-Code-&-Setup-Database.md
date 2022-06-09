@@ -166,4 +166,30 @@ sudo mysql -u root
 
 ![image](https://user-images.githubusercontent.com/99697182/172899738-5dfe28f7-734e-40d8-a34e-1b81463a26ed.png)
 
+# Membuat Database Baru pada user baru
 
+1. Untuk membuat pengguna yang dapat terhubung dari host mana pun, gunakan wildcard ‘%‘ sebagai bagian host:
+
+```
+CREATE USER 'user_database'@'%' IDENTIFIED BY 'password_user';
+```
+
+Opsi ini biasanya digunakan oleh para webmaster yang menginginkan MySQL server ditempat terpisah dengan web server.
+
+![image](https://user-images.githubusercontent.com/99697182/172904375-44168b37-a140-495b-9d97-a42444e460fe.png)
+
+2. Memberikan semua hak istimewa ke akun pengguna untuk semua database :
+
+```
+GRANT ALL PRIVILEGES ON *.* TO 'user_database'@'localhost';
+```
+
+![image](https://user-images.githubusercontent.com/99697182/172905771-e98d637a-1275-4761-83d3-6a42cdd6f467.png)
+
+3. Kemudian saya login dengan user baru yang tadi di buat
+
+```
+SELECT user, FROM mysql.user
+```
+
+![image](https://user-images.githubusercontent.com/99697182/172905900-6705511f-378a-47e9-aa88-160b20543b3f.png)
