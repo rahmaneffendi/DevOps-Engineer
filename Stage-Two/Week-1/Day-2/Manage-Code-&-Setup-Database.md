@@ -30,6 +30,33 @@ disini saya akan buat server lain , user : inyi, pw : inyi
 
 ![image](https://user-images.githubusercontent.com/99697182/172873075-b01301d5-3e38-40da-85f0-4d1bfc306e4b.png)
 
+# membuat server database 
+
+1.kita create vm nya
+
+![image](https://user-images.githubusercontent.com/99697182/172874191-6b9fb3c6-b6ee-4d41-a3c7-67a5fda4ea67.png)
+
+![image](https://user-images.githubusercontent.com/99697182/172874548-a12b09f7-d8be-430f-87ee-ccaa18e8e2d6.png)
+
+![image](https://user-images.githubusercontent.com/99697182/172874912-f7a0d34c-12c6-4a78-b6dc-1bb0e1633cb4.png)
+
+![image](https://user-images.githubusercontent.com/99697182/172875293-b2c83d2c-ceeb-4a03-9a2b-4a8fd7ee665b.png)
+
+2. kita remote 
+
+![image](https://user-images.githubusercontent.com/99697182/172875657-ec6b92d6-1122-4e1b-ae70-ee15e801ed5e.png)
+
+![image](https://user-images.githubusercontent.com/99697182/172875811-3fc9477e-2e9f-4426-bec0-dd172e6ee877.png)
+
+disini saya akan menambakhkan user, user : enye, pw : enye
+
+![image](https://user-images.githubusercontent.com/99697182/172876302-3be8d912-1494-4055-aaeb-5ba6a495a37c.png)
+
+![image](https://user-images.githubusercontent.com/99697182/172876534-989518ec-82a5-46cb-9d1b-91ea29cdc7f8.png)
+
+![image](https://user-images.githubusercontent.com/99697182/172876830-40f76576-3dd8-48e8-bbea-8cd98a5dbc19.png)
+
+
 
 
 
