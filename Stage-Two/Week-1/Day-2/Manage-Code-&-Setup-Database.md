@@ -66,5 +66,42 @@ Jika DI total dengan pertemuan kemarin, Saya punya 4 Server , berikut ilustrasin
 
 SSH adalah protokol secure yang digunakan untuk mengelola hosting atau server secara remote. Dengan menggunakan protokol ini, Anda tidak perlu mendatangi lokasi fisik server, karena pengelolaan bisa dilakukan secara remote dari lokasi manapun. 
 
-1
+1. Kita generat keygen di Gateaway server 
 
+Pertama tama gunakan ssh-keygen untuk membuat ssh key
+
+```
+ssh-keygen
+```
+
+![image](https://user-images.githubusercontent.com/99697182/172887388-9a98b382-8799-4312-a948-673e3903e940.png)
+
+2. Kemudian masuk ke direktori .ssh lalu gunakan perintahcat untuk melihat id_rsa.pub
+
+```
+cat id_rsa.pub
+```
+
+![image](https://user-images.githubusercontent.com/99697182/172888855-f5616d99-3304-4a78-8fc6-42a90aec6834.png)
+
+3. Kemudian buat file authorized_keys dan masukan id_rsa.pub kalian disini lalu save dan exit
+
+![image](https://user-images.githubusercontent.com/99697182/172889108-3ff8aa10-4aaa-410b-a8a8-c689aa1fb00d.png)
+
+![image](https://user-images.githubusercontent.com/99697182/172889333-19a347e0-a938-485f-a1b2-cd7b7b3866de.png)
+
+4. Kemudian Masuk ke frontend-server dan buat direktori .ssh 
+
+![image](https://user-images.githubusercontent.com/99697182/172889937-1f9922c0-9892-4764-8b09-deadcd195eb8.png)
+
+5. Kemudian masuk lagi ke dir di gateaway-server dan migrasikan file id_rsa.pub ke server-frontend menggunakan perintah scp id_rsa.pub "username"@ip:./
+
+Pada server gateway masukan perintah
+
+```
+scp id_rsa.pub anya@103.176.78.23:/home/anya/.ssh/
+```
+
+![image](https://user-images.githubusercontent.com/99697182/172891212-64b7d005-2ad4-4cf9-b1fb-43adc206e03f.png)
+
+6. 
