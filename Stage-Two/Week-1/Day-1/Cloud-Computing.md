@@ -558,6 +558,18 @@ saya ganti dan buat lagi os = nginx ubuntu 20, dan 2 user, sebagai user utamanya
 
 ![Img 1](assets/8.png)
 
+Kemudian saya juga mengubah DNS nya
+
+![Img 1](assets/12.png)
+
+kemudian saya juga mengubah API tokennya 
+
+`2312cc76618891ed4cb390af35876866b5a96`
+
+![Img 1](assets/13.png)
+
+![Img 1](assets/14.png)
+
 kemudian saya coba lagi untul instalasi certbot 
 
 ![Img 1](assets/9.png)
