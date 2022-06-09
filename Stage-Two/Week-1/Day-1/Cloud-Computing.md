@@ -648,6 +648,8 @@ namun masih tetap sama
 
 10. Disini saya menonaltifkan include/.../sites-enabled di folder nginx.conf, kemudian saya rapikan file rahman.studentdumbways.my.id, lalu saya atur ulang sertifikatnya dan berhasil 
 
+![Img 1](assets/25.png)
+
 ![Img 1](assets/26.png)
 
 
