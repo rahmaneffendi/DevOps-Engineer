@@ -132,8 +132,36 @@ disini bisa masuk ke database
 
 ![image](https://user-images.githubusercontent.com/99697182/172895418-946893f7-cef2-41d3-8ade-f704721cdcd7.png)
 
+# Instalasi MYSQL pada server Database
 
+1. Masukan perintah instal
 
+```
+sudo apt-get install mysql-server
+```
 
+![image](https://user-images.githubusercontent.com/99697182/172896799-f71f3810-2dcd-4805-94d9-bb2ef100525c.png)
 
+Untuk instalasi baru MySQL, Anda akan menjalankan skrip keamanan DBMS yang disertakan. Skrip ini mengubah beberapa opsi asali yang kurang aman untuk hal-hal seperti log masuk root jarak jauh dan pengguna sampel.
 
+```
+sudo mysql_secure_installation
+```
+
+![image](https://user-images.githubusercontent.com/99697182/172899225-39b69f7f-a664-437b-84d7-80a939334260.png)
+
+2. Untuk melihat versi gunakan perintah
+
+```
+mysql --version
+```
+
+Untuk masuk ke mysql gunakan perintah
+
+```
+sudo mysql -u root
+```
+
+![image](https://user-images.githubusercontent.com/99697182/172899738-5dfe28f7-734e-40d8-a34e-1b81463a26ed.png)
+
+3. 
