@@ -487,6 +487,8 @@ Kemudian tes menggunakan web browser dan registrasi
 
 ![image](https://user-images.githubusercontent.com/99697182/173000260-d22603cf-5fde-48b3-8cd1-b31f21ffd8a5.png)
 
+![image](https://user-images.githubusercontent.com/99697182/173001011-3e57392e-53e0-4607-8f7e-54c111ed2edf.png)
+
 Semua berjalan normal apabila tidak ada error 
 
 # 🥳🥳🥳🥳🥳 
