@@ -212,6 +212,17 @@ Untuk melihat isi dari database gunakan perintah
 show databases;
 ```
 
+```
+USE wayshub;
+```
+
+```
+SHOW TABLES;
+```
+
+![image](https://user-images.githubusercontent.com/99697182/172970110-42b19262-0e94-458a-a9da-724d8e90baa1.png)
+
+
 ![image](https://user-images.githubusercontent.com/99697182/172906587-776e8675-8097-441a-b0dc-830a13f3160d.png)
 
 # Mengganti bind address
