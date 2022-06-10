@@ -189,6 +189,13 @@ GRANT ALL PRIVILEGES ON *.* TO 'user_database'@'localhost';
 3. Kemudian saya login dengan user baru yang tadi di buat
 
 ```
+mysql -u rahman -p
+```
+
+![image](https://user-images.githubusercontent.com/99697182/172969007-131a4b52-7b7f-4aa4-89ba-0be5392a0018.png)
+
+
+```
 SELECT user, FROM mysql.user
 ```
 
