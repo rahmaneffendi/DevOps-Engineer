@@ -300,6 +300,10 @@ curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.38.0/install.sh | bash
 exec bash
 ```
 
+```
+nvm i 14
+```
+
 ![image](https://user-images.githubusercontent.com/99697182/172974605-2d6478d4-d2f9-4ba0-815c-44791a70e635.png)
 
 ![image](https://user-images.githubusercontent.com/99697182/172974691-cb0067f5-3775-4f1a-9dc5-335fb5caa5df.png)
