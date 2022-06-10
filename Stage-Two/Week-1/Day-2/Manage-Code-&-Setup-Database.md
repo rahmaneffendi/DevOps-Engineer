@@ -402,6 +402,8 @@ server {
 
 ![image](https://user-images.githubusercontent.com/99697182/172983096-7ee69a07-466b-4563-b993-822c0f23e1cb.png)
 
+![image](https://user-images.githubusercontent.com/99697182/172988550-6f989fb7-d035-400b-b38c-d84dea5e5c55.png)
+
 # Menggunakan SSL CertBot untuk memperaman website
 
 ## Apa itu SSL ?
@@ -419,19 +421,6 @@ sudo certbot
 ```
 ![image](https://user-images.githubusercontent.com/99697182/172984413-99a06903-2450-4808-8a26-974935aaaac5.png)
 
-## ket. Disini saya masih blum bisa certbot karena htpp nya masih blum berjalan
 
-## dan saya disini blum bisa juga mengkoneksikan frontend dan backend
 
-![image](https://user-images.githubusercontent.com/99697182/172985642-47f3d31b-a9a4-45e1-ad72-d996766e1a9c.png)
-
-![image](https://user-images.githubusercontent.com/99697182/172985621-0d651723-fa78-4e9e-ab6e-75cb0f68d2f1.png)
-
-![image](https://user-images.githubusercontent.com/99697182/172985711-3ab45090-0578-4a84-b7e0-b27654987286.png)
-
-![image](https://user-images.githubusercontent.com/99697182/172985746-9f610a62-1e73-4571-baac-a826e1c64362.png)
-
-![image](https://user-images.githubusercontent.com/99697182/172985873-7a8e1034-4e06-445b-9a3e-ac88e600ad9d.png)
-
-![image](https://user-images.githubusercontent.com/99697182/172985923-6fa24f4a-8957-4536-bb34-8200f853f7e6.png)
 
