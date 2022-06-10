@@ -225,9 +225,17 @@ SHOW TABLES;
 
 ![image](https://user-images.githubusercontent.com/99697182/172906587-776e8675-8097-441a-b0dc-830a13f3160d.png)
 
-# Mengganti bind address
+# Mengganti bind address / mengganti Konfig mysql
 
 Fungsi melakukan bind address yaitu supaya database dapat di akses oleh client
+
+```
+cd /etc/mysql/mysql.conf.d
+```
+
+```
+sudo nano mysqld.cnf
+```
 
 ![image](https://user-images.githubusercontent.com/99697182/172907397-7078a956-b891-47b2-9bf9-cc196ced2f00.png)
 
@@ -250,3 +258,14 @@ systemctl restart mysql.service
 # Dapat meremote database dari client
 
 # Memberikan Akses Kepada User
+
+
+# Deployment
+
+# Cloning fork [apk backend ini](https://github.com/dumbwaysdev/wayshub-backend)
+
+# Mengubah direktori menjadi backend dan deploy aplikasi menggunakan PM2
+
+# Mengoneksikan aplikasi frontend dan backend
+
+# Pastikan dapat registrasi pada aplikasi
