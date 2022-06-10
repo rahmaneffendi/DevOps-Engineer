@@ -369,6 +369,29 @@ Kemudian kita perlu membuat file ecosystem untuk menjalankan backend
 pm2 ecosystem simple
 ```
 
+kemudian edit file file ecosysytem
+
+```
+module.exports = {
+  apps : [{
+    name   : "backend",
+    script : "npm start"
+  }]
+}
+```
+
+![image](https://user-images.githubusercontent.com/99697182/172990203-fb756cdf-9d92-49d2-9ac2-1deabb4421c7.png)
+
+kemudian jalankan 
+
+```
+pm2 start ecosystem.config.js
+```
+
+![image](https://user-images.githubusercontent.com/99697182/172990573-dc7e2620-7136-4c81-9520-011194a05556.png)
+
+
+
 # Mengoneksikan aplikasi frontend dan backend
 
 Sebelum mengoneksikan aplikasi frontend dan backend kita perlu mengatur domain untuk backend
