@@ -257,14 +257,95 @@ systemctl restart mysql.service
 
 # Dapat meremote database dari client
 
-# Memberikan Akses Kepada User
+```
+sudo apt install mysql-client
+```
+
+Gunakan perintah diatas untuk menginstall mysql untuk client supaya client dapat meremote database
+
+![image](https://user-images.githubusercontent.com/99697182/172972971-8c674901-572d-497d-958d-d81d2707e2a7.png)
+
+```
+mysql -u rahman -h 103.186.1.7 -p
+```
+
+![image](https://user-images.githubusercontent.com/99697182/172973212-6103db1e-455f-4762-91ae-d8d526667c76.png)
 
 
 # Deployment
 
-# Cloning fork [apk backend ini](https://github.com/dumbwaysdev/wayshub-backend)
+## Cloning fork [apk backend ini](https://github.com/dumbwaysdev/wayshub-backend)
 
-# Mengubah direktori menjadi backend dan deploy aplikasi menggunakan PM2
+![image](https://user-images.githubusercontent.com/99697182/172973370-99b8bde6-a774-4c1f-8d09-701e6701c4e7.png)
+
+## Mengubah direktori menjadi backend dan deploy aplikasi menggunakan PM2
+
+![image](https://user-images.githubusercontent.com/99697182/172973508-b54f5667-6d64-4d4e-b146-15274291d44f.png)
+
+Karena disini saya akan mendeploy aplikasi frontend dengan konfigurasi node js jadi terlebih dahulu saya akan menginstall NPM (Node Package Manager) dan NVM (Node Version Manager) terlebih dahulu
+
+```
+sudo apt install npm
+```
+
+![image](https://user-images.githubusercontent.com/99697182/172973626-992598ba-4d6a-43a4-a527-3cd6771d9b4e.png)
+
+Selanjutnya saya akan Install NVM (Node Version Manager) menggunakan link di bawah ini
+
+```
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.38.0/install.sh | bash
+```
+
+```
+exec bash
+```
+
+![image](https://user-images.githubusercontent.com/99697182/172974605-2d6478d4-d2f9-4ba0-815c-44791a70e635.png)
+
+![image](https://user-images.githubusercontent.com/99697182/172974691-cb0067f5-3775-4f1a-9dc5-335fb5caa5df.png)
+
+## Migrasi data backend ke database
+
+Edit file config.json pada /backend/config
+
+![image](https://user-images.githubusercontent.com/99697182/172975051-4a26bfae-b09e-4a4c-b230-dfd3a3e56c94.png)
+
+![image](https://user-images.githubusercontent.com/99697182/172975015-0d4f43f0-b8dd-4fe4-909a-4db9d439a89c.png)
+
+kemudian install sequelize
+
+```
+sudo npm install -g sequelize-cli
+```
+
+![image](https://user-images.githubusercontent.com/99697182/172975354-71496173-bc56-451e-a193-7191ffd76a27.png)
+
+![image](https://user-images.githubusercontent.com/99697182/172975372-efa63cfb-179a-4f93-ae6c-9615478fbddf.png)
+
+```
+sudo npx sequelize db:migrate
+```
+![image](https://user-images.githubusercontent.com/99697182/172975884-cf3031d9-92e9-4b8d-af83-1cacc1d5a9c6.png)
+
+disini saya mengalami beberapa unable, oleh karena itu saya install sequelize package locally in my project with the following command:
+
+```
+npm install sequelize
+```
+
+![image](https://user-images.githubusercontent.com/99697182/172976230-544e13fc-bdc7-4230-80c6-ea2a1f8b071d.png)
+
+disini sudah bisa 
+
+![image](https://user-images.githubusercontent.com/99697182/172976380-da1ede3a-12a2-416b-aaef-dab98ab81b59.png)
+
+Setelah itu cek pada database
+
+![image](https://user-images.githubusercontent.com/99697182/172976765-4d04473d-07fc-48e1-baf9-c4848546f3b4.png)
+
+Proses migrasi berhasil
+
+
 
 # Mengoneksikan aplikasi frontend dan backend
 
