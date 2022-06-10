@@ -421,6 +421,46 @@ sudo certbot
 ```
 ![image](https://user-images.githubusercontent.com/99697182/172984413-99a06903-2450-4808-8a26-974935aaaac5.png)
 
+![image](https://user-images.githubusercontent.com/99697182/172988926-c2b4ec1a-8a88-46c4-bcfa-5e56daa80ac7.png)
+
+### Konfigurasi SSL / HTTPS pada server backend berhasil
+
+Masuk ke server frontend kemudian masuk pada direktori wayshub-frontend
+
+![image](https://user-images.githubusercontent.com/99697182/172989380-6e49bfe6-092f-4174-98a1-2f3c26535d35.png)
+
+Masuk pada direktori aplikasi/wayshub-frontend/src/config kemudian edit file api.js , isi gunakan domain backend
+
+```
+import axios from 'axios';
+
+const API = axios.create({
+    baseURL: "https://api.rahman.studentdumbways.my.id/api/v1"
+});
+
+const setAuthToken = (token) => {
+    if(token){
+        API.defaults.headers.common['Authorization'] = `Bearer ${token}`;
+    } else {
+        delete API.defaults.headers.common['Authorization'];
+    }
+}
+
+export {
+    API,
+    setAuthToken
+}
+```
+
+![image](https://user-images.githubusercontent.com/99697182/172989578-c22a71a5-0795-45c9-a504-0aae23b68c2f.png)
+
+![image](https://user-images.githubusercontent.com/99697182/172989626-c1b13fb2-7f34-4c3d-aae1-a1a20c6a1538.png)
+
+Kemudian tes menggunakan web browser dan registrasi
+
+
+
+
 
 
 
