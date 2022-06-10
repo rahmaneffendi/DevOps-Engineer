@@ -481,6 +481,15 @@ export {
 
 Kemudian tes menggunakan web browser dan registrasi
 
+![image](https://user-images.githubusercontent.com/99697182/173000175-ab666c2e-06b2-433a-93b8-26b6c4dd7f74.png)
+
+![image](https://user-images.githubusercontent.com/99697182/173000223-195bd895-c17b-4b35-938b-ef2e4ae89510.png)
+
+![image](https://user-images.githubusercontent.com/99697182/173000260-d22603cf-5fde-48b3-8cd1-b31f21ffd8a5.png)
+
+Semua berjalan normal apabila tidak ada error 
+
+# 🥳🥳🥳🥳🥳 
 
 
 
