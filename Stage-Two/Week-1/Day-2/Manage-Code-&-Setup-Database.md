@@ -345,8 +345,27 @@ Setelah itu cek pada database
 
 Proses migrasi berhasil
 
+## Instal PM2
 
+Untuk Instalasi PM2 gunakan perintah
 
-# Mengoneksikan aplikasi frontend dan backend
+```
+npm install pm2
+```
 
-# Pastikan dapat registrasi pada aplikasi
+![image](https://user-images.githubusercontent.com/99697182/172977562-617f9132-f567-4c25-9f61-42c25c7d2e26.png)
+
+![image](https://user-images.githubusercontent.com/99697182/172977648-f9f10726-0b0e-4ed3-bed3-de74b7f62a72.png)
+
+![image](https://user-images.githubusercontent.com/99697182/172977704-0f671527-8e94-4df7-b454-0177ded86aed.png)
+
+![image](https://user-images.githubusercontent.com/99697182/172977977-c341d603-8d8b-4b6a-a72a-389ba7ead9a6.png)
+
+![image](https://user-images.githubusercontent.com/99697182/172978150-14718f9d-d861-45bc-94d7-99767e3fcab1.png)
+
+Kemudian kita perlu membuat file ecosystem untuk menjalankan backend
+
+```
+pm2 ecosystem simple
+```
+
