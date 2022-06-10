@@ -369,3 +369,52 @@ Kemudian kita perlu membuat file ecosystem untuk menjalankan backend
 pm2 ecosystem simple
 ```
 
+# Mengoneksikan aplikasi frontend dan backend
+
+Sebelum mengoneksikan aplikasi frontend dan backend kita perlu mengatur domain untuk backend
+
+Disini saya menggunakan domain dari CloudFlare , ke menu dns dan buat domain
+
+Domain yang saya buat untuk backend yaitu api.rahman.studentdumbways.my.id
+
+![image](https://user-images.githubusercontent.com/99697182/172982105-d9d0ed38-a337-42c4-8cec-0898beebbb36.png)
+
+Kemudian saya akan membuat reverse proxy untuk server backend menggunakan domain api.rahman.studentdumbways.my.id
+
+buka direktori /etc/nginx/dumbways kemudian buat file reverse proxy baru
+
+![image](https://user-images.githubusercontent.com/99697182/172982406-ec04f200-dfe7-4b62-b849-b977de041bda.png)
+
+```
+server { 
+        server_name api.rahman.studentdumbways.my.id; 
+
+        location /{
+        proxy_pass http://103.186.1.5:5000;
+        }
+}
+```
+
+
+![image](https://user-images.githubusercontent.com/99697182/172982584-c8aa464f-0319-48c6-b1fb-2c6855a21fa8.png)
+
+![image](https://user-images.githubusercontent.com/99697182/172982814-a2473702-076b-4d70-93c2-ec0a7a00b5f0.png)
+
+![image](https://user-images.githubusercontent.com/99697182/172983096-7ee69a07-466b-4563-b993-822c0f23e1cb.png)
+
+# Menggunakan SSL CertBot untuk memperaman website
+
+## Apa itu SSL ?
+
+SSL adalah singkatan dari Secure Socket Layer, salah satu komponen penting yang harus dimiliki website. Dengan SSL, transfer data di dalam website menjadi lebih aman dan terenkripsi. Bahkan saking pentingnya, Google Chrome melabeli website tanpa sertifikat SSL sebagai Not Secure.
+
+Apabila sistem keamanan ini ditambahkan pada website Anda, maka URL website akan berubah menjadi HTTPS. Tujuan utama pemasangan SSL adalah sebagai pengaman pertukaran data yang terjadi melalui jaringan internet.
+
+![image](https://user-images.githubusercontent.com/99697182/172983838-95577c6f-deb9-442a-9a38-9909ed635f67.png)
+
+Jalankan certbot menggunakan perintah
+
+```
+sudo certbot
+```
+
