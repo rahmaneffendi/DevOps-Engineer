@@ -81,11 +81,30 @@ Disini saya mempunyai akun docker : arahmane = Docker123
 
 ![image](https://user-images.githubusercontent.com/99697182/173330690-0764764c-9d30-484d-b648-90039fa7b468.png)
 
-
-
-
-
-
 ## Langkah 3 - Docker Images
+
+1. Sekarang kita mendownload node versi dubnium alpine 3.11 dan mysql dengan tag latest
+
+```
+docker pull node:dubnium-alpine3.11
+```
+
+```
+docker pull mysql
+```
+
+![image](https://user-images.githubusercontent.com/99697182/173342836-f7019cce-e212-4115-bf74-676753e9f912.png)
+
+2. Sekarang kita cek images apakah sudah berhasil di pull dengan:
+
+```
+docker images
+```
+
+![image](https://user-images.githubusercontent.com/99697182/173342959-9f3015b8-e137-4471-8636-0473668c02ab.png)
+
+
+
+
 ## Langkah 4 - Setup Frontend & Backend
 ## Langkah 5 - Setup Gateway (Proxy & SSL)
