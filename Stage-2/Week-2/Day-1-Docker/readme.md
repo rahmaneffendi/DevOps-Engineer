@@ -4,7 +4,7 @@
 
 A. Requirements
 
-Install docker in server front-end and server back-end
+<li>Install docker in server front-end and server back-end
 
 Login to docker hub
 
