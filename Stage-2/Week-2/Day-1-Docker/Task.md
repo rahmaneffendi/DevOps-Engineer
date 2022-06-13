@@ -103,8 +103,59 @@ docker images
 
 ![image](https://user-images.githubusercontent.com/99697182/173342959-9f3015b8-e137-4471-8636-0473668c02ab.png)
 
-
-
-
 ## Langkah 4 - Setup Frontend & Backend
+
+1. Sekarang saya clone front end dan back end nya
+
+```
+git clone https://github.com/dumbwaysdev/wayshub-frontend
+```
+
+```
+git clone https://github.com/dumbwaysdev/wayshub-backend
+```
+
+![image](https://user-images.githubusercontent.com/99697182/173343711-1a37d019-e94b-4d50-8d8e-2bc09a6ec5e1.png)
+
+2. Sekarang saya akan run images mysql dan membuat volume dengan directory mysql-data
+
+```
+docker run -d --name database -p 3306:3306 -v ~/mysql-data:/var/lib/mysql -e MYSQL_ROOT_PASSWORD=Are132465798 -e MYSQL_DATABASE=wayshub mysql:latest
+```
+
+![image](https://user-images.githubusercontent.com/99697182/173344364-c1b8acc4-d729-4e4e-8625-7ab411f36c68.png)
+
+3. Sekarang saya akan mengkonfigurasi backend nya dengan membuat docker compose
+
+Install terlebih dahulu docker compose
+
+```
+sudo curl -L "https://github.com/docker/compose/releases/download/1.29.2/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
+```
+
+```
+sudo chmod +x /usr/local/bin/docker-compose
+```
+
+```
+docker compose --version
+```
+
+![image](https://user-images.githubusercontent.com/99697182/173344915-c6edcc32-d49a-4fab-93a0-1e97e04c90ba.png)
+
+4. Masuk ke directory backend dan copy env.example menjadi .env
+
+Karna disini saya sudah mempunyai .env maka disini saya hanya memperlihatkan isinya
+
+
+
+
+
+
+
+
+
+
+
+
 ## Langkah 5 - Setup Gateway (Proxy & SSL)
