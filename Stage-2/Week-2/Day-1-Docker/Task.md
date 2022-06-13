@@ -17,6 +17,8 @@ User 2 & Pwnya : get = get
 
 2. App-Server : CPU : 2, RAM : 2, Disk : 20
 
+Ip Public = 103.172.204.174
+
 User 1 & Pwnya : ubuntu = Sembarang1
 
 User 2 & Pwnya : app = app
