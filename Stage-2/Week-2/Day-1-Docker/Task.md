@@ -219,7 +219,7 @@ Edit api.js di directory syc/config untuk mengkoneksikan ke back end nya
 
 ![image](https://user-images.githubusercontent.com/99697182/173349835-b62b1373-c1b1-4142-9630-7a8001ea3069.png)
 
-11. Sekarang kita akan buat file dockerfile seperti di backend tadi dengan isi:
+11. Sekarang ke folder wayshub-frontend dan kita akan buat file dockerfile seperti di backend tadi dengan isi:
 
 ```
 FROM node:dubnium-alpine3.11
@@ -230,9 +230,9 @@ EXPOSE 3000
 CMD [ "npm", "start" ]
 ```
 
-![image](https://user-images.githubusercontent.com/99697182/173350012-5c95611e-759b-4c0d-bac6-0008f71cb3f6.png)
+![image](https://user-images.githubusercontent.com/99697182/173353065-80e2d1c4-de40-494a-a55c-976b0b8427fd.png)
 
-![image](https://user-images.githubusercontent.com/99697182/173350064-7ecd9d98-58b7-4b1d-9656-528750775a22.png)
+![image](https://user-images.githubusercontent.com/99697182/173353220-b322a013-126a-420d-99c5-062674c0470c.png)
 
 12. Buat file docker-compose.yml untuk front end dengan isi:
 
@@ -248,9 +248,9 @@ services:
     - 3333:3000
 ```
 
-![image](https://user-images.githubusercontent.com/99697182/173350209-c42c4149-b541-4054-b0b8-92d818f97093.png)
+![image](https://user-images.githubusercontent.com/99697182/173353292-8083d78c-cd86-4182-87ea-f4e7a8b5e7d8.png)
 
-![image](https://user-images.githubusercontent.com/99697182/173350449-b87171ab-4ff1-4658-8dea-50902d79c01e.png)
+![image](https://user-images.githubusercontent.com/99697182/173353613-f1e44d97-f21a-42fd-b0a2-c24c7d3de5c9.png)
 
 13. Build dan Jalankan compose secara daemon dengan:
 
@@ -258,7 +258,20 @@ services:
 docker-compose up -d
 ```
 
-![image](https://user-images.githubusercontent.com/99697182/173351297-7fb578ba-8947-4913-81b7-895df9a7ce56.png)
+disini ada error karena sebelumnya saya sudah membuat container, 
+
+![image](https://user-images.githubusercontent.com/99697182/173354174-fd6af234-ff69-410d-a557-6be884ccd55c.png)
+
+disini saya akan mencoba untuk menghapusnya
+
+![image](https://user-images.githubusercontent.com/99697182/173354504-94646596-bf10-43ad-8b4d-1eb7d570093b.png)
+
+kemudian saya coba ulang
+
+![image](https://user-images.githubusercontent.com/99697182/173354693-93e26ceb-7090-4162-b500-43039e1c2a68.png)
+
+14. Sekarang kita cek di browser
+
 
 
 ## Langkah 5 - Setup Gateway (Proxy & SSL)
