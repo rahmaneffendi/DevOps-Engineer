@@ -270,7 +270,21 @@ kemudian saya coba ulang
 
 ![image](https://user-images.githubusercontent.com/99697182/173354693-93e26ceb-7090-4162-b500-43039e1c2a68.png)
 
+disini saya masih tidak bisa menjalankan apk nya karena status containernya exit, meskipun saya sudah mencoba mencari banyak referensi untuk start tapi masih tidak bisa
+
+karena masih tidak bisa, jadi saya buat saja container baru dengan nama baru saja
+
+![image](https://user-images.githubusercontent.com/99697182/173358931-3dc95b24-03f4-45ca-838d-7188bd3558e5.png)
+
+![image](https://user-images.githubusercontent.com/99697182/173359669-e5f04c62-5954-4382-8ce2-fe214560de31.png)
+
 14. Sekarang kita cek di browser
+
+```
+http://103.172.204.174:3333/login
+```
+
+![image](https://user-images.githubusercontent.com/99697182/173359819-ea0009e4-b20b-4eae-9a52-581fec711a11.png)
 
 
 
