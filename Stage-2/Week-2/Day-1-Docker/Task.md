@@ -1,8 +1,8 @@
-# Setup Docker dan Frontend, Backend dan Database Deployment.
+# Setup Docker | Frontend, Backend dan Database Deployment.
 
 
-
-## Langkah 1 - Instalasi and Config Docker
-## Langkah 2 - Docker Images
-## Langkah 3 - Setup Frontend & Backend
-## Langkah 4 - Setup Gateway
+## Langkah 1 - Membuat Server Pada IdCLoudHost
+## Langkah 2 - Instalasi and Config Docker
+## Langkah 3 - Docker Images
+## Langkah 4 - Setup Frontend & Backend
+## Langkah 5 - Setup Gateway (Proxy & SSL)
