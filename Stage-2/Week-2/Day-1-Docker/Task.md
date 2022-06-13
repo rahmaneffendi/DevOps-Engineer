@@ -147,8 +147,67 @@ docker compose --version
 
 Karna disini saya sudah mempunyai .env maka disini saya hanya memperlihatkan isinya
 
+```
+cat .env
+```
 
+![image](https://user-images.githubusercontent.com/99697182/173345883-14877cc2-04e3-4046-ac1b-ea0c365700bc.png)
 
+5. Sekarang konfigurasi backend ke database dengan cara:
+
+Masuk ke directory config dan edit file config.json
+
+```
+nano config.json
+```
+
+![image](https://user-images.githubusercontent.com/99697182/173346504-f09ec8be-221c-4a93-af4b-289cdf50a398.png)
+
+![image](https://user-images.githubusercontent.com/99697182/173347257-ec6f1abb-200a-41ba-945c-ea150e9d3c73.png)
+
+6. Kembali ke folder backend dan buat file bernama dockerfile berisi:
+
+```
+FROM node:dubnium-alpine3.11
+WORKDIR /usr/app
+COPY . .
+RUN npm install
+RUN npm install sequelize-cli -g
+RUN npx sequelize db:migrate
+EXPOSE 5000
+CMD [ "npm", "start" ]
+```
+
+![image](https://user-images.githubusercontent.com/99697182/173347854-df788f04-c583-46e8-bb7b-2d4d675e83b4.png)
+
+![image](https://user-images.githubusercontent.com/99697182/173348003-41cd5397-04a4-484c-a084-951144bdc9a6.png)
+
+7. Sekarang buat file docker-compose.yml dengan isi berikut:
+
+```
+version: '3.7'
+services:
+ backend:
+   build: .
+   container_name: be
+   image: arerahman/wayshub-be:stable
+   stdin_open: true
+   ports:
+    - 5555:5000
+```
+![image](https://user-images.githubusercontent.com/99697182/173348518-d6c32b1e-c64e-4587-ada2-558235efbfcb.png)
+
+![image](https://user-images.githubusercontent.com/99697182/173348565-62e61c9b-e182-4c93-8d4f-6b5e1acaec5e.png)
+
+8. Build dan Jalankan compose secara daemon dengan:
+
+```
+docker-compose up -d
+```
+
+![image](https://user-images.githubusercontent.com/99697182/173348857-023fc0fe-a7ff-4f21-aaf1-e3c6976a1b99.png)
+
+9. Jika sudah running tes di web browser dengan masukkan ip dan custom port tadi
 
 
 
