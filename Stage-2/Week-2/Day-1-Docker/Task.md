@@ -21,6 +21,8 @@ User 1 & Pwnya : ubuntu = Sembarang1
 
 User 2 & Pwnya : app = app
 
+![image](https://user-images.githubusercontent.com/99697182/173318847-e2f149f1-55e3-4a43-9e88-497fa8045475.png)
+
 ## Langkah 2 - Instalasi and Config Docker
 ## Langkah 3 - Docker Images
 ## Langkah 4 - Setup Frontend & Backend
