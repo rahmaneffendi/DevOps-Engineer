@@ -7,11 +7,15 @@ Disini Saya membuat 2 Buah Server Dengan Spek Berikut:
 
 1. Gateway-Server : CPU : 1, RAM : 1, Disk : 20
 
+Ip Public = 103.179.56.23
+
 User 1 & Pwnya : ubuntu = Sembarang1
 
 User 2 & Pwnya : get = get
 
-1. App-Server : CPU : 2, RAM : 2, Disk : 20
+![image](https://user-images.githubusercontent.com/99697182/173317837-8777500c-ad84-48e0-9d1e-812405ac9395.png)
+
+2. App-Server : CPU : 2, RAM : 2, Disk : 20
 
 User 1 & Pwnya : ubuntu = Sembarang1
 
