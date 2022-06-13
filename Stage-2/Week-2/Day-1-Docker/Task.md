@@ -252,5 +252,13 @@ services:
 
 ![image](https://user-images.githubusercontent.com/99697182/173350449-b87171ab-4ff1-4658-8dea-50902d79c01e.png)
 
+13. Build dan Jalankan compose secara daemon dengan:
+
+```
+docker-compose up -d
+```
+
+![image](https://user-images.githubusercontent.com/99697182/173351297-7fb578ba-8947-4913-81b7-895df9a7ce56.png)
+
 
 ## Langkah 5 - Setup Gateway (Proxy & SSL)
