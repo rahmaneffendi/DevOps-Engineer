@@ -26,6 +26,66 @@ User 2 & Pwnya : app = app
 ![image](https://user-images.githubusercontent.com/99697182/173318847-e2f149f1-55e3-4a43-9e88-497fa8045475.png)
 
 ## Langkah 2 - Instalasi and Config Docker
+
+1. Install Docker menggunakan bash dengan isi berikut:
+
+```
+sudo apt-get update
+sudo apt-get install \
+ca-certificates \
+curl \
+gnupg \
+lsb-release
+    
+curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo gpg --dearmor -o /usr/share/keyrings/docker-archive-keyring.gpg
+
+echo \
+"deb [arch=$(dpkg --print-architecture) signed-by=/usr/share/keyrings/docker-archive-keyring.gpg] https://download.docker.com/linux/ubuntu \
+$(lsb_release -cs) stable" | sudo tee /etc/apt/sources.list.d/docker.list > /dev/null
+
+sudo apt-get update
+sudo apt-get install docker-ce docker-ce-cli containerd.io
+```
+
+![image](https://user-images.githubusercontent.com/99697182/173328366-5d49fd58-9767-4a76-b731-be9fc7b53b74.png)
+
+![image](https://user-images.githubusercontent.com/99697182/173328172-7e98178c-229d-4a81-bf28-0f4083355234.png)
+
+2. Cek versi docker menggunakan:
+
+```
+docker -v
+```
+
+![image](https://user-images.githubusercontent.com/99697182/173328661-b8536b6f-4a90-4894-87b2-da84b175ac71.png)
+
+3. Kita akan membuat perintah docker agar tidak menggunakan sudo lagi dengan perintah berikut:
+
+```
+sudo usermod -aG docker app
+```
+
+![image](https://user-images.githubusercontent.com/99697182/173329013-3e364858-4811-4dcd-868a-fb9a01fe1f23.png)
+
+4. Sekarang kita login menggunakan:
+
+```
+docker login
+```
+
+Sebelumnya, Saya mau membuat akun terlebih dahulu pada [hub.docker](https://hub.docker.com/signup) ini
+
+![image](https://user-images.githubusercontent.com/99697182/173330457-129b621d-21f8-4db8-87ae-7f793985d7f3.png)
+
+Disini saya mempunyai akun docker : arahmane = Docker123
+
+![image](https://user-images.githubusercontent.com/99697182/173330690-0764764c-9d30-484d-b648-90039fa7b468.png)
+
+
+
+
+
+
 ## Langkah 3 - Docker Images
 ## Langkah 4 - Setup Frontend & Backend
 ## Langkah 5 - Setup Gateway (Proxy & SSL)
