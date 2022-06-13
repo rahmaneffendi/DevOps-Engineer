@@ -209,12 +209,48 @@ docker-compose up -d
 
 9. Jika sudah running tes di web browser dengan masukkan ip dan custom port tadi
 
+![image](https://user-images.githubusercontent.com/99697182/173349186-88563ebe-bd35-49d5-964d-499afaf115ab.png)
 
+10. Jika back end sudah selesai sekarang kita akan ke front end dan mengkonfigurasi front end sebelum membuat compose
 
+Edit api.js di directory syc/config untuk mengkoneksikan ke back end nya
 
+![image](https://user-images.githubusercontent.com/99697182/173349497-500ce5f3-4a60-45eb-a2d4-0aad61121c60.png)
 
+![image](https://user-images.githubusercontent.com/99697182/173349835-b62b1373-c1b1-4142-9630-7a8001ea3069.png)
 
+11. Sekarang kita akan buat file dockerfile seperti di backend tadi dengan isi:
 
+```
+FROM node:dubnium-alpine3.11
+WORKDIR /usr/app
+COPY . .
+RUN npm install
+EXPOSE 3000
+CMD [ "npm", "start" ]
+```
+
+![image](https://user-images.githubusercontent.com/99697182/173350012-5c95611e-759b-4c0d-bac6-0008f71cb3f6.png)
+
+![image](https://user-images.githubusercontent.com/99697182/173350064-7ecd9d98-58b7-4b1d-9656-528750775a22.png)
+
+12. Buat file docker-compose.yml untuk front end dengan isi:
+
+```
+version: '3.7'
+services:
+ frontend:
+   build: .
+   container_name: fe
+   image: arerahman/wayshub-fe:stable
+   stdin_open: true
+   ports:
+    - 3333:3000
+```
+
+![image](https://user-images.githubusercontent.com/99697182/173350209-c42c4149-b541-4054-b0b8-92d818f97093.png)
+
+![image](https://user-images.githubusercontent.com/99697182/173350449-b87171ab-4ff1-4658-8dea-50902d79c01e.png)
 
 
 ## Langkah 5 - Setup Gateway (Proxy & SSL)
