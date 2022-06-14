@@ -129,8 +129,21 @@ Worker2
 
 ![image](https://user-images.githubusercontent.com/99697182/173595413-99163bc1-a280-417e-a20d-0341b251e1b2.png)
 
+4. Untuk melihat konfigurasi container gunakan perintah berikut:
 
+```
+docker service inspect helloworld
+```
 
+![image](https://user-images.githubusercontent.com/99697182/173596012-8ef93571-3d9a-4d86-a7e4-e90d5c9eb382.png)
 
+5. Kemudian Untuk me-remove service gunakan perintah berikut:
 
+```
+docker service rm helloworld
+```
+
+![image](https://user-images.githubusercontent.com/99697182/173596687-ca13e100-461f-4034-9932-512ef686ae00.png)
+
+# Langkah 3 - 
 
