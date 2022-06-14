@@ -260,13 +260,19 @@ kemudian kita cek di masing2 server
 
 Manager
 
+disini ada 2
+
 ![image](https://user-images.githubusercontent.com/99697182/173618175-8a1dfb28-a1da-40c3-a167-f7fb2a45185b.png)
 
 Worker1
 
+disini ada 2
+
 ![image](https://user-images.githubusercontent.com/99697182/173618489-bdbb6132-c3ea-461d-b9be-9daa13e4e03d.png)
 
 Worker2
+
+disini ada 1
 
 ![image](https://user-images.githubusercontent.com/99697182/173618784-2af88daa-b312-4e3a-aa56-606b68647610.png)
 
