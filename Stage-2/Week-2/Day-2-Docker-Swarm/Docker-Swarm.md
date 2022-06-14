@@ -145,7 +145,7 @@ docker service rm helloworld
 
 ![image](https://user-images.githubusercontent.com/99697182/173596687-ca13e100-461f-4034-9932-512ef686ae00.png)
 
-# Langkah 3 - Menuju Ke Aplikasinya 
+# Langkah 3 - Menuju Ke Deployment Aplikasinya 
 
 1. clone aplikasinya terlebih dahulu Diseluruh server
 
@@ -166,7 +166,7 @@ Worker2
 
 ![image](https://user-images.githubusercontent.com/99697182/173601530-0cfd5e30-1fb8-486d-9877-c5d88b8cbaab.png)
 
-2. Buat/edit composenya :
+2. Buat/edit konfigurasi composenya :
 
 replace suganda dan sgnd menjadi nama user kita, 
 
@@ -204,10 +204,71 @@ Worker2
 
 ![image](https://user-images.githubusercontent.com/99697182/173604397-32e9dc36-1b52-441a-b892-efe10e53343c.png)
 
-4. Sekarang Kita melakukan depedency aplikasinya
+4. Sekarang Kita melakukan deployment aplikasinya
+
+```
+docker stack deploy --compose-file docker-compose.yml stack-todo
+```
+
+ket : 
+
+stack-todo = nama servicenya
+
+![image](https://user-images.githubusercontent.com/99697182/173612465-e43a1298-2316-4ec2-b2f4-db1932efddb7.png)
 
 
+kemudian kita cek menggunakan perintah:
 
+```
+docker service ls
+```
+
+sepertinya disini ada 1 yang ngga bisa , yaitu mongonya,
+
+![image](https://user-images.githubusercontent.com/99697182/173613234-40c5ab0d-75de-4d05-a356-a5a44af01124.png)
+
+5. Kemudian Kita cek browsernya :
+
+```
+103.171.84.101:5000
+```
+
+![image](https://user-images.githubusercontent.com/99697182/173614239-4196b149-073f-499a-ae12-fe30db3fcbf0.png)
+
+setelah saya coba dengan port lain, yang bisa hanya port 5000, jadi saya scale yang port 5000 nya 
+
+```
+docker service scale stack-todo_todo-skill=5
+```
+
+ket : 
+
+stack-todo_todo-skill = nama service nya, saya ambil yang port 5000 aja
+
+![image](https://user-images.githubusercontent.com/99697182/173617602-4f8bbecf-996c-46fc-940d-3bfc9df90cb5.png)
+
+kemudian kita cek 
+
+```
+docker service ls
+```
+disini sudah berhasil 
+
+![image](https://user-images.githubusercontent.com/99697182/173617870-cb2a4fc9-37fc-4c9b-a7c1-b109f7ed7c88.png)
+
+kemudian kita cek di masing2 server
+
+Manager
+
+![image](https://user-images.githubusercontent.com/99697182/173618175-8a1dfb28-a1da-40c3-a167-f7fb2a45185b.png)
+
+Worker1
+
+![image](https://user-images.githubusercontent.com/99697182/173618489-bdbb6132-c3ea-461d-b9be-9daa13e4e03d.png)
+
+Worker2
+
+![image](https://user-images.githubusercontent.com/99697182/173618784-2af88daa-b312-4e3a-aa56-606b68647610.png)
 
 
 
