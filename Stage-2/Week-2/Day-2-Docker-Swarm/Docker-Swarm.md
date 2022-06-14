@@ -145,5 +145,27 @@ docker service rm helloworld
 
 ![image](https://user-images.githubusercontent.com/99697182/173596687-ca13e100-461f-4034-9932-512ef686ae00.png)
 
-# Langkah 3 - 
+# Langkah 3 - Menuju Ke Aplikasinya 
+
+1. clone aplikasinya terlebih dahulu
+
+```
+git clone https://github.com/sgnd/dumbways-docker-microservices.git
+```
+
+![image](https://user-images.githubusercontent.com/99697182/173597588-39732d10-312c-40b8-9e05-cdc2f884f219.png)
+
+![image](https://user-images.githubusercontent.com/99697182/173597815-a56fdb9a-8100-4890-a581-5ccbc29bb6fa.png)
+
+2. Buat/edit composenya :
+
+
+
+
+
+
+
+
+
+
 
