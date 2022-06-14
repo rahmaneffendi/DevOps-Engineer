@@ -429,7 +429,7 @@ sudo certbot --nginx
 
 10. Sekarang kita cek apakah sudah berhasil HTTPS atau belum
 
-disini saya dapat error
+disini saya dapat error, Sepertinya error ini karena blum konek ke backendnya
 
 ![image](https://user-images.githubusercontent.com/99697182/173505423-6327486d-ded6-41df-a09a-34731e9bbf4f.png)
 
