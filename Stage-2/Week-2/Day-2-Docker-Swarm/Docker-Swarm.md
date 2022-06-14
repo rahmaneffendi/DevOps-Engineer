@@ -278,5 +278,6 @@ disini ada 1
 
 
 
+#### Quote : "Docker Swarm itu Docker Compose yang di clusterkan"
 
 
