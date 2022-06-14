@@ -159,6 +159,14 @@ git clone https://github.com/sgnd/dumbways-docker-microservices.git
 
 2. Buat/edit composenya :
 
+replace suganda dan sgnd menjadi nama user kita, 
+
+disini saya mereplace 5 suganda dan 1 sgnd
+
+![image](https://user-images.githubusercontent.com/99697182/173599396-24e75b39-e132-407f-b7be-f4e4a2131c69.png)
+
+![image](https://user-images.githubusercontent.com/99697182/173599153-b843283e-0c5c-4274-952d-affc3b6c622b.png)
+
 
 
 
