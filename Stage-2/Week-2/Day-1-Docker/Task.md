@@ -400,15 +400,47 @@ http://api.rahman.studentdumbways.my.id/
 
 Install terlebih dahulu certbot nya
 
+```
 sudo snap install --classic certbot
+```
 
+```
 sudo ln -s /snap/bin/certbot /usr/bin/certbot
+```
+![image](https://user-images.githubusercontent.com/99697182/173503475-d652c173-85d3-4cda-aec5-af0306479fff.png)
 
-8. Sekarang kita akan membuat folder baru yaiut .secrets dan membuat file twk.ini dan masukkan private key cloudflare kita
+8. Sekarang kita akan membuat folder baru yaitu .secrets dan membuat file rahman.ini dan masukkan private key cloudflare kita
+
+![image](https://user-images.githubusercontent.com/99697182/173503729-7ba25322-474d-447a-ac37-be9aac2070b1.png)
+
+![image](https://user-images.githubusercontent.com/99697182/173503962-4e6a8cd9-e862-4050-b76c-db04e5d3a9fe.png)
+
+![image](https://user-images.githubusercontent.com/99697182/173504426-a4c3dba0-3af8-4b77-98a2-0ca9fc6c7b11.png)
 
 9. Sekarang jalankan certbot menggunakan perintah:
 
+```
 sudo certbot --nginx
+```
+
+![image](https://user-images.githubusercontent.com/99697182/173504742-fc3693d3-14fe-48cc-b3f5-7f7285b11b7f.png)
+
+![image](https://user-images.githubusercontent.com/99697182/173504777-868805bc-1533-45b7-b5a6-30183b3cb44d.png)
 
 10. Sekarang kita cek apakah sudah berhasil HTTPS atau belum
+
+disini saya dapat error
+
+![image](https://user-images.githubusercontent.com/99697182/173505423-6327486d-ded6-41df-a09a-34731e9bbf4f.png)
+
+
+
+
+
+
+
+
+link yang saya coba research selain menggunakan certbot :
+
+[ini](https://youtu.be/oRMp2IzdS68) 
 
