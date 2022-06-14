@@ -289,3 +289,35 @@ http://103.172.204.174:3333/login
 
 
 ## Langkah 5 - Setup Gateway (Proxy & SSL)
+
+1. Sekarang kita akan mengkonfigurasi gateaway nya dengan reverse proxy
+
+![image](https://user-images.githubusercontent.com/99697182/173477311-ae63eeec-acf7-421b-925e-834a96cc9863.png)
+
+2. Masukkan konfigurasi reverse proxy untuk link domain twk.studentdumbways.my.id
+
+![image](https://user-images.githubusercontent.com/99697182/173477193-8b4c297f-05c6-4115-903b-4f9d70df2823.png)
+
+3. Masukkan konfigurasi reverse proxy untuk link domain api.twk.studendumbways.my.id
+
+4. Sekarang konfigurasi nginx.conf agar konfigurasi kita tadi terbaca oleh nginx
+
+5. Tambahkan include folder wayshub tadi
+
+6. Verifikasi hasil konfig dan restart nginx
+
+7. Sekarang kita akan membuat SSL menggunakan certbot agar domain kita menjadi https dengan cara:
+
+Install terlebih dahulu certbot nya
+
+sudo snap install --classic certbot
+
+sudo ln -s /snap/bin/certbot /usr/bin/certbot
+
+8. Sekarang kita akan membuat folder baru yaiut .secrets dan membuat file twk.ini dan masukkan private key cloudflare kita
+
+9. Sekarang jalankan certbot menggunakan perintah:
+
+sudo certbot --nginx
+
+10. Sekarang kita cek apakah sudah berhasil HTTPS atau belum
