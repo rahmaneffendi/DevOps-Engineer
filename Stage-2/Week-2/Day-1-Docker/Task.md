@@ -459,6 +459,7 @@ disini : email = 456@gmail.com , pw = 456
 
 ![image](https://user-images.githubusercontent.com/99697182/173517420-be7df781-506e-4fd7-95bb-b5b16c59ceec.png)
 
+meskipun begitu, itu masih blom konek
 
 11. Setelah itu saya coba menjadikan htpps untuk backend nya :
 
