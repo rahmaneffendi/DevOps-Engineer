@@ -294,17 +294,27 @@ http://103.172.204.174:3333/login
 
 ![image](https://user-images.githubusercontent.com/99697182/173477311-ae63eeec-acf7-421b-925e-834a96cc9863.png)
 
-2. Masukkan konfigurasi reverse proxy untuk link domain twk.studentdumbways.my.id
+2. Masukkan konfigurasi reverse proxy untuk link domain rahman.studentdumbways.my.id
 
 ![image](https://user-images.githubusercontent.com/99697182/173477193-8b4c297f-05c6-4115-903b-4f9d70df2823.png)
 
-3. Masukkan konfigurasi reverse proxy untuk link domain api.twk.studendumbways.my.id
+3. Masukkan konfigurasi reverse proxy untuk link domain api.rahman.studendumbways.my.id
+
+![image](https://user-images.githubusercontent.com/99697182/173492870-f3e1b9b2-8fc9-470d-96f1-589ec6e0198f.png)
+
+![image](https://user-images.githubusercontent.com/99697182/173493098-2b41a66d-77ab-464c-a3d3-9913583b169f.png)
 
 4. Sekarang konfigurasi nginx.conf agar konfigurasi kita tadi terbaca oleh nginx
 
+![image](https://user-images.githubusercontent.com/99697182/173493356-880e264b-257a-416e-84d6-c2600efa9e8f.png)
+
 5. Tambahkan include folder wayshub tadi
 
+![image](https://user-images.githubusercontent.com/99697182/173493302-d82314d9-f7e0-4cd7-9981-0a4bc92b6dbb.png)
+
 6. Verifikasi hasil konfig dan restart nginx
+
+![image](https://user-images.githubusercontent.com/99697182/173493469-c9a7ab24-f066-442f-9b6e-fafbcc7a84c6.png)
 
 7. Sekarang kita akan membuat SSL menggunakan certbot agar domain kita menjadi https dengan cara:
 
