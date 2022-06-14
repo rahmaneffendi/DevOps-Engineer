@@ -316,6 +316,29 @@ http://103.172.204.174:3333/login
 
 ![image](https://user-images.githubusercontent.com/99697182/173493469-c9a7ab24-f066-442f-9b6e-fafbcc7a84c6.png)
 
+kita daftarkan dulu DNS nya :
+
+![image](https://user-images.githubusercontent.com/99697182/173494763-c8dbac90-542d-4cd4-a0aa-fd9251c0f1dc.png)
+
+![image](https://user-images.githubusercontent.com/99697182/173494815-3d32850c-c9d5-494a-8d89-a9324049b3b1.png)
+
+kita boleh cek browser
+
+```
+http://rahman.studentdumbways.my.id/
+```
+
+![image](https://user-images.githubusercontent.com/99697182/173494628-6f063f73-8496-4ca4-a682-a5ffd4a6e3b0.png)
+
+
+```
+http://api.rahman.studentdumbways.my.id/
+```
+
+![image](https://user-images.githubusercontent.com/99697182/173494489-32348fc6-5ad6-42a7-b10c-453fe4dc477b.png)
+
+
+
 7. Sekarang kita akan membuat SSL menggunakan certbot agar domain kita menjadi https dengan cara:
 
 Install terlebih dahulu certbot nya
@@ -331,3 +354,4 @@ sudo ln -s /snap/bin/certbot /usr/bin/certbot
 sudo certbot --nginx
 
 10. Sekarang kita cek apakah sudah berhasil HTTPS atau belum
+
