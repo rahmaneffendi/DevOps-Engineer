@@ -276,7 +276,13 @@ disini ada 1
 
 ![image](https://user-images.githubusercontent.com/99697182/173618784-2af88daa-b312-4e3a-aa56-606b68647610.png)
 
+6. Apabila mau menghapusnya bisa mengguakan perintah ini :
 
+```
+docker stack rm stack-todo
+```
+
+ket : stack-todo = nama servicenya
 
 #### Quote : "Docker Swarm itu Docker Compose yang di clusterkan"
 
