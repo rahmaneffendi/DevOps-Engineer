@@ -461,6 +461,15 @@ disini : email = 456@gmail.com , pw = 456
 
 meskipun begitu, itu masih blom konek
 
+saya coba reboot servernya, danmenjalankan kembali  containernya, dan cek kembali di browser google
+
+![image](https://user-images.githubusercontent.com/99697182/173555057-7c27ccd2-a05f-4b4e-8ba4-08dc00ff9104.png)
+
+saya coba di mozilla bisa
+
+![image](https://user-images.githubusercontent.com/99697182/173554759-09d2a83a-1052-4125-a0f1-5602ac8077fe.png)
+
+
 11. Setelah itu saya coba menjadikan htpps untuk backend nya :
 
 ![image](https://user-images.githubusercontent.com/99697182/173515792-20579d79-5e92-4220-96c5-1d089cae5f1e.png)
