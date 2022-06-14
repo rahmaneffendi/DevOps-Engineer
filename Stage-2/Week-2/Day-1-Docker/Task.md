@@ -59,6 +59,22 @@ docker -v
 
 ![image](https://user-images.githubusercontent.com/99697182/173328661-b8536b6f-4a90-4894-87b2-da84b175ac71.png)
 
+```
+docker versi
+```
+
+![image](https://user-images.githubusercontent.com/99697182/173495456-052fb8d5-c2a3-4466-bd3c-fb7c80d4cb6c.png)
+
+Untuk memasuki container mysql gunakan perintah
+
+```
+docker container exec -it database bash
+```
+
+![image](https://user-images.githubusercontent.com/99697182/173495847-d5dac6db-b4c9-48f7-b7e7-491c3ebd78cc.png)
+
+
+
 3. Kita akan membuat perintah docker agar tidak menggunakan sudo lagi dengan perintah berikut:
 
 ```
