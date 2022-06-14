@@ -469,6 +469,11 @@ saya coba di mozilla bisa
 
 ![image](https://user-images.githubusercontent.com/99697182/173554759-09d2a83a-1052-4125-a0f1-5602ac8077fe.png)
 
+saya coba membersihan cache di komputer saya, dan apk nya berjalan
+
+![image](https://user-images.githubusercontent.com/99697182/173555913-73a8d378-2269-43d2-9117-f100cc3aad2c.png)
+
+![image](https://user-images.githubusercontent.com/99697182/173556020-8abfa2db-c2b6-4063-b2d4-8efa19f683b1.png)
 
 11. Setelah itu saya coba menjadikan htpps untuk backend nya :
 
