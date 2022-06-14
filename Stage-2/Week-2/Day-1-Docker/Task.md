@@ -439,11 +439,33 @@ ketika saya clik esc maka keluar slide hitam
 
 Namun Ketika COba di Hp bisa 
 
+email = 123@gmail.com , pw = 123 
+
 ![image](https://user-images.githubusercontent.com/99697182/173515299-a7f4a3f1-7841-43b6-9522-747a25789af4.png)
+
+![image](https://user-images.githubusercontent.com/99697182/173516724-63b3f265-0c3c-4c87-8ceb-fbe38035b977.png)
+
+![image](https://user-images.githubusercontent.com/99697182/173516886-be1c7f5f-da62-4b43-a56d-fb40af0eaf9c.png)
+
+![image](https://user-images.githubusercontent.com/99697182/173516983-529bda3e-f794-4a9d-b49f-bb4e3f32f503.png)
+
+dan saya coba di incognito
+
+![image](https://user-images.githubusercontent.com/99697182/173517141-41d0a9e6-3332-4b70-9b31-a07fb03037ea.png)
+
+dan bisa register juga
+
+disini : email = 456@gmail.com , pw = 456
+
+![image](https://user-images.githubusercontent.com/99697182/173517420-be7df781-506e-4fd7-95bb-b5b16c59ceec.png)
+
 
 11. Setelah itu saya coba menjadikan htpps untuk backend nya :
 
 ![image](https://user-images.githubusercontent.com/99697182/173515792-20579d79-5e92-4220-96c5-1d089cae5f1e.png)
+
+
+
 
 
 
