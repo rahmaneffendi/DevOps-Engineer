@@ -235,6 +235,14 @@ docker-compose up -d
 
 ![image](https://user-images.githubusercontent.com/99697182/173349186-88563ebe-bd35-49d5-964d-499afaf115ab.png)
 
+Jka hasilnya seperti ini, maka berarti berhasil
+
+Kemudian saya akan cek juga migrasi datanya pada mysql
+
+![image](https://user-images.githubusercontent.com/99697182/173497414-ac17b8a7-65d6-417a-bc91-c2ab36d29d4b.png)
+
+Migrasi Data Berhasil 
+
 10. Jika back end sudah selesai sekarang kita akan ke front end dan mengkonfigurasi front end sebelum membuat compose
 
 Edit api.js di directory syc/config untuk mengkoneksikan ke back end nya
