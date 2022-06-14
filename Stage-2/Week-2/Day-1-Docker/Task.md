@@ -437,7 +437,13 @@ ketika saya clik esc maka keluar slide hitam
 
 ![image](https://user-images.githubusercontent.com/99697182/173509896-a8571b38-e652-4578-89ec-8a9308e46211.png)
 
+Namun Ketika COba di Hp bisa 
 
+![image](https://user-images.githubusercontent.com/99697182/173515299-a7f4a3f1-7841-43b6-9522-747a25789af4.png)
+
+11. Setelah itu saya coba menjadikan htpps untuk backend nya :
+
+![image](https://user-images.githubusercontent.com/99697182/173515792-20579d79-5e92-4220-96c5-1d089cae5f1e.png)
 
 
 
