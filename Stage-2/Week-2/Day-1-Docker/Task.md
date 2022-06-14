@@ -243,6 +243,31 @@ Kemudian saya akan cek juga migrasi datanya pada mysql
 
 Migrasi Data Berhasil 
 
+Selanjutnya saya ingin push repo menuju docker hub
+
+![image](https://user-images.githubusercontent.com/99697182/173498208-7d865218-a6ab-4367-83b1-9294c1bbfde0.png)
+
+Dikarenakan nama repository saya berbeda tidak sesuai username docker hub jadi saya akan membuat tag baru
+
+```
+docker tag 7890f31eac9c arahmane/wayshub-be
+```
+
+![image](https://user-images.githubusercontent.com/99697182/173498517-858f0329-178a-4372-99b5-b2c0c1d0133a.png)
+
+`KETERANGAN` : Apabila nama repository tidak sesuai dengan akun docker hub maka akan muncul pesan "denied: requested access to the resource is denied"
+
+```
+docker push arahmane/wayshub-be
+```
+![image](https://user-images.githubusercontent.com/99697182/173498824-2e11e26a-320d-407a-8fbf-943c372b898a.png)
+
+Selanjutnya cek di web browser
+
+![image](https://user-images.githubusercontent.com/99697182/173498875-02116a64-99b0-438c-b7f5-8d42ac2da759.png)
+
+![image](https://user-images.githubusercontent.com/99697182/173498939-2b376fcc-5e91-4d59-a2c8-23b5c7eb3e46.png)
+
 10. Jika back end sudah selesai sekarang kita akan ke front end dan mengkonfigurasi front end sebelum membuat compose
 
 Edit api.js di directory syc/config untuk mengkoneksikan ke back end nya
