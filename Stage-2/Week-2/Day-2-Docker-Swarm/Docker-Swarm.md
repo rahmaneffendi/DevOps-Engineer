@@ -80,4 +80,57 @@ docker node ls
 
 ![image](https://user-images.githubusercontent.com/99697182/173591746-ad1a53da-5f76-43d6-a879-4fc88c0d652e.png)
 
+# Langkah 2 - Docker Swarm Commands
+
+1. Untuk membuat docker service gunakan perintah berikut:
+
+```
+docker service create --replicas 1 --name helloworld alpine ping google.com
+```
+
+![image](https://user-images.githubusercontent.com/99697182/173593350-9a65babf-8ea1-40c5-a014-05c9c253858e.png)
+
+2. Kita lihat service nya sudah berjalan atau blum dengan :
+
+```
+docker service ps helloworld
+```
+
+```
+docker ps
+```
+
+dan dia terdeploy di managernya langsung
+
+![image](https://user-images.githubusercontent.com/99697182/173594180-a7f45d9d-148e-47cb-826e-fd810ac205ff.png)
+
+3. Kemudian Untuk scale aplikasi gunakan perintah berikut:
+
+```
+docker service scale helloworld=5
+```
+![image](https://user-images.githubusercontent.com/99697182/173594910-8e22d6a2-5061-418f-9740-e9cd14c615f5.png)
+
+Kemudian Kita cek di seluruh servernya :
+
+```
+docker ps
+```
+
+Manager
+
+![image](https://user-images.githubusercontent.com/99697182/173595075-7989bc68-a957-4048-8a00-0557233e16ed.png)
+
+Worker1
+
+![image](https://user-images.githubusercontent.com/99697182/173595269-2b3fadad-7e80-4acd-97a9-c3469c9f9bc0.png)
+
+Worker2
+
+![image](https://user-images.githubusercontent.com/99697182/173595413-99163bc1-a280-417e-a20d-0341b251e1b2.png)
+
+
+
+
+
 
