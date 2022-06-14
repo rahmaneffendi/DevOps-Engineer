@@ -65,21 +65,6 @@ docker versi
 
 ![image](https://user-images.githubusercontent.com/99697182/173495456-052fb8d5-c2a3-4466-bd3c-fb7c80d4cb6c.png)
 
-Untuk memasuki container mysql gunakan perintah
-
-```
-docker container exec -it database bash
-```
-
-![image](https://user-images.githubusercontent.com/99697182/173495847-d5dac6db-b4c9-48f7-b7e7-491c3ebd78cc.png)
-
-masuk ke mysql nya dan masukan password : Are132465798
-
-![image](https://user-images.githubusercontent.com/99697182/173496247-8fb8bbff-83cf-4da6-99cc-805e20eaa400.png)
-
-Show Databases
-
-![image](https://user-images.githubusercontent.com/99697182/173496405-d3658537-2d81-4742-ac89-6e857f7dbe52.png)
 
 3. Kita akan membuat perintah docker agar tidak menggunakan sudo lagi dengan perintah berikut:
 
@@ -124,6 +109,23 @@ docker images
 ```
 
 ![image](https://user-images.githubusercontent.com/99697182/173342959-9f3015b8-e137-4471-8636-0473668c02ab.png)
+
+Untuk memasuki container mysql gunakan perintah
+
+```
+docker container exec -it database bash
+```
+
+![image](https://user-images.githubusercontent.com/99697182/173495847-d5dac6db-b4c9-48f7-b7e7-491c3ebd78cc.png)
+
+masuk ke mysql nya dan masukan password : Are132465798
+
+![image](https://user-images.githubusercontent.com/99697182/173496247-8fb8bbff-83cf-4da6-99cc-805e20eaa400.png)
+
+Show Databases
+
+![image](https://user-images.githubusercontent.com/99697182/173496405-d3658537-2d81-4742-ac89-6e857f7dbe52.png)
+
 
 ## Langkah 4 - Setup Frontend & Backend
 
