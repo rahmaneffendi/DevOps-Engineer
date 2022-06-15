@@ -95,6 +95,9 @@ dan disini saya gagal lagi, akan saya retry lagi
 
 ![image](https://user-images.githubusercontent.com/99697182/173774984-edcf7ad6-9ce5-412d-83a4-f8c080e740d3.png)
 
+gagal lagi, akan saya retry lagi
+
+![image](https://user-images.githubusercontent.com/99697182/173775908-f0ba81bd-5051-4b19-80e6-2741ce5c178e.png)
 
 
 
