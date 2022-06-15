@@ -137,6 +137,20 @@ Setelah itu saya akan install docker
 
 ![image](https://user-images.githubusercontent.com/99697182/173798782-978c487e-99a1-43bb-a68c-0707c706c06f.png)
 
+```
+sudo curl -L "https://github.com/docker/compose/releases/download/1.29.2/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
+```
+
+```
+sudo chmod +x /usr/local/bin/docker-compose
+```
+
+```
+docker compose --version
+```
+
+![image](https://user-images.githubusercontent.com/99697182/173802087-1116ef22-825e-4411-88df-4d60cba75709.png)
+
 Selanjutnya saya akan menginstall jenkins nya dengan tutorial [ini ](https://www.youtube.com/watch?v=pMO26j2OUME)
 
 ```
@@ -162,7 +176,21 @@ ket : a0b45e544dc0 = container id
 
 kemudian copy initial setup nya = 7f4ed0dcd2524acbad364ed282e38633
 
+dan kita buka browser `103.55.38.183:8080`, dan pastekan code nya setelah itu klik `continue`
 
+![image](https://user-images.githubusercontent.com/99697182/173802819-464930f9-4278-4b1c-932e-a5041ec3dce8.png)
+
+pilih install sugested plugin
+
+![image](https://user-images.githubusercontent.com/99697182/173802945-5f6bb76a-c523-4bd7-98a4-a5bd1889aa44.png)
+
+dan kita tunggu prosesnya : 
+
+![image](https://user-images.githubusercontent.com/99697182/173804927-34ae245a-10db-4442-9d1a-ddabaf182901.png)
+
+disini saya akan melakukan retry :
+
+![image](https://user-images.githubusercontent.com/99697182/173805024-5d867144-508a-4b55-b8d8-53b9b9fd4cc4.png)
 
 
 
