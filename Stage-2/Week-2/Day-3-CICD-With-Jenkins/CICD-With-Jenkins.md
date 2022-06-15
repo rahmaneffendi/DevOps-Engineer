@@ -131,9 +131,36 @@ Setelah itu saya akan install docker
 
 ![image](https://user-images.githubusercontent.com/99697182/173794970-7ab39992-a000-47d6-ba45-30d45be03efc.png)
 
+![image](https://user-images.githubusercontent.com/99697182/173798415-32993d1c-e260-47a9-aa8c-f0bda92038b7.png)
 
+![image](https://user-images.githubusercontent.com/99697182/173798629-22e8c978-fac4-4444-bb96-60ef6b593738.png)
 
+![image](https://user-images.githubusercontent.com/99697182/173798782-978c487e-99a1-43bb-a68c-0707c706c06f.png)
 
+Selanjutnya saya akan menginstall jenkins nya dengan tutorial [ini ](https://www.youtube.com/watch?v=pMO26j2OUME)
+
+```
+docker run -p 8080:8080 -p 50000:50000 -d -v jenkins_home:/var/jenkins_home jenkins/jenkins:lts
+```
+
+![image](https://user-images.githubusercontent.com/99697182/173799962-d3ada71f-af5b-4cb2-95dd-c914b7a200be.png)
+
+```
+docker ps
+```
+
+![image](https://user-images.githubusercontent.com/99697182/173800142-6d31dd83-47d6-4d8e-9482-6fa1ee569818.png)
+
+```
+docker logs a0b45e544dc0
+```
+ket : a0b45e544dc0 = container id
+
+![image](https://user-images.githubusercontent.com/99697182/173800681-52c5eca3-45ed-4770-998f-cf6266200dbd.png)
+
+![image](https://user-images.githubusercontent.com/99697182/173800709-8b74c040-cd09-43c1-949f-a5b7c03887c4.png)
+
+kemudian copy initial setup nya = 7f4ed0dcd2524acbad364ed282e38633
 
 
 
