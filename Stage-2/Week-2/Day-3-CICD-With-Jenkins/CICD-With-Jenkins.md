@@ -307,7 +307,63 @@ Jangan Lupa juga untuk mengubah remotenya dan mengganti remotenya menjadi ssh
 
 ![image](https://user-images.githubusercontent.com/99697182/173868964-6e843526-4388-4caf-937d-bac8d0e165c9.png)
 
+Kemudian Kita coba buat script yang bernama jenkinsfile
 
+![image](https://user-images.githubusercontent.com/99697182/173869909-5771e9a6-d516-4127-a971-54921f1767e1.png)
+
+dan masukan script ini :
+
+```
+def secret = 'server'
+def server = 'app@103.172.204.174'
+def directory = 'wayshub-frontend'
+def branch = 'master'
+
+pipeline{
+    agent any
+    stages{
+        stage ('compose down &  pull'){
+            steps{
+                sshagent([secret]) {
+                    sh """ssh -o StrictHostKeyChecking=no ${server} << EOF
+                    cd ${directory}
+                    docker-compose down
+                    docker system prune -f
+                    git pull origin ${branch}
+                    exit
+                    EOF"""
+                }
+            }
+        }
+        stage ('docker build'){
+            steps{
+                sshagent([secret]) {
+                    sh """ssh -o StrictHostKeyChecking=no ${server} << EOF
+                    cd ${directory}
+                    docker-compose build
+                    exit
+                    EOF"""
+                }
+            }
+        }
+        stage ('docker up'){
+            steps{
+                sshagent([secret]) {
+                    sh """ssh -o StrictHostKeyChecking=no ${server} << EOF
+                    cd ${directory}
+                    docker-compose up -d
+                    exit
+                    EOF"""
+                }
+            }
+        }
+    }
+}
+```
+
+![image](https://user-images.githubusercontent.com/99697182/173871187-c2a93f8a-eb9d-478d-abab-2bff1e15ca9a.png)
+
+![image](https://user-images.githubusercontent.com/99697182/173871249-dc506372-953e-43af-bc58-47a169329f5e.png)
 
 
 # Step 8 - Membuat Job nya 
