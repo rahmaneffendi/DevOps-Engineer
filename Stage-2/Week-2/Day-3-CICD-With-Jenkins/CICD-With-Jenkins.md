@@ -279,6 +279,21 @@ kemudian agar dikenali, kita masukan id_rsa.pub nya ke authorized_keys
  
 ![image](https://user-images.githubusercontent.com/99697182/173861122-4870f493-7e2a-4975-952f-4deb97d09417.png)
 
+# Step 6 - Membuat Manage Credensial 
+
+Pertama kita masuk ke `dashboard` jenkins kita, kemudian kita klik `manage jenkins`, dan klik `manage credentials`, kemudian klik `jenkins`, klik `global credentials (unrestricted)`, klik `add credentials`,
+
+dan isi yang di perlukan, di bagian bawah masukan private ssh key server aplikasinya
+
+jika sudah klik ok
+
+![image](https://user-images.githubusercontent.com/99697182/173865302-363ae410-8932-422b-ad7a-27c4e3e4492e.png)
+
+nah disini kita sudah punya ssh key untuk masuk ke dalam servernya
+
+![image](https://user-images.githubusercontent.com/99697182/173865725-b74ef42b-fa61-4bd5-b3c6-b9888db1036f.png)
+
+# Step 7 - Membuat Job nya 
 
 
 
