@@ -218,6 +218,30 @@ and ready
 
 ![image](https://user-images.githubusercontent.com/99697182/173806266-314d09b8-31a8-439b-bbfe-e8a9251048c6.png)
 
+# Step 4 - Menghubungkan Local dan server dengan mengirimkan ssh key
+
+Sebelum mengirimkannya, pastikan kalau lokal kita sudah terhubung dengan github kita
+
+![image](https://user-images.githubusercontent.com/99697182/173843371-9e2bdcd3-aa36-4df7-8e51-de6fa51ec513.png)
+
+kita cek lokasi direktori yang akan di tuju
+
+![image](https://user-images.githubusercontent.com/99697182/173844998-81beaa9c-6905-4d2d-90ef-cf4cc810743a.png)
+
+```
+scp -r id_rsa id_rsa.pub rahman@103.55.38.183:/home/rahman/.ssh
+```
+![image](https://user-images.githubusercontent.com/99697182/173845229-4cc95ee2-5514-4a54-8c56-195036eb2a7a.png)
+
+jika sudah, kita bisa cek dan pastikan ssh key nya terhubung
+
+![image](https://user-images.githubusercontent.com/99697182/173845594-24153942-6ead-47ad-8ba0-ff682150cf00.png)
+
+kemudian agar jenkinsnya dikenali, kita masukan id_rsa.pub nya ke authorized_keys 
+
+![image](https://user-images.githubusercontent.com/99697182/173846071-14e65289-15b9-4174-8c60-6cbc5fd35ddf.png)
+
+![image](https://user-images.githubusercontent.com/99697182/173846172-58a05a20-266f-4590-9c37-9dde4f3480c4.png)
 
 
 
