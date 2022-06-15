@@ -83,10 +83,17 @@ Kemudian klik continue
 
 dan akan loading, usahakan koneksi nya lancar, agar proses loading tidak mengalami resiko gagal ataupun mengulang
 
-![image](https://user-images.githubusercontent.com/99697182/173773658-cce79f91-474f-42bf-bb71-d9eff0f6b122.png)
-
 ![image](https://user-images.githubusercontent.com/99697182/173773767-f2920263-25a6-4fb3-aab2-06f703ba44bb.png)
 
+disini saya dapat failed , dan akan saya retry 
+
+![image](https://user-images.githubusercontent.com/99697182/173774067-0ab1a332-93b3-40e7-afbd-973704b85d46.png)
+
+![image](https://user-images.githubusercontent.com/99697182/173774901-bde9632a-d23f-4f33-9cc2-4ac358bbe6a6.png)
+
+dan disini saya gagal lagi, akan saya retry lagi 
+
+![image](https://user-images.githubusercontent.com/99697182/173774984-edcf7ad6-9ce5-412d-83a4-f8c080e740d3.png)
 
 
 
