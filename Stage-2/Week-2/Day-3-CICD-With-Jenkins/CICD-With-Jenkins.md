@@ -243,6 +243,9 @@ kemudian agar jenkinsnya dikenali, kita masukan id_rsa.pub nya ke authorized_key
 
 ![image](https://user-images.githubusercontent.com/99697182/173846172-58a05a20-266f-4590-9c37-9dde4f3480c4.png)
 
+`disini, salah satu manfaatnya, agar ketika kita mau meremote tidak usah menggunakan password lagi`
+
+
 
 
 
