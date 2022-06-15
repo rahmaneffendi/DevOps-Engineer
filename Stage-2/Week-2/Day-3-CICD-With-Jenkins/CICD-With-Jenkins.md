@@ -247,8 +247,37 @@ kemudian agar jenkinsnya dikenali, kita masukan id_rsa.pub nya ke authorized_key
 
 ![image](https://user-images.githubusercontent.com/99697182/173847108-f172dc5f-12ff-4675-81b6-7f6e6908c0e5.png)
 
+## Dan Sekarang kita sambungkan juga dengan server aplikasi di tugas day 1 
 
+Spek Server apk kemarin :
 
+`App-Server : CPU : 2, RAM : 2, Disk : 20
+
+Ip Public = 103.172.204.174
+
+User 1 & Pwnya : ubuntu = Sembarang1
+
+User 2 & Pwnya : app = app`
+
+kita cek lokasi direktori yang akan di tuju 
+
+![image](https://user-images.githubusercontent.com/99697182/173859706-8c486d2a-e6ba-4bfa-b264-8b8e9252d19c.png)
+
+```
+scp -r id_rsa id_rsa.pub app@103.172.204.174:/home/app/.ssh
+```
+
+![image](https://user-images.githubusercontent.com/99697182/173860054-f7917815-820b-4852-9655-3515cbe5ff28.png)
+
+jika sudah, kita bisa cek dan pastikan ssh key nya terhubung 
+
+![image](https://user-images.githubusercontent.com/99697182/173860401-dfd4d599-9dd0-4943-87c9-e1d185647306.png)
+
+kemudian agar dikenali, kita masukan id_rsa.pub nya ke authorized_keys
+
+![image](https://user-images.githubusercontent.com/99697182/173861013-284c3cd1-e0ee-4d51-a612-6c3e441d056d.png)
+ 
+![image](https://user-images.githubusercontent.com/99697182/173861122-4870f493-7e2a-4975-952f-4deb97d09417.png)
 
 
 
