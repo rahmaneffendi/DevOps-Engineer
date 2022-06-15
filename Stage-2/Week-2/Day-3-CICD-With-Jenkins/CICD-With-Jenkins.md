@@ -125,6 +125,8 @@ sudo systemctl status jenkins
 
 ![image](https://user-images.githubusercontent.com/99697182/173794104-f5a11af1-6af5-41a4-aa20-1f20521d1ede.png)
 
+# Step 2 - Install Docker
+
 Setelah itu saya akan install docker
 
 ![image](https://user-images.githubusercontent.com/99697182/173795141-abe97657-ca15-4331-b44f-ce25f90cb663.png)
@@ -150,6 +152,8 @@ docker compose --version
 ```
 
 ![image](https://user-images.githubusercontent.com/99697182/173802087-1116ef22-825e-4411-88df-4d60cba75709.png)
+
+# Step 3 -Install Jenkins
 
 Selanjutnya saya akan menginstall jenkins nya dengan tutorial [ini ](https://www.youtube.com/watch?v=pMO26j2OUME) dan artikel [ini](http://www.dimasrio.com/2017/04/setup-dan-install-jenkins-docker.html), dan saya mengambil images dockernya dari [ini](https://hub.docker.com/r/jenkins/jenkins)
 
