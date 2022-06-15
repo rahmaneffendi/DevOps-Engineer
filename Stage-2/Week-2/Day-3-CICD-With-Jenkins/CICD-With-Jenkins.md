@@ -125,7 +125,7 @@ sudo systemctl status jenkins
 
 ![image](https://user-images.githubusercontent.com/99697182/173794104-f5a11af1-6af5-41a4-aa20-1f20521d1ede.png)
 
-# Step 2 - Install Docker
+# Step 3 - Install Docker
 
 Setelah itu saya akan install docker
 
@@ -153,7 +153,7 @@ docker compose --version
 
 ![image](https://user-images.githubusercontent.com/99697182/173802087-1116ef22-825e-4411-88df-4d60cba75709.png)
 
-# Step 3 -Install Jenkins
+# Step 4 -Install Jenkins
 
 Selanjutnya saya akan menginstall jenkins nya dengan tutorial [ini ](https://www.youtube.com/watch?v=pMO26j2OUME) dan artikel [ini](http://www.dimasrio.com/2017/04/setup-dan-install-jenkins-docker.html), dan saya mengambil images dockernya dari [ini](https://hub.docker.com/r/jenkins/jenkins)
 
@@ -218,7 +218,7 @@ and ready
 
 ![image](https://user-images.githubusercontent.com/99697182/173806266-314d09b8-31a8-439b-bbfe-e8a9251048c6.png)
 
-# Step 4 - Menghubungkan Local dan server dengan mengirimkan ssh key
+# Step 5 - Menghubungkan Local dengan server jenkins dan dengan server aplikasinya juga, dengan mengirimkan ssh key-nya
 
 Sebelum mengirimkannya, pastikan kalau lokal kita sudah terhubung dengan github kita
 
