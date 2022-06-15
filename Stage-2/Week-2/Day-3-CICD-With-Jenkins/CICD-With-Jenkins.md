@@ -48,13 +48,40 @@ sudo apt install jenkins
 sudo systemctl status jenkins
 ```
 
+![image](https://user-images.githubusercontent.com/99697182/173768942-41534acf-74b3-4722-9054-16dacb32c623.png)
+
 3. Sekarang masuk ke jenkins menggunakan web browser dengan port jenkins 8080
 
 ```
 103.55.38.183:8080
 ```
+![image](https://user-images.githubusercontent.com/99697182/173769515-18a5ca56-ad5a-4843-85e2-eafcad9ba831.png)
 
+4. Ikuti perintah ini dengan masukan administrative password dengan cat seperti berikut:
 
+![image](https://user-images.githubusercontent.com/99697182/173769933-4db44769-055b-491b-9620-9956d0d85fe2.png)
+
+```
+sudo cat /var/lib/jenkins/secrets/initialAdminPassword
+```
+
+![image](https://user-images.githubusercontent.com/99697182/173770100-b3d6608a-4760-479b-ba2f-babdc7160453.png)
+
+Copy paste Kode tesebut ke jenkins tadi
+
+```
+bf329c3346cd43b79a689b23a3dd0c13
+```
+
+![image](https://user-images.githubusercontent.com/99697182/173770263-73441f31-d49c-42fc-b19a-027ae867e44b.png)
+
+Kemudian klik continue
+
+5. kemudian kita pilih install suggested plugin
+
+![image](https://user-images.githubusercontent.com/99697182/173770426-ecc783b1-794c-4edf-847c-d298ff1680a4.png)
+
+dan akan loading, usahakan koneksi nya lancar, agar proses loading tidak mengalami resiko gagal ataupun mengulang
 
 
 
