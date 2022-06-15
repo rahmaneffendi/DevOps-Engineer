@@ -293,7 +293,24 @@ nah disini kita sudah punya ssh key untuk masuk ke dalam servernya
 
 ![image](https://user-images.githubusercontent.com/99697182/173865725-b74ef42b-fa61-4bd5-b3c6-b9888db1036f.png)
 
-# Step 7 - Membuat Job nya 
+# Step 7 - Membuat Repository di Github, push & meremotenya  
+
+Pertama kita pastikan dulu server aplikasinya sudah ter-config dengan github
+
+![image](https://user-images.githubusercontent.com/99697182/173867578-f9ad117e-2e63-482c-9286-699b1cc26654.png)
+
+Kemudian Jangan Lupa untuk membuat Repository Untuk Apk Frontendnya 
+
+![image](https://user-images.githubusercontent.com/99697182/173868210-2c8509d1-db48-4530-897a-cd194d99c35c.png)
+
+Jangan Lupa juga untuk mengubah remotenya dan mengganti remotenya menjadi ssh
+
+![image](https://user-images.githubusercontent.com/99697182/173868964-6e843526-4388-4caf-937d-bac8d0e165c9.png)
+
+
+
+
+# Step 8 - Membuat Job nya 
 
 
 
