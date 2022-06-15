@@ -151,7 +151,13 @@ docker compose --version
 
 ![image](https://user-images.githubusercontent.com/99697182/173802087-1116ef22-825e-4411-88df-4d60cba75709.png)
 
-Selanjutnya saya akan menginstall jenkins nya dengan tutorial [ini ](https://www.youtube.com/watch?v=pMO26j2OUME)
+Selanjutnya saya akan menginstall jenkins nya dengan tutorial [ini ](https://www.youtube.com/watch?v=pMO26j2OUME) dan artikel [ini](http://www.dimasrio.com/2017/04/setup-dan-install-jenkins-docker.html), dan saya mengambil images dockernya dari [ini](https://hub.docker.com/r/jenkins/jenkins)
+
+```
+docker pull jenkins/jenkins
+```
+
+![image](https://user-images.githubusercontent.com/99697182/173837538-2149b2b1-a12c-47db-84dd-44225800b383.png)
 
 ```
 docker run -p 8080:8080 -p 50000:50000 -d -v jenkins_home:/var/jenkins_home jenkins/jenkins:lts
