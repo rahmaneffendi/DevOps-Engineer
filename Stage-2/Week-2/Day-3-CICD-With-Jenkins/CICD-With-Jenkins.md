@@ -361,12 +361,43 @@ pipeline{
 }
 ```
 
-![image](https://user-images.githubusercontent.com/99697182/173871187-c2a93f8a-eb9d-478d-abab-2bff1e15ca9a.png)
+![image](https://user-images.githubusercontent.com/99697182/173874834-6b5c6da4-3495-4cd7-b395-d50432b05297.png)
 
-![image](https://user-images.githubusercontent.com/99697182/173871249-dc506372-953e-43af-bc58-47a169329f5e.png)
+![image](https://user-images.githubusercontent.com/99697182/173874900-a545cbd9-3fea-4adf-ae18-3da3d90970c7.png)
+
+setelah itu kita add, commit & push 
+
+![image](https://user-images.githubusercontent.com/99697182/173875332-e27c5fa9-79b3-41c3-b456-8d182e5f0265.png)
+
+kemudian kita cek
+
+![image](https://user-images.githubusercontent.com/99697182/173875475-6c90a182-30f0-4ba7-a8d5-35b8d8ed851e.png)
 
 
-# Step 8 - Membuat Job nya 
+# Step 8 - Membuat Pipe line
+
+Kembali ke `dashboard` Jenkins, dan klik `New Item` , beri nama itemnya dan klik `pipeline` lalu klik `OK`
+
+![image](https://user-images.githubusercontent.com/99697182/173872655-50619436-abd7-4f60-9c4a-60089031018f.png)
+
+Kemudian Isi seperti gambar di bawah ini
+
+![image](https://user-images.githubusercontent.com/99697182/173873439-14ffcd82-25b6-4c61-9ae6-01628f6b3448.png)
+
+Kemudian Apply & Save 
+
+![image](https://user-images.githubusercontent.com/99697182/173875056-3faed085-87a9-48ac-aa17-b64d46eb4b4d.png)
+
+kemudian kita klik `Build Now`, dan dia akan otomatis nge-build, Untuk Build pertama harus manual
+
+![image](https://user-images.githubusercontent.com/99697182/173875990-3ce772d0-4bb5-433d-8e8d-227143836562.png)
+
+dan disini saya mendapat error
+
+![image](https://user-images.githubusercontent.com/99697182/173876201-0517034d-6ddc-47a5-9527-2505dc14b718.png)
+
+
+# Step 9 - Membuat Job nya 
 
 
 
