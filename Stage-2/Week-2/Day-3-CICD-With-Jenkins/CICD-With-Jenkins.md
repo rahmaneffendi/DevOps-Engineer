@@ -101,4 +101,57 @@ gagal lagi, akan saya retry lagi
 
 ### Cat : Dari ada instruksi untuk instalasi jenkins nya menggunakan docker
 
+disini, saya akan stop dulu jenkinsnya :
+
+```
+sudo systemctl stop jenkins 
+```
+
+![image](https://user-images.githubusercontent.com/99697182/173792142-991a3a87-d2d0-49cb-b8d9-1b4a7b9441df.png)
+
+dan saya akan coba uninstall nya :
+
+```
+sudo apt-get remove --purge jenkins
+```
+
+![image](https://user-images.githubusercontent.com/99697182/173793755-01c39771-0395-47e2-a546-4a52540fb3e6.png)
+
+kita cek 
+
+```
+sudo systemctl status jenkins
+```
+
+![image](https://user-images.githubusercontent.com/99697182/173794104-f5a11af1-6af5-41a4-aa20-1f20521d1ede.png)
+
+Setelah itu saya akan install docker
+
+![image](https://user-images.githubusercontent.com/99697182/173795141-abe97657-ca15-4331-b44f-ce25f90cb663.png)
+
+![image](https://user-images.githubusercontent.com/99697182/173794970-7ab39992-a000-47d6-ba45-30d45be03efc.png)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
