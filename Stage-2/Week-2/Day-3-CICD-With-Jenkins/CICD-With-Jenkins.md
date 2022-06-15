@@ -192,7 +192,21 @@ disini saya akan melakukan retry :
 
 ![image](https://user-images.githubusercontent.com/99697182/173805024-5d867144-508a-4b55-b8d8-53b9b9fd4cc4.png)
 
+![image](https://user-images.githubusercontent.com/99697182/173805429-5bab78cc-53ba-42c0-8d87-9e4e2494dc7e.png)
 
+dan ketika sudah loading selesai, semuanya berhasil terinstall, kita akan di minta untuk membuat user admin pertama  
+
+![image](https://user-images.githubusercontent.com/99697182/173805853-7c381a7f-8f08-4148-bd03-82162b79e6d8.png)
+
+![image](https://user-images.githubusercontent.com/99697182/173806088-1c689d8b-ac58-49f9-82b9-9b2daa96f8bb.png)
+
+klik save & finish
+
+![image](https://user-images.githubusercontent.com/99697182/173806143-c5bce7c3-bd60-4ad1-8616-710fb325276d.png)
+
+and ready
+
+![image](https://user-images.githubusercontent.com/99697182/173806266-314d09b8-31a8-439b-bbfe-e8a9251048c6.png)
 
 
 
