@@ -109,8 +109,17 @@ docker container start (container id)
 ![image](https://user-images.githubusercontent.com/99697182/174067004-0213f747-e75a-4047-bec4-6b4c40dc0f16.png)
 
 
+## Setelah ini saya sudah membuat revers proxy dan ssl certbot nya untuk jenkinsnya, dan saya mencoba masuk ke jenkinsnya 
 
+![image](https://user-images.githubusercontent.com/99697182/174069250-5969eef6-9caf-4d97-8325-e843baf1edee.png)
 
+![image](https://user-images.githubusercontent.com/99697182/174071230-27c40804-242d-4b5c-bed3-bedb9dabca9a.png)
+
+![image](https://user-images.githubusercontent.com/99697182/174072291-aa435029-14fb-4799-8ce0-b2d01ae7026b.png)
+
+ini tampilan awal jenkins nya 
+
+![image](https://user-images.githubusercontent.com/99697182/174072380-1fb01704-96e2-4f5b-9fde-106a908f5ce5.png)
 
 
 
