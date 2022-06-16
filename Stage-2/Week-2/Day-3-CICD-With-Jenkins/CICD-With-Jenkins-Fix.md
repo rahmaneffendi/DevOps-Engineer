@@ -466,6 +466,8 @@ Jika back end sudah selesai sekarang kita akan ke front end dan mengkonfigurasi 
 
 ![image](https://user-images.githubusercontent.com/99697182/174112203-4edafa45-2b5d-47e6-b05f-51eef9cd6b63.png)
 
+disini kita push lagi ke github dan otomatis akan ter-build di jenkinsnya
+
 
 
 
