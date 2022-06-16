@@ -28,11 +28,16 @@ user = jenkins, pw = Sembarang1, public IP : 103.214.113.82
 sudo apt  install docker.io
 ```
 
+![image](https://user-images.githubusercontent.com/99697182/174063955-2b2808ae-6145-437b-bc56-0cd38fb9b681.png)
+
+![image](https://user-images.githubusercontent.com/99697182/174064219-1477b2fc-0f33-4b6f-86e6-9cdae8aed8fa.png)
+
 Kemudian saya akan memberikan akses root kepada docker supaya saat menjalankan docker tidak perlu menggunakan sudo
 
 ```
 sudo usermod -aG docker $user
 ```
+![image](https://user-images.githubusercontent.com/99697182/174064309-e3d038c2-db02-47b4-9948-3c0da18fa372.png)
 
 Kemudian relogin
 
@@ -42,6 +47,34 @@ Login Docker
 docker login
 ```
 
+![image](https://user-images.githubusercontent.com/99697182/174064482-2d217f2a-c784-4edb-bcef-48f42fd0de8a.png)
+
+# Install Jenkins on Docker
+
+```
+docker run -p 8080:8080 -p 50000:50000 -v jenkins_home:/var/jenkins_home jenkins/jenkins:lts-jdk11
+```
+
+![image](https://user-images.githubusercontent.com/99697182/174064850-dbe973ba-d66c-4595-a53e-ecdc8a6d439e.png)
+
+![image](https://user-images.githubusercontent.com/99697182/174064962-15ed23f2-5a3b-46d7-8e18-4613dfd15664.png)
+
+disini saya mendapatkan code untuk mengakses jenkinsnya
+
+```
+2eb05dc836ea49c1b9ee5f23fd700c6a
+```
+
+# Install Nginx
+
+```
+sudo apt install nginx
+```
+![image](https://user-images.githubusercontent.com/99697182/174065384-c6cf0c28-45da-4ddf-9bfd-26ffdeedc199.png)
+
+Kemudian cek pada web browser
+
+![image](https://user-images.githubusercontent.com/99697182/174065630-3fbc003e-ba5a-4750-b348-96dead6bb5a8.png)
 
 
 
