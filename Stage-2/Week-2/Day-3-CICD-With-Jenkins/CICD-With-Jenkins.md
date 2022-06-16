@@ -293,6 +293,21 @@ nah disini kita sudah punya ssh key untuk masuk ke dalam servernya
 
 ![image](https://user-images.githubusercontent.com/99697182/173865725-b74ef42b-fa61-4bd5-b3c6-b9888db1036f.png)
 
+
+# install ssh
+
+![image](https://user-images.githubusercontent.com/99697182/173989485-e5ac5c2b-dbf0-4509-9327-f40a89c09a99.png)
+
+![image](https://user-images.githubusercontent.com/99697182/173989509-d6c3e5a3-6e75-4209-b28b-217410eb7d95.png)
+
+![image](https://user-images.githubusercontent.com/99697182/173989553-196992ed-33d2-490e-98dc-9eda60cb286a.png)
+
+![image](https://user-images.githubusercontent.com/99697182/173989578-e0812962-38fa-4287-bfde-7e367eb9535e.png)
+
+![image](https://user-images.githubusercontent.com/99697182/173989592-64d331c6-be1e-40ce-a6ab-1b3c60200e69.png)
+
+disini saya restart
+
 # Step 7 - Membuat Repository di Github, push & meremotenya  
 
 Pertama kita pastikan dulu server aplikasinya sudah ter-config dengan github
