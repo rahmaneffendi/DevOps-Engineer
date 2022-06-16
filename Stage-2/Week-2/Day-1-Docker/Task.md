@@ -118,15 +118,6 @@ docker container exec -it database bash
 
 ![image](https://user-images.githubusercontent.com/99697182/173495847-d5dac6db-b4c9-48f7-b7e7-491c3ebd78cc.png)
 
-masuk ke mysql nya dan masukan password : Are132465798
-
-![image](https://user-images.githubusercontent.com/99697182/173496247-8fb8bbff-83cf-4da6-99cc-805e20eaa400.png)
-
-Show Databases
-
-![image](https://user-images.githubusercontent.com/99697182/173496405-d3658537-2d81-4742-ac89-6e857f7dbe52.png)
-
-
 ## Langkah 4 - Setup Frontend & Backend
 
 1. Sekarang saya clone front end dan back end nya
@@ -343,6 +334,13 @@ http://103.172.204.174:3333/login
 
 ![image](https://user-images.githubusercontent.com/99697182/173359819-ea0009e4-b20b-4eae-9a52-581fec711a11.png)
 
+masuk ke mysql nya dan masukan password : Are132465798
+
+![image](https://user-images.githubusercontent.com/99697182/173496247-8fb8bbff-83cf-4da6-99cc-805e20eaa400.png)
+
+Show Databases
+
+![image](https://user-images.githubusercontent.com/99697182/173496405-d3658537-2d81-4742-ac89-6e857f7dbe52.png)
 
 
 ## Langkah 5 - Setup Gateway (Proxy & SSL)
