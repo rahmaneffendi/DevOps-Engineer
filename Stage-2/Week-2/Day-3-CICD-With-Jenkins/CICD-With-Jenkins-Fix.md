@@ -289,4 +289,145 @@ masukan link dan save
 
 ![image](https://user-images.githubusercontent.com/99697182/174085810-32b84ae7-fdb3-4049-9da7-db54e1ccf9c7.png)
 
+# Build Database Secara Manual
+
+```
+docker pull mysql
+```
+
+![image](https://user-images.githubusercontent.com/99697182/174096266-0c0a1316-175a-484f-b7af-8cce619d6cf7.png)
+
+![image](https://user-images.githubusercontent.com/99697182/174096366-fbe8239b-69cc-43c4-95ef-b42298d4c668.png)
+
 # Build BE Nya
+
+```
+git clone https://github.com/dumbwaysdev/wayshub-backend
+```
+
+![image](https://user-images.githubusercontent.com/99697182/174095648-0dc9ea9c-88a5-487e-ad61-41fbd3fa0c68.png)
+
+Sekarang saya akan run images mysql dan membuat volume dengan directory mysql-data
+
+```
+docker run -d --name database -p 3306:3306 -v ~/mysql-data:/var/lib/mysql -e MYSQL_ROOT_PASSWORD=Are132465798 -e MYSQL_DATABASE=wayshub mysql:latest
+```
+
+![image](https://user-images.githubusercontent.com/99697182/174097022-8eef6861-e250-4c71-b62e-406f017d0717.png)
+
+![image](https://user-images.githubusercontent.com/99697182/174097373-2e83eba2-5e5e-4d3b-b2b3-b753ad3a29fb.png)
+
+Sekarang konfigurasi backend ke database dengan cara:
+
+Masuk ke directory config dan edit file config.json
+
+```
+nano config.json
+```
+
+![image](https://user-images.githubusercontent.com/99697182/174098558-8fabe406-f902-4818-8b4b-cc3ab79eec66.png)
+
+Kembali ke folder backend dan buat file bernama dockerfile berisi:
+
+```
+FROM node:dubnium-alpine3.11
+WORKDIR /usr/app
+COPY . .
+RUN npm install
+RUN npm install sequelize-cli -g
+RUN npx sequelize db:migrate
+EXPOSE 5000
+CMD [ "npm", "start" ]
+```
+
+![image](https://user-images.githubusercontent.com/99697182/174098861-c9174b21-a738-48c8-988b-158176d1ebdf.png)
+
+Sekarang buat file docker-compose.yml dengan isi berikut:
+
+```
+version: '3.8'
+services:
+ backend:
+   build: .
+   container_name: be
+   image: arahmane/wayshub-be:stable
+   stdin_open: true
+   ports:
+    - 5555:5000
+```
+
+![image](https://user-images.githubusercontent.com/99697182/174099290-208d5cd7-f41e-4dde-8e4c-db768037a860.png)
+
+```
+def secret = 'rahman'
+def server = 'jenkins@103.214.113.82'
+def dir = 'wayshub-backend'
+def branch = 'main'
+
+pipeline{
+	agent any
+	stages{
+		stage ('Delete container and images & git pull'){
+			steps{
+				sshagent([secret]) {
+					sh """ssh -o StrictHostKeyChecking=no ${server} << EOF
+					cd ${dir}
+					docker-compose down
+					docker system prune -f
+					git pull origin ${branch}
+					exit
+					EOF"""
+				}
+			}
+		}
+	stage ('Build Images'){
+                        steps{
+                                sshagent([secret]) {
+                                        sh """ssh -o StrictHostKeyChecking=no ${server} << EOF
+                                        cd ${dir}
+                                        docker-compose build
+                                        exit
+                                        EOF"""
+                                }
+                        }
+                }
+	stage ('Deploy Container'){
+                        steps{
+                                sshagent([secret]) {
+                                        sh """ssh -o StrictHostKeyChecking=no ${server} << EOF
+                                        cd ${dir}
+                                        docker-compose up -d
+                                        exit
+                                        EOF"""
+                                }
+				
+                        }
+		
+               }
+
+	}
+	
+}
+```
+
+![image](https://user-images.githubusercontent.com/99697182/174100014-af111b02-120a-4924-bd6e-7b25f32953b7.png)
+
+![image](https://user-images.githubusercontent.com/99697182/174100306-987362e9-8526-4ecc-9734-9d50083a8a48.png)
+
+![image](https://user-images.githubusercontent.com/99697182/174100568-312d0899-898a-4349-85cf-70c18c9c4150.png)
+
+kita ke jenkins lagi membuat job baru dan kita build
+
+
+
+
+
+
+
+
+
+
+
+
+
+
