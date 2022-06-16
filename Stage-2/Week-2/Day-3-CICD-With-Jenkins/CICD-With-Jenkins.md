@@ -510,6 +510,18 @@ Klik Build Now
 
 ![image](https://user-images.githubusercontent.com/99697182/174017915-54ba8b12-8803-4ed3-98c3-75daf94d0bf4.png)
 
+Buat dockerfile dan docker-compose nya
+
+![image](https://user-images.githubusercontent.com/99697182/174019206-0eee2a58-d812-4111-98f0-35ea9881ae84.png)
+
+![image](https://user-images.githubusercontent.com/99697182/174019462-d79a8687-aa6e-4295-ad62-60133814f597.png)
+
+![image](https://user-images.githubusercontent.com/99697182/174019630-8c4c4054-1b0a-4f5e-91a1-7373a20f8c6a.png)
+
+![image](https://user-images.githubusercontent.com/99697182/174020230-744c26a6-1af5-4c08-b63e-dada23a5eeb7.png)
+
+jangan lupa untuk push lagi
+
 
 
 
