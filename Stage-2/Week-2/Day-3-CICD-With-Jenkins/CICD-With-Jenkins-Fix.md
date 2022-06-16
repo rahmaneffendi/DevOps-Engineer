@@ -468,6 +468,24 @@ Jika back end sudah selesai sekarang kita akan ke front end dan mengkonfigurasi 
 
 disini kita push lagi ke github dan otomatis akan ter-build di jenkinsnya
 
+disini yang betul itu di nomor 4, kalau nomor 5 itu kepencet
+
+![image](https://user-images.githubusercontent.com/99697182/174115013-95f116b5-d961-44b2-905a-0180e6653602.png)
+
+# Kita cek browser
+
+bisa registrasi
+
+![image](https://user-images.githubusercontent.com/99697182/174115315-7e687d89-d896-4942-ae66-b668e41be23f.png)
+
+dan bisa masuk juga
+
+![image](https://user-images.githubusercontent.com/99697182/174115570-e7bebbf3-f112-48e1-8692-70720f48f4b5.png)
+
+
+# cat :
+
+disini saya ada yang kurang yaitu, memasukan databsenya ke direktory dan uploadnya ke github
 
 
 
