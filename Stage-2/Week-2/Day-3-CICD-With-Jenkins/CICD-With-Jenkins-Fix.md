@@ -260,6 +260,25 @@ disini kita berhasil
 
 Sudah berhasil di build dan deploy selanjutnya saya akan cek image yang barusan dibuat pada docker
 
+![image](https://user-images.githubusercontent.com/99697182/174084212-386baff1-af42-4849-b1b6-3569d751e8b1.png)
 
+![image](https://user-images.githubusercontent.com/99697182/174084516-0e4f44b5-59b6-4117-b05d-90117f16204c.png)
+
+Kemudian cek melalui web browser
+
+```
+103.214.113.82:3030
+```
+![image](https://user-images.githubusercontent.com/99697182/174084676-b1eb7a20-091e-4925-8ba4-dfd9797384e5.png)
+
+# Webhook for Jenkins
+
+![image](https://user-images.githubusercontent.com/99697182/174085409-7b7be76c-4f97-4f57-a832-2161bb3fd794.png)
+
+masukan link dan save 
+
+![image](https://user-images.githubusercontent.com/99697182/174085722-c3fb4de6-74d2-4635-af27-2c36dea9685b.png)
+
+![image](https://user-images.githubusercontent.com/99697182/174085810-32b84ae7-fdb3-4049-9da7-db54e1ccf9c7.png)
 
 
