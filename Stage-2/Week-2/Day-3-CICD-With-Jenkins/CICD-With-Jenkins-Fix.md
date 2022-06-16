@@ -1,5 +1,3 @@
-# Bismillah
-
 # CI/CD JENKINS
 
 ## Apa itu CI/CD?
@@ -121,9 +119,146 @@ ini tampilan awal jenkins nya
 
 ![image](https://user-images.githubusercontent.com/99697182/174072380-1fb01704-96e2-4f5b-9fde-106a908f5ce5.png)
 
+# Menghubungkan Github dengan mengirimkan ssh key
 
+![image](https://user-images.githubusercontent.com/99697182/174073054-d1e539b0-3a09-4413-af28-c71cca2d1ab6.png)
 
+buat authorized_keys dulu di lokal
 
+![image](https://user-images.githubusercontent.com/99697182/174073425-463413d2-2b51-47fe-baef-bad7feec2f16.png)
+
+![image](https://user-images.githubusercontent.com/99697182/174073356-c6bc1d5c-73cc-4402-b330-fbdf3ba09a58.png)
+
+kemudian saya akan memberikan ssh dari local menuju server jenkins saya
+
+```
+scp -r id_rsa id_rsa.pub authorized_keys jenkins@103.214.113.82:/home/jenkins/.ssh
+```
+
+![image](https://user-images.githubusercontent.com/99697182/174074212-1c733fea-9b10-46ef-8aeb-2bbed532a368.png)
+
+![image](https://user-images.githubusercontent.com/99697182/174074361-e106071d-fe4f-4209-9c2a-08e2b173c9c5.png)
+
+# Create a job
+
+![image](https://user-images.githubusercontent.com/99697182/174074602-d1eb9ecd-bc4a-4c14-ba78-be5d6dc61c9d.png)
+
+![image](https://user-images.githubusercontent.com/99697182/174074688-d1e15ca7-472d-4bdc-b00d-e0a6f7b5eb82.png)
+
+# Add Credential
+
+![image](https://user-images.githubusercontent.com/99697182/174075538-cc29343d-13d4-4251-a593-b04a790a54a6.png)
+
+![image](https://user-images.githubusercontent.com/99697182/174075507-6eb2bada-2b1b-42e1-9b7b-e407cbc8c139.png)
+
+# Integrasi dengan git
+
+Langkah pertama saya akan membuat repository baru pada github
+
+![image](https://user-images.githubusercontent.com/99697182/174075928-b3a1e2a4-738c-4a23-b04e-40e7e4ea03a1.png)
+
+![image](https://user-images.githubusercontent.com/99697182/174076437-7b36819b-df1e-4c56-aecb-3a8986e11a55.png)
+
+![image](https://user-images.githubusercontent.com/99697182/174076583-9b779731-5b6d-4a97-8489-035cb02e2fc4.png)
+
+# Build FE
+
+Membuat jenkinsfile
+
+![image](https://user-images.githubusercontent.com/99697182/174076867-2d57534c-adc5-45a4-9152-2330e4a898bd.png)
+
+```
+def secret = 'rahman'
+def server = 'jenkins@103.214.113.82'
+def directory = 'wayshub-frontend'
+def branch = 'main'
+
+pipeline{
+    agent any
+    stages{
+        stage ('compose down &  pull'){
+            steps{
+                sshagent([secret]) {
+                    sh """ssh -o StrictHostKeyChecking=no ${server} << EOF
+                    cd ${directory}
+                    docker-compose down
+                    docker system prune -f
+                    git pull origin ${branch}
+                    exit
+                    EOF"""
+                }
+            }
+        }
+        stage ('docker build'){
+            steps{
+                sshagent([secret]) {
+                    sh """ssh -o StrictHostKeyChecking=no ${server} << EOF
+                    cd ${directory}
+                    docker-compose build
+                    exit
+                    EOF"""
+                }
+            }
+        }
+        stage ('docker up'){
+            steps{
+                sshagent([secret]) {
+                    sh """ssh -o StrictHostKeyChecking=no ${server} << EOF
+                    cd ${directory}
+                    docker-compose up -d
+                    exit
+                    EOF"""
+                }
+            }
+        }
+    }
+}
+
+```
+
+![image](https://user-images.githubusercontent.com/99697182/174077234-df09727f-a824-49b9-9dfe-cd14569a6769.png)
+
+![image](https://user-images.githubusercontent.com/99697182/174077306-afb48b4f-a9d4-4f7b-96d0-0e1b2dad9d81.png)
+
+![image](https://user-images.githubusercontent.com/99697182/174079070-207a6617-e21c-4c24-a6f5-b0f3e03d184f.png)
+
+![image](https://user-images.githubusercontent.com/99697182/174078550-8abbc9d3-e59b-4d80-810c-ffe9a838a7b3.png)
+
+![image](https://user-images.githubusercontent.com/99697182/174079017-54cc945e-4322-4876-a94b-66bad56d7db3.png)
+
+![image](https://user-images.githubusercontent.com/99697182/174079189-bdc3e6d2-b353-4c53-8010-b25601eb4583.png)
+
+# Configure Pipeline
+
+![image](https://user-images.githubusercontent.com/99697182/174077588-e4c17eb2-4366-4f63-bfc7-2d5ec62f095d.png)
+
+![image](https://user-images.githubusercontent.com/99697182/174077749-0bb69674-7a0c-44bb-b68a-e4c5df6df7a9.png)
+
+![image](https://user-images.githubusercontent.com/99697182/174077823-cf857851-8126-494f-9eb9-abff5293cd0f.png)
+
+klik build now 
+
+dan saya gagal lagi
+
+![image](https://user-images.githubusercontent.com/99697182/174079562-32a35cdd-ec75-4dda-bb42-ab298e038ca2.png)
+
+disini saya coba install plugin
+
+![image](https://user-images.githubusercontent.com/99697182/174080382-3bfed987-81da-46b2-a37c-82634c5be4f4.png)
+
+![image](https://user-images.githubusercontent.com/99697182/174080888-7a51d7f8-5e1b-4f11-99fa-3638bc416ed6.png)
+
+disini saya blum install compose nya
+
+![image](https://user-images.githubusercontent.com/99697182/174083110-c959e1b1-a55b-4abd-ac21-b5c685e3ce25.png)
+
+![image](https://user-images.githubusercontent.com/99697182/174082115-91484694-3204-4079-8620-bf46bd3b1a57.png)
+
+disini kita berhasil
+
+![image](https://user-images.githubusercontent.com/99697182/174083778-b32dff40-7577-4f84-81eb-7411af2a1619.png)
+
+Sudah berhasil di build dan deploy selanjutnya saya akan cek image yang barusan dibuat pada docker
 
 
 
