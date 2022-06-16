@@ -431,9 +431,84 @@ Kemudian Saya buat repository baru dan meremotenya
 
 ![image](https://user-images.githubusercontent.com/99697182/174015169-b3b2f183-5fba-48e3-b891-1a628e9417b9.png)
 
-dan saya akan melakukan push 
+git config
 
+![image](https://user-images.githubusercontent.com/99697182/174015866-a086cfa4-86a5-44d7-bc0f-c35dbee55301.png)
 
+buat Script Jenkinsfile
+
+![image](https://user-images.githubusercontent.com/99697182/174016861-d7c1efba-8d66-43e2-8f02-53098c9b9bcb.png)
+
+```
+def secret = 'rahman'
+def server = 'rahman@103.55.38.183'
+def directory = 'wayshub-frontend'
+def branch = 'main'
+
+pipeline{
+    agent any
+    stages{
+        stage ('compose down &  pull'){
+            steps{
+                sshagent([secret]) {
+                    sh """ssh -o StrictHostKeyChecking=no ${server} << EOF
+                    cd ${directory}
+                    docker-compose down
+                    docker system prune -f
+                    git pull origin ${branch}
+                    exit
+                    EOF"""
+                }
+            }
+        }
+        stage ('docker build'){
+            steps{
+                sshagent([secret]) {
+                    sh """ssh -o StrictHostKeyChecking=no ${server} << EOF
+                    cd ${directory}
+                    docker-compose build
+                    exit
+                    EOF"""
+                }
+            }
+        }
+        stage ('docker up'){
+            steps{
+                sshagent([secret]) {
+                    sh """ssh -o StrictHostKeyChecking=no ${server} << EOF
+                    cd ${directory}
+                    docker-compose up -d
+                    exit
+                    EOF"""
+                }
+            }
+        }
+    }
+}
+
+```
+
+![image](https://user-images.githubusercontent.com/99697182/174016689-efa4603e-344e-4155-9dcb-b61239c8d850.png)
+
+![image](https://user-images.githubusercontent.com/99697182/174016760-eeef310f-9f12-4742-b917-dfddf25813af.png)
+
+Push Ke github 
+
+![image](https://user-images.githubusercontent.com/99697182/174017017-5348d346-9d1e-41e0-8d3d-11121f440773.png)
+
+![image](https://user-images.githubusercontent.com/99697182/174017070-e4b5f125-7064-4733-9a3e-683f9b7e7707.png)
+
+## Configure Pipline 
+
+![image](https://user-images.githubusercontent.com/99697182/174017308-7bb2326c-fed7-414f-aebb-16a16a116afc.png)
+
+![image](https://user-images.githubusercontent.com/99697182/174017499-e5aafeb0-f446-4fca-b10b-9ac056fa8c8d.png)
+
+![image](https://user-images.githubusercontent.com/99697182/174017663-754d1ed2-a9b7-4816-a4ec-a675c101a50b.png)
+
+Klik Build Now
+
+![image](https://user-images.githubusercontent.com/99697182/174017915-54ba8b12-8803-4ed3-98c3-75daf94d0bf4.png)
 
 
 
