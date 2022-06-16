@@ -415,7 +415,25 @@ dan disini saya mendapat error
 ![image](https://user-images.githubusercontent.com/99697182/173876201-0517034d-6ddc-47a5-9527-2505dc14b718.png)
 
 
-# Step 9 - Membuat Job nya 
+## Disini Saya Akan Mengalihkan Deploy Apilaksinya, Saya akan Arahkan Ke server jenkins Sesuai Instruksi baru
+
+Pertama, Akan Saya Clone Aplikasinya di server jenkins 
+
+```
+git clone https://github.com/dumbwaysdev/wayshub-frontend
+```
+
+![image](https://user-images.githubusercontent.com/99697182/174014505-09431a28-c616-4bb2-8fbf-3dcf20419326.png)
+
+Kemudian Saya buat repository baru dan meremotenya 
+
+![image](https://user-images.githubusercontent.com/99697182/174014845-d454e6ea-8738-4f2b-9f66-c147e73c2045.png)
+
+![image](https://user-images.githubusercontent.com/99697182/174015169-b3b2f183-5fba-48e3-b891-1a628e9417b9.png)
+
+dan saya akan melakukan push 
+
+
 
 
 
