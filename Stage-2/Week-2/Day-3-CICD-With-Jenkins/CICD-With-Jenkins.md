@@ -528,6 +528,16 @@ dan masih gagal
 
 ![image](https://user-images.githubusercontent.com/99697182/174020673-ba252069-8ff0-4fe2-a562-3c124e2cdffb.png)
 
+dari sini saya mencari tau bisa gagal dari mana
+
+saya coba2 buat network
+
+```
+ef681f9da3a852d481c6ac247b4699fbe27dd6088eaaf0c5e535dfbb91e200de
+```
+
+![image](https://user-images.githubusercontent.com/99697182/174046715-75c11fa5-da9d-471b-93af-6017ef61d8ee.png)
+
 
 
 
