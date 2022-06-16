@@ -271,7 +271,15 @@ Kemudian cek melalui web browser
 ```
 ![image](https://user-images.githubusercontent.com/99697182/174084676-b1eb7a20-091e-4925-8ba4-dfd9797384e5.png)
 
-# Webhook for Jenkins
+### Reverse Proxy untuk frontend
+
+![image](https://user-images.githubusercontent.com/99697182/174093819-5bc3cefd-4837-40ae-8a9a-4e8c78343594.png)
+
+![image](https://user-images.githubusercontent.com/99697182/174094689-8eee2ae5-8743-4311-9b01-96866a3dcda7.png)
+
+![image](https://user-images.githubusercontent.com/99697182/174094785-11439933-1105-49d1-8399-de496b161f94.png)
+
+# Webhook for Jenkins Frontendnya 
 
 ![image](https://user-images.githubusercontent.com/99697182/174085409-7b7be76c-4f97-4f57-a832-2161bb3fd794.png)
 
@@ -281,4 +289,4 @@ masukan link dan save
 
 ![image](https://user-images.githubusercontent.com/99697182/174085810-32b84ae7-fdb3-4049-9da7-db54e1ccf9c7.png)
 
-
+# Build BE Nya
