@@ -76,8 +76,37 @@ Kemudian cek pada web browser
 
 ![image](https://user-images.githubusercontent.com/99697182/174065630-3fbc003e-ba5a-4750-b348-96dead6bb5a8.png)
 
+# Setup network jenkins
 
+```
+docker network create jenkins
+```
 
+![image](https://user-images.githubusercontent.com/99697182/174066077-0970c1e9-1ce6-4f56-80d6-5ae610f608c2.png)
+
+```
+b79a98ce3a40
+```
+
+```
+b79a98ce3a40dacae449b7726695b10894ceaf23afae73f60aa362252be65d8e
+```
+
+# Setup work direktory dan run jenkins sebagai container
+
+```
+docker pull jenkins/jenkins
+```
+
+![image](https://user-images.githubusercontent.com/99697182/174066615-39ca3a96-b8dd-4b30-a73d-6e40f75188ad.png)
+
+jalankan
+
+```
+docker container start (container id)
+```
+
+![image](https://user-images.githubusercontent.com/99697182/174067004-0213f747-e75a-4047-bec4-6b4c40dc0f16.png)
 
 
 
