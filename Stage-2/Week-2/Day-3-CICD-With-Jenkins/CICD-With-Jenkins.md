@@ -317,7 +317,7 @@ dan masukan script ini :
 def secret = 'server'
 def server = 'app@103.172.204.174'
 def directory = 'wayshub-frontend'
-def branch = 'master'
+def branch = 'main'
 
 pipeline{
     agent any
