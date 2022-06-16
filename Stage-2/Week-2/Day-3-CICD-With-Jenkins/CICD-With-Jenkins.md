@@ -522,6 +522,12 @@ Buat dockerfile dan docker-compose nya
 
 jangan lupa untuk push lagi
 
+dan saya coba build ulang 
+
+dan masih gagal
+
+![image](https://user-images.githubusercontent.com/99697182/174020673-ba252069-8ff0-4fe2-a562-3c124e2cdffb.png)
+
 
 
 
