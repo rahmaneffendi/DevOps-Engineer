@@ -418,7 +418,53 @@ pipeline{
 
 kita ke jenkins lagi membuat job baru dan kita build
 
+![image](https://user-images.githubusercontent.com/99697182/174102819-686840bd-e7ad-4667-94b3-ec6776a120c3.png)
 
+kita cek browsernya 
+
+![image](https://user-images.githubusercontent.com/99697182/174103279-fb4e5a68-d3ba-4c6c-b20d-e92e2b90bdde.png)
+
+### kita atur webhooknya juga 
+
+![image](https://user-images.githubusercontent.com/99697182/174104315-69779feb-2c19-4990-92fc-2b089da8932e.png)
+
+![image](https://user-images.githubusercontent.com/99697182/174104385-91287d06-ba1d-4100-864b-07c460e86c62.png)
+
+### Kemudian saya akan cek juga migrasi datanya pada mysql
+
+Untuk memasuki container mysql gunakan perintah
+
+```
+docker container exec -it database bash
+```
+
+masuk ke mysql
+
+```
+mysql -i wayshub -p
+```
+
+![image](https://user-images.githubusercontent.com/99697182/174105748-07977a96-f6f1-418c-88e6-748222896a14.png)
+
+![image](https://user-images.githubusercontent.com/99697182/174106302-aeacfc3d-99b0-4b53-8b00-dd75c27f4047.png)
+
+![image](https://user-images.githubusercontent.com/99697182/174106546-47ddcca3-9a15-4ee7-bfcc-0d86b9f88274.png)
+
+Jika back end sudah selesai sekarang kita akan ke front end dan mengkonfigurasi front end sebelum membuat compose
+
+### Atur Https nya 
+
+![image](https://user-images.githubusercontent.com/99697182/174109205-d911bc47-5124-4904-88ba-50a05a76e8d9.png)
+
+![image](https://user-images.githubusercontent.com/99697182/174110333-3274f945-375e-4a78-9afd-04bbae8aa762.png)
+
+![image](https://user-images.githubusercontent.com/99697182/174111645-4ec7fc6b-41d8-4853-b487-a1a3d01f14b4.png)
+
+# Edit api.js di directory syc/config untuk mengkoneksikan ke back end nya
+
+![image](https://user-images.githubusercontent.com/99697182/174107793-ac6c3c2c-b948-45b7-8fb6-2573525f73f5.png)
+
+![image](https://user-images.githubusercontent.com/99697182/174112203-4edafa45-2b5d-47e6-b05f-51eef9cd6b63.png)
 
 
 
