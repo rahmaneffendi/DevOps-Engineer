@@ -27,3 +27,8 @@ Jenkins can deploy to another server
 When you finish this task, please upload attachment (step by step with screenshot) to this card.
 
 Then don't forget to drag and drop to the "Test" list.
+
+## Challange 
+
+CICD 
+
