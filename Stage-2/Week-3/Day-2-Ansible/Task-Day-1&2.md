@@ -203,6 +203,21 @@ kemudian kita cek pada browser
 
 ![image](https://user-images.githubusercontent.com/99697182/174805913-98f39f55-392b-4de7-9f0a-ea256828ba5b.png)
 
+# Install Docker pada server
+
+Berikut Referensi Docker Yang akan kita lihat
+
+https://docs.docker.com/engine/install/ubuntu/
+
+https://docs.docker.com/compose/install/compose-plugin/#installing-compose-on-linux-systems
+
+buat direktori docker.yml dan masukan script download docker nya
+
+![image](https://user-images.githubusercontent.com/99697182/174811549-a8e0dcdf-c437-44bb-975f-e45fd3c808f8.png)
+
+```
+
+```
 
 
 
