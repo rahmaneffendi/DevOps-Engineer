@@ -294,11 +294,129 @@ pertama kita edit File Inventory kita
 
 ![image](https://user-images.githubusercontent.com/99697182/174817141-95a076a3-8249-4a9d-889e-a570b9f29dc6.png)
 
+![image](https://user-images.githubusercontent.com/99697182/174817821-ea03b791-f561-433f-b04b-c742f8f8400a.png)
+
 Kemudian Kita atur scripting nya di bagi 2 antara monitoring dan app
 
-```
+Disini kita sesuaikan aja nama hosts nya dan permission sudo docker nya
 
 ```
+- hosts: monitoring
+  become: yes
+  gather_facts: yes
+  tasks:
+         - name: 'update'
+           apt:
+            update_cache: yes
+
+         - name: 'upgrade'
+           apt:
+            upgrade: dist
+
+         - name: 'install dependencies'
+           apt:
+             name:
+             - ca-certificates
+             - curl
+             - gnupg
+             - lsb-release
+
+         - name: 'add docker gpg key'
+           apt_key:
+            url: https://download.docker.com/linux/ubuntu/gpg
+
+         - name: 'add repository docker'
+           apt_repository:
+             repo: deb  https://download.docker.com/linux/ubuntu focal stable
+
+         - name: 'install docker engine'
+           apt: 
+            name:
+             - docker-ce
+             - docker-ce-cli
+             - containerd.io
+             - docker-compose-plugin
+
+         - name: 'update'
+           apt:
+            update_cache: yes
+
+         - name: 'install docker-compose'
+           shell: curl -SL https://github.com/docker/compose/releases/download/v2.6.0/docker-compose-linux-x86_64 -o /usr/local/bin/docker-compose
+
+
+         - name: 'set permision for docker'
+           shell: sudo chmod +x /usr/local/bin/docker-compose
+        
+         - name: 'docker without sudo'
+           shell: sudo usermod -aG docker moni
+
+- hosts: app
+  become: yes
+  gather_facts: yes
+  tasks:
+         - name: 'update'
+           apt:
+            update_cache: yes
+
+         - name: 'upgrade'
+           apt:
+            upgrade: dist
+
+         - name: 'install dependencies'
+           apt:
+             name:
+             - ca-certificates
+             - curl
+             - gnupg
+             - lsb-release
+
+         - name: 'add docker gpg key'
+           apt_key:
+            url: https://download.docker.com/linux/ubuntu/gpg
+
+         - name: 'add repository docker'
+           apt_repository:
+             repo: deb  https://download.docker.com/linux/ubuntu focal stable
+
+         - name: 'install docker engine'
+           apt: 
+            name:
+             - docker-ce
+             - docker-ce-cli
+             - containerd.io
+             - docker-compose-plugin
+
+         - name: 'update'
+           apt:
+            update_cache: yes
+
+         - name: 'install docker-compose'
+           shell: curl -SL https://github.com/docker/compose/releases/download/v2.6.0/docker-compose-linux-x86_64 -o /usr/local/bin/docker-compose
+
+
+         - name: 'set permision for docker'
+           shell: sudo chmod +x /usr/local/bin/docker-compose
+        
+         - name: 'docker without sudo'
+           shell: sudo usermod -aG docker app
+```
+
+![image](https://user-images.githubusercontent.com/99697182/174818951-31b0c90f-eddf-4dd8-a319-ebe40aef5a19.png)
+
+![image](https://user-images.githubusercontent.com/99697182/174818995-3bffac78-4879-496a-9ee2-609d125ca968.png)
+
+![image](https://user-images.githubusercontent.com/99697182/174819223-9061d427-6477-467b-aaf4-508feacbd56a.png)
+
+kemudian kita install
+
+![image](https://user-images.githubusercontent.com/99697182/174820409-4cdaa48f-c3bb-48bd-8b9f-7aa0bdda7a18.png)
+ 
+ dan kita cek pada app server 
+ 
+ ![image](https://user-images.githubusercontent.com/99697182/174820979-c1245da5-679a-4956-ad26-1e9efdb51b9b.png)
+
+
 
 
 
