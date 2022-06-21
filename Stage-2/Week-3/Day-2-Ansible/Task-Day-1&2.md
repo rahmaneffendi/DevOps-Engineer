@@ -117,6 +117,19 @@ sepertinya disini saya dapat error
 
 ![image](https://user-images.githubusercontent.com/99697182/174779186-f86e7432-968b-45c5-8d75-13e42bc8e14e.png)
 
+saya akan memperbaikinya di inventory
+
+![image](https://user-images.githubusercontent.com/99697182/174779918-5f837af0-4863-4028-92e8-4a432c203d37.png)
+
+disini saya mengubah usernya 
+
+![image](https://user-images.githubusercontent.com/99697182/174780010-b531cc80-005e-4f68-852c-4c2be6b3deba.png)
+
+kita cek lagi dan bisa
+
+![image](https://user-images.githubusercontent.com/99697182/174780173-e6b92163-90c2-4634-a395-0da25a25fe42.png)
+
+
 
 
 
