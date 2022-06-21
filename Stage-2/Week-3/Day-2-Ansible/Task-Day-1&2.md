@@ -84,6 +84,10 @@ Copy private key server dan paste di direktori ansible di file baru yang bernama
 
 ![image](https://user-images.githubusercontent.com/99697182/174773673-19b5ec47-d322-483d-850b-f9e1d7ec53e0.png)
 
+Jangan lupa untuk mengubah hak akses file .pemnya menjadi read only kemudian test mengoneksikan ke server
+
+![image](https://user-images.githubusercontent.com/99697182/174777729-5c60f154-0be8-4f7b-b74e-4faa36ce88fb.png)
+
 # Setup Ansible
 
 Buat directory baru dan file baru bernama Inventory yang berisi isi dari server kita nantinya yang akan dilakukan otomisasi
@@ -91,6 +95,28 @@ Buat directory baru dan file baru bernama Inventory yang berisi isi dari server 
 ![image](https://user-images.githubusercontent.com/99697182/174775480-79c6174f-254f-4209-bec9-96e4ee70dbd8.png)
 
 ![image](https://user-images.githubusercontent.com/99697182/174776587-966a029c-f146-4672-88f5-5bb88eb28c20.png)
+
+Buat file baru yang bernama ansible.cfg, file ini berfungsi untuk sebagai penghubung antara server yang ada di inventory ke local kita dengan private key tadi
+
+```
+[defaults]
+inventory = Inventory
+private_key_file = sshkey.pem
+```
+![image](https://user-images.githubusercontent.com/99697182/174778578-871c951e-ecc9-49a1-b418-aeb0eb4386f4.png)
+
+![image](https://user-images.githubusercontent.com/99697182/174778754-d9a8ad75-4a57-4544-b680-c3e24eaef433.png)
+
+Cek koneksi ke server tujuan dengan menggunakan perintah berikut:
+
+```
+ansible all -m ping
+```
+
+sepertinya disini saya dapat error
+
+![image](https://user-images.githubusercontent.com/99697182/174779186-f86e7432-968b-45c5-8d75-13e42bc8e14e.png)
+
 
 
 
