@@ -129,6 +129,45 @@ kita cek lagi dan bisa
 
 ![image](https://user-images.githubusercontent.com/99697182/174780173-e6b92163-90c2-4634-a395-0da25a25fe42.png)
 
+# Install Nginx Pada Server Monitoring
+
+disini saya tidak menghiraukan server app terlebih dulu 
+
+![image](https://user-images.githubusercontent.com/99697182/174781284-1f700801-3cb4-4b2f-9229-6db39264a210.png)
+
+![image](https://user-images.githubusercontent.com/99697182/174781347-1bf4ccca-b82d-40ed-a963-dfd5d555af12.png)
+
+Buat file baru bernama nginx.yml
+
+```
+- hosts: moni
+  become: yes
+  gather_facts: yes
+  tasks:
+        - name: 'install nginx'
+          apt: 
+            name:
+             - nginx
+            state: latest
+```
+
+Kemudian saya akan install nginx.yml nya
+
+![image](https://user-images.githubusercontent.com/99697182/174781756-bb0f7c8e-8894-42d6-b8f6-9092de71281c.png)
+
+![image](https://user-images.githubusercontent.com/99697182/174782412-a7eb482b-c4c2-430c-9a5e-42f68ecb5e70.png)
+
+kita cek apakah sudah benar syntaxnya :
+
+```
+ansible-playbook --syntax-check nginx.yml
+```
+
+disini saya dapat error
+
+![image](https://user-images.githubusercontent.com/99697182/174783489-7b751dba-b81d-40b8-a5e6-2d29abf546a7.png)
+
+
 
 
 
