@@ -216,13 +216,89 @@ buat direktori docker.yml dan masukan script download docker nya
 ![image](https://user-images.githubusercontent.com/99697182/174811549-a8e0dcdf-c437-44bb-975f-e45fd3c808f8.png)
 
 ```
+- hosts: all
+  become: yes
+  gather_facts: yes
+  tasks:
+         - name: 'update'
+           apt:
+            update_cache: yes
+
+         - name: 'upgrade'
+           apt:
+            upgrade: dist
+
+         - name: 'install dependencies'
+           apt:
+             name:
+             - ca-certificates
+             - curl
+             - gnupg
+             - lsb-release
+
+         - name: 'add docker gpg key'
+           apt_key:
+            url: https://download.docker.com/linux/ubuntu/gpg
+
+         - name: 'add repository docker'
+           apt_repository:
+             repo: deb  https://download.docker.com/linux/ubuntu focal stable
+
+         - name: 'install docker engine'
+           apt: 
+            name:
+             - docker-ce
+             - docker-ce-cli
+             - containerd.io
+             - docker-compose-plugin
+
+         - name: 'update'
+           apt:
+            update_cache: yes
+
+         - name: 'install docker-compose'
+           shell: curl -SL https://github.com/docker/compose/releases/download/v2.6.0/docker-compose-linux-x86_64 -o /usr/local/bin/docker-compose
+
+
+         - name: 'set permision for docker'
+           shell: sudo chmod +x /usr/local/bin/docker-compose
+        
+         - name: 'docker without sudo'
+           shell: sudo usermod -aG docker moni
 
 ```
 
+![image](https://user-images.githubusercontent.com/99697182/174814097-b002f15e-f57f-48c6-8376-8a42812c342c.png)
 
+![image](https://user-images.githubusercontent.com/99697182/174814256-1ce6a714-af2b-4daa-8d7e-327b37b89701.png)
 
+kita cek syntaxnya 
 
+![image](https://user-images.githubusercontent.com/99697182/174813975-b655733a-16e3-4273-8e44-156c724ba9f5.png)
 
+kemudian kita install 
+
+![image](https://user-images.githubusercontent.com/99697182/174815308-3f5aaa0f-612e-4393-b0cd-beb2cd577143.png)
+
+![image](https://user-images.githubusercontent.com/99697182/174815409-fc54b535-0861-4d49-9c52-bf896fef2871.png)
+
+Kemudian Kita cek pada server moni
+
+![image](https://user-images.githubusercontent.com/99697182/174816140-693ee132-0a51-4475-b820-299c977aaa75.png)
+
+## Kemudian Kita install pada Server App
+
+ket: Sebetulnya kita bisa install sekaligus, hanya saja saya lupa, jadi disini saya akan mencoba lagi dengan install sekligus
+
+pertama kita edit File Inventory kita 
+
+![image](https://user-images.githubusercontent.com/99697182/174817141-95a076a3-8249-4a9d-889e-a570b9f29dc6.png)
+
+Kemudian Kita atur scripting nya di bagi 2 antara monitoring dan app
+
+```
+
+```
 
 
 
