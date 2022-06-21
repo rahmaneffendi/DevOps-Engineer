@@ -449,7 +449,7 @@ disini saya membuat password untuk user are = are
 ![image](https://user-images.githubusercontent.com/99697182/174860133-9e4fdba8-5797-4211-a585-d0a526dd34ed.png)
 
 ```
-- hosts: moni
+- hosts: monitoring
   become: yes
   gather_facts: yes
   tasks:
@@ -475,7 +475,23 @@ disini saya membuat password untuk user are = are
            state: reloaded
 ```
 
-![image](https://user-images.githubusercontent.com/99697182/174861195-a86d2d71-d2c1-4178-ae0c-31ba4e53d75f.png)
+![image](https://user-images.githubusercontent.com/99697182/174861573-7667b4fe-045e-43ee-9a27-7d809f157e82.png)
+
+kita cek
+
+![image](https://user-images.githubusercontent.com/99697182/174861693-aa636227-2bf6-425c-bebf-a2e815c2b191.png)
+
+kita jalankan 
+
+![image](https://user-images.githubusercontent.com/99697182/174861846-282b1c39-6332-48c0-90b7-975a3bf0f18b.png)
+
+kita coba pakai user baru nya dan berhasil
+
+![image](https://user-images.githubusercontent.com/99697182/174862146-da249abb-20c6-4e8a-b165-54648b063d69.png)
+
+
+
+
 
 
 
