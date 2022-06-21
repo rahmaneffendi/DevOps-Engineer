@@ -20,3 +20,57 @@ user : app, PW : Sembarang1, IP :
 
 ![image](https://user-images.githubusercontent.com/99697182/174741032-041c5948-0e9e-4e1a-bd59-92d1d09cfc57.png)
 
+# Install Ansible Di Local
+
+kita bisa menginstalnya dengan perintah berikut
+
+```
+sudo apt update; sudo apt upgrade
+```
+
+```
+sudo apt install software-properties-common
+```
+
+```
+sudo add-apt-repository --yes --update ppa:ansible/ansible
+```
+
+```
+sudo apt install ansible
+```
+
+disini saya sudah mengintallnya, jadi kita langsung cek saja
+
+```
+ansible --version
+```
+
+![image](https://user-images.githubusercontent.com/99697182/174758817-983db6b8-9d22-44ec-b73e-f87a54399432.png)
+
+# 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
