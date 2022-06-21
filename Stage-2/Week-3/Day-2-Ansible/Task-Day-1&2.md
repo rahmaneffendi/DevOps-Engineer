@@ -286,6 +286,8 @@ Kemudian Kita cek pada server moni
 
 ![image](https://user-images.githubusercontent.com/99697182/174816140-693ee132-0a51-4475-b820-299c977aaa75.png)
 
+![image](https://user-images.githubusercontent.com/99697182/174827706-c07d845a-1692-4ffe-b1f6-6f222c1eac73.png)
+
 ## Kemudian Kita install pada Server App
 
 ket: Sebetulnya kita bisa install sekaligus, hanya saja saya lupa, jadi disini saya akan mencoba lagi dengan install sekligus
@@ -414,7 +416,28 @@ kemudian kita install
  
  dan kita cek pada app server 
  
- ![image](https://user-images.githubusercontent.com/99697182/174820979-c1245da5-679a-4956-ad26-1e9efdb51b9b.png)
+![image](https://user-images.githubusercontent.com/99697182/174820979-c1245da5-679a-4956-ad26-1e9efdb51b9b.png)
+
+![image](https://user-images.githubusercontent.com/99697182/174827446-b23c2d96-40ec-4dc1-b827-8a3959cc9fd6.png)
+
+# Instalasi services node exporter, prometheus & Grafana
+
+Buat dahulu sebuah folder baru bernama files dan didalamnya buat file-file yang berisi services node exporter, prometheus & Grafana
+
+ket : files disini sudah default
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
