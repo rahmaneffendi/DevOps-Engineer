@@ -448,6 +448,35 @@ disini saya membuat password untuk user are = are
 
 ![image](https://user-images.githubusercontent.com/99697182/174860133-9e4fdba8-5797-4211-a585-d0a526dd34ed.png)
 
+```
+- hosts: moni
+  become: yes
+  gather_facts: yes
+  tasks:
+       - name: 'Create User'
+         user:
+           name: are
+           password: "$6$l9O/K11I5NJf2Ncv$/EVE2VNUURY5qst4ounFxP62rAFNGElvnth6rRKqTjh8Esjcn00n6XiTlsJnCuQ2IIjvLGH22fh5JSwzo6bc.0"
+           groups: sudo
+           shell: /bin/bash
+           system: no
+           createhome: yes
+           home: /home/are
+
+       - name: 'Change Pass Authentication'
+         lineinfile:
+           path: /etc/ssh/sshd_config
+           regexp: 'PasswordAuthentication no'
+           line: PasswordAuthentication yes
+
+       - name: 'reload'
+         systemd:
+           name: sshd
+           state: reloaded
+```
+
+![image](https://user-images.githubusercontent.com/99697182/174861195-a86d2d71-d2c1-4178-ae0c-31ba4e53d75f.png)
+
 
 
 
