@@ -422,10 +422,11 @@ kemudian kita install
 
 # Instalasi services node exporter, prometheus & Grafana
 
+ref : https://medium.com/nerd-for-tech/tutorial-how-to-deploy-prometheus-and-node-exporter-as-containers-on-a-remote-server-with-5-af5b449be49b
+
 Buat dahulu sebuah folder baru bernama files dan didalamnya buat file-file yang berisi services node exporter, prometheus & Grafana
 
 ket : files disini sudah default
-
 
 
 
