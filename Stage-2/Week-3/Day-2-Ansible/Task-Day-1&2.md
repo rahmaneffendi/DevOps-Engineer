@@ -201,6 +201,7 @@ ansible-playbook nginx.yml
 
 kemudian kita cek pada browser 
 
+![image](https://user-images.githubusercontent.com/99697182/174805913-98f39f55-392b-4de7-9f0a-ea256828ba5b.png)
 
 
 
