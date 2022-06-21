@@ -86,6 +86,12 @@ Copy private key server dan paste di direktori ansible di file baru yang bernama
 
 # Setup Ansible
 
+Buat directory baru dan file baru bernama Inventory yang berisi isi dari server kita nantinya yang akan dilakukan otomisasi
+
+![image](https://user-images.githubusercontent.com/99697182/174775480-79c6174f-254f-4209-bec9-96e4ee70dbd8.png)
+
+![image](https://user-images.githubusercontent.com/99697182/174776587-966a029c-f146-4672-88f5-5bb88eb28c20.png)
+
 
 
 
