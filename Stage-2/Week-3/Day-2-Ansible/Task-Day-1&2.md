@@ -140,14 +140,14 @@ disini saya tidak menghiraukan server app terlebih dulu
 Buat file baru bernama nginx.yml
 
 ```
-- hosts: moni
+- hosts: all
   become: yes
-  gather_facts: yes
+  gather_facts: true
   tasks:
         - name: 'install nginx'
-          apt: 
+          apt:
             name:
-             - nginx
+              - nginx
             state: latest
 ```
 
@@ -166,6 +166,44 @@ ansible-playbook --syntax-check nginx.yml
 disini saya dapat error
 
 ![image](https://user-images.githubusercontent.com/99697182/174783489-7b751dba-b81d-40b8-a5e6-2d29abf546a7.png)
+
+ketika saya cek ternyata nama host nya yaitu all
+
+![image](https://user-images.githubusercontent.com/99697182/174800526-87ebe478-688d-446d-82b5-c4698afbf9ab.png)
+
+saya coba ubah
+
+![image](https://user-images.githubusercontent.com/99697182/174800652-a6f7f86d-1068-49f5-be4c-bf0b42837565.png)
+
+dan ternyata masih error, sepertinya bukan disitu masalahnya
+
+![image](https://user-images.githubusercontent.com/99697182/174800788-6ce50719-1e94-4eaf-8990-1163f6688447.png)
+
+Sekarang saya mencoba menambah spasi di name bawah apt
+
+![image](https://user-images.githubusercontent.com/99697182/174801348-cebbf65d-cb6e-4a78-ab4a-8e74edaec6d0.png)
+
+saya cek lagi, dan masih error
+
+![image](https://user-images.githubusercontent.com/99697182/174801507-902e013c-5ed3-41d4-8254-a39eaee8ae4f.png)
+
+setelah melakukan beberapa percobaan dan input ulang menggunakan VSCODE, akhirnya dia bisa 
+
+![image](https://user-images.githubusercontent.com/99697182/174804366-e9cd5a8f-5ab8-46b6-87c5-09cd69b12c49.png)
+
+kemudian install nginx nya 
+
+```
+ansible-playbook nginx.yml
+```
+
+![image](https://user-images.githubusercontent.com/99697182/174805006-5fe7b1ce-4208-4094-84f8-80e81154ccec.png)
+
+kemudian kita cek pada browser 
+
+
+
+
 
 
 
