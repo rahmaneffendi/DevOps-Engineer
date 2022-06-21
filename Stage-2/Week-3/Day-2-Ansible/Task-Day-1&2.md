@@ -428,11 +428,25 @@ Buat dahulu sebuah folder baru bernama files dan didalamnya buat file-file yang 
 
 ket : files disini sudah default
 
+ouh iya, disini saya akan edit lagi File Inventory nya 
 
+![image](https://user-images.githubusercontent.com/99697182/174858781-741ce7af-65a6-44ad-bec1-fe13129f232f.png)
 
+### Disini saya akan coba menambah user ke server monitor
 
+sebelumnya install whois untuk generate password menjadi token ( sudo apt install whois )
 
+![image](https://user-images.githubusercontent.com/99697182/174859514-c6d481bf-eaec-41de-9158-0fb0e2c6fdca.png)
 
+dan cek (mkpasswd --help)
+
+![image](https://user-images.githubusercontent.com/99697182/174859694-b0741eca-03f1-4690-a18f-a388bff7b505.png)
+
+membuat password (mkpasswd --method=sha-512)
+
+disini saya membuat password untuk user are = are
+
+![image](https://user-images.githubusercontent.com/99697182/174860133-9e4fdba8-5797-4211-a585-d0a526dd34ed.png)
 
 
 
