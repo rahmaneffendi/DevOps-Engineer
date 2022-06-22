@@ -132,7 +132,13 @@ sudo kubeadm init --apiserver-advertise-address=103.226.139.195 --pod-network-ci
 
 ![image](https://user-images.githubusercontent.com/99697182/175059795-f0123782-79a5-4582-8697-8154feb52d1f.png)
 
+saya cek
 
+```
+systemctl status kubelet
+```
+
+![image](https://user-images.githubusercontent.com/99697182/175060460-a56b7b67-5a4a-4dd2-86b7-2efb231ff906.png)
 
 
 
