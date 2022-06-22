@@ -423,6 +423,10 @@ kemudian kita install
 
 ### Disini saya akan coba menambah user ke server monitor
 
+ouh iya, disini saya akan edit lagi File Inventory nya 
+
+![image](https://user-images.githubusercontent.com/99697182/174858781-741ce7af-65a6-44ad-bec1-fe13129f232f.png)
+
 sebelumnya install whois untuk generate password menjadi token ( sudo apt install whois )
 
 ![image](https://user-images.githubusercontent.com/99697182/174859514-c6d481bf-eaec-41de-9158-0fb0e2c6fdca.png)
@@ -490,7 +494,7 @@ Buat dahulu sebuah folder baru bernama files dan didalamnya buat file-file yang 
 
 ket : files disini sudah default
 
-ouh iya, disini saya akan edit lagi File Inventory nya 
+Kita cek dulu File Inventory 
 
 ![image](https://user-images.githubusercontent.com/99697182/174858781-741ce7af-65a6-44ad-bec1-fe13129f232f.png)
 
