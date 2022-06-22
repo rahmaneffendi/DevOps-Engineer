@@ -573,6 +573,8 @@ jadi ada 3 file
 
 kita buat file node-exporter.yml
 
+ref : https://hub.docker.com/r/bitnami/node-exporter
+
 setelah itu kita masukan scriptnya untuk instalasi node exporter 
 
 ```
@@ -633,9 +635,71 @@ Setelah itu kita buat file monitoring.yml nya
 
 ![image](https://user-images.githubusercontent.com/99697182/174919585-d751c32c-5ff1-4ac4-81cd-768c54d2ca9b.png)
 
+ref : https://hub.docker.com/r/bitnami/prometheus/
 
+ref : https://hub.docker.com/r/grafana/grafana
 
+dan kita masukan script nya :
 
+```
+- hosts: monitoring
+  become: true
+  gather_facts: yes
+  tasks:
+    - name: "copy configuration prometheus.yml"
+      copy:
+        src: files/
+        dest: /home/moni/prometheus/
+        owner: moni
+        group: sudo
+        mode: 0664
+    - name: "install prometheus"
+      command: "docker run --name prometheus \ -v /path/to/prometheus-persistence:/opt/bitnami/prometheus/data \ bitnami/prometheus:latest"
+    - name: "install grafana"
+      command: "docker run -d --name=grafana -p 3000:3000 grafana/grafana"
+```
+
+![image](https://user-images.githubusercontent.com/99697182/174971071-03388231-a59e-400d-9e02-a81634b3b5c4.png)
+
+kita install monitoring.yml nya dan saya mengalami failed
+
+![image](https://user-images.githubusercontent.com/99697182/174971726-94517bc0-2fef-4453-ab77-2bb3494dab35.png)
+
+![image](https://user-images.githubusercontent.com/99697182/174972008-c98e4d3f-6f72-4ce7-a072-7b7ae1e73a75.png)
+
+disini saya akan ganti
+
+ref : https://prometheus.io/docs/prometheus/latest/installation/#:~:text=All%20Prometheus%20services%20are%20available%20as%20Docker%20images,sample%20configuration%20and%20exposes%20it%20on%20port%209090.
+
+```
+- hosts: monitoring
+  become: true
+  gather_facts: yes
+  tasks:
+    - name: "copy configuration prometheus.yml"
+      copy:
+        src: files/
+        dest: /home/moni/prometheus/
+        owner: moni
+        group: sudo
+        mode: 0664
+    - name: "install prometheus"
+      command: "docker run -d --name=prometheus -p 9090:9090 -v /home/moni/prometheus/prometheus.yml:/etc/prometheus/prometheus.yml prom/prometheus"
+    - name: "install grafana"
+      command: "docker run -d --name=grafana -p 3000:3000 grafana/grafana"
+```
+
+![image](https://user-images.githubusercontent.com/99697182/174972521-23ffa8e4-e579-4b3a-a4f0-ccc23e9e6651.png)
+
+akan saya coba install lagi dan mengalami error 
+
+![image](https://user-images.githubusercontent.com/99697182/174973264-d982caf3-2108-44d8-88aa-ccc0f50ef269.png)
+
+dan jika saya cek 
+
+![image](https://user-images.githubusercontent.com/99697182/174974026-28b52576-4061-4a9f-9ca2-34ed108b6a5d.png)
+
+![image](https://user-images.githubusercontent.com/99697182/174974168-7f6fbbe4-38be-4722-b823-0ae51bde7392.png)
 
 
 
