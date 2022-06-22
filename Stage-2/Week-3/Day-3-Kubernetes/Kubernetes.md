@@ -140,10 +140,13 @@ systemctl status kubelet
 
 ![image](https://user-images.githubusercontent.com/99697182/175060460-a56b7b67-5a4a-4dd2-86b7-2efb231ff906.png)
 
+```
+journalctl -xeu kubelet
+```
 
+![image](https://user-images.githubusercontent.com/99697182/175061302-d79ded7c-eec5-447c-a678-7a86afff3391.png)
 
-
-
+disini ada error
 
 
 
