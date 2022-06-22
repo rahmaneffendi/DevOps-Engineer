@@ -709,11 +709,31 @@ disini saya akan menghapus container , image & foldernya dulu
 
 ![image](https://user-images.githubusercontent.com/99697182/174980025-dac62f50-428b-488f-98c3-acd678715072.png)
 
+disini saya juga akan edit file prometheusnya dengan  mengganti lokalhost menjadi ip server monitoring
+
+![image](https://user-images.githubusercontent.com/99697182/174982859-40362bfb-fe35-47b9-b410-eee2b33ab9fc.png)
+
 disini saya akan mempelajari lagi ansible nya
 
 ref : https://docs.ansible.com/ansible/2.5/modules/docker_container_module.html
 
-disini saya akan mengulang script nya kembali 
+disini saya akan mengulang script nya kembali dan bisa,  ternyata masalahnya ada pada file promotheus.yml nya
+
+![image](https://user-images.githubusercontent.com/99697182/174983871-63caa593-2cda-4168-8f61-bd612f4c5168.png)
+
+kita cek di server
+
+![image](https://user-images.githubusercontent.com/99697182/174984109-02d8fbef-0049-4ede-8474-8712ffbb0539.png)
+
+kita cek di browser 
+
+```
+103.55.37.194:9090
+```
+
+![image](https://user-images.githubusercontent.com/99697182/174984343-c629e53e-1062-43d2-94af-019020ccaf68.png)
+
+
 
 
 
