@@ -581,20 +581,58 @@ setelah itu kita masukan scriptnya untuk instalasi node exporter
   gather_facts: yes
   tasks:
     - name: 'install node exporter'
-      shell: "docker run -d --name=node-exporter --net=\"host\" --pid=\"host\" -v \"/:/host:ro,rslave\" prom/node-exporter:latest --path.rootfs=/host"
+      shell: "docker run --name node-exporter-node1 --network node-exporter-network bitnami/node-exporter:latest"
 ```
 
+![image](https://user-images.githubusercontent.com/99697182/174955116-4c2066e4-f97c-46cb-9bf0-dacb4448aec0.png)
+
+![image](https://user-images.githubusercontent.com/99697182/174954971-6c7bbdf8-a917-431a-ad7c-650ebd2e40ac.png)
+
+![image](https://user-images.githubusercontent.com/99697182/174955181-03b9e582-81c9-4f26-a0f0-4ee380a09cd7.png)
+
+dikarenakan saya mengalami failed, saya akan mencoba images lain
+
 ref: https://medium.com/nerd-for-tech/tutorial-how-to-deploy-prometheus-and-node-exporter-as-containers-on-a-remote-server-with-5-af5b449be49b
+
+```
+- hosts: all
+  become: true
+  gather_facts: yes
+  tasks:
+    - name: 'install node exporter'
+      shell: "docker run -d --name=node-exporter --net=\"host\" --pid=\"host\" -v \"/:/host:ro,rslave\" prom/node-exporter:latest --path.rootfs=/host"
+```
 
 ![image](https://user-images.githubusercontent.com/99697182/174952827-5f4d805e-76a2-4d33-84cf-0cf4097372db.png)
 
 ![image](https://user-images.githubusercontent.com/99697182/174953134-d008c18b-ede9-46da-a9db-15f6dff6262a.png)
 
-Setelah ini 
+Setelah ini kita cek browser di port 9100
 
-kita buat file monitoring.yml nya
+```
+103.55.37.194:9100
+```
+
+![image](https://user-images.githubusercontent.com/99697182/174954062-984c1f79-f448-453f-a7fc-7f41c5b478f7.png)
+
+```
+103.55.37.191:9100
+```
+
+![image](https://user-images.githubusercontent.com/99697182/174954141-117e7968-826c-4b3b-b4ef-1fa8d180a1f0.png)
+
+kita juga bisa cek di server monitoringnya 
+
+![image](https://user-images.githubusercontent.com/99697182/174955416-acf2ca1e-a84d-4ce0-8cce-5cbd7924b721.png)
+
+kita juga bisa cek di server appnya 
+
+![image](https://user-images.githubusercontent.com/99697182/174955641-bff6fb15-396b-4909-83ac-f69b22453326.png)
+
+Setelah itu kita buat file monitoring.yml nya
 
 ![image](https://user-images.githubusercontent.com/99697182/174919585-d751c32c-5ff1-4ac4-81cd-768c54d2ca9b.png)
+
 
 
 
