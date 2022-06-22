@@ -725,13 +725,83 @@ kita cek di server
 
 ![image](https://user-images.githubusercontent.com/99697182/174984109-02d8fbef-0049-4ede-8474-8712ffbb0539.png)
 
-kita cek di browser 
+kita cek di browser Prometheusnya
 
 ```
 103.55.37.194:9090
 ```
 
 ![image](https://user-images.githubusercontent.com/99697182/174984343-c629e53e-1062-43d2-94af-019020ccaf68.png)
+
+![image](https://user-images.githubusercontent.com/99697182/174986316-f8cecf98-36df-41bf-8a48-6dd623d46d3a.png)
+
+![image](https://user-images.githubusercontent.com/99697182/174986656-26959d56-eb57-44a7-94d6-075261c10112.png)
+
+![image](https://user-images.githubusercontent.com/99697182/174986745-996978b6-0512-4c18-9d57-32a515e5c495.png)
+
+![image](https://user-images.githubusercontent.com/99697182/174987070-1c5ce285-fc81-4642-b25b-1f439d831035.png)
+
+Kemudian Kita coba Grafana nya
+
+disitu kita tinggal masukan default (user=admin, pw= admin)
+
+![image](https://user-images.githubusercontent.com/99697182/174987973-602282bf-b5de-45e2-8030-18cd820b7098.png)
+
+![image](https://user-images.githubusercontent.com/99697182/174988195-6224b614-d3e4-431b-9a59-cc937a8fce1f.png)
+
+![image](https://user-images.githubusercontent.com/99697182/174988373-2cd46fcc-8d81-4469-8da6-486ad066f9cb.png)
+
+disini klik setting(configuration), klik add data source, pilih promotheus, 
+
+masukan url dari prometheusnya dan klik save & test 
+
+![image](https://user-images.githubusercontent.com/99697182/174989476-cda1402e-4e16-4d28-b948-c537d77b4b72.png)
+
+dan kita balik lagi ke dashboard , klik new dashboard, 
+
+![image](https://user-images.githubusercontent.com/99697182/174990334-1a4182bd-3751-4443-9741-aaa9509b6d2c.png)
+
+add new panel 
+
+![image](https://user-images.githubusercontent.com/99697182/174990405-18eb511c-23bf-46de-a36d-2e70f643905d.png)
+
+pilih data source promotheus dan pilih metric apa yang mau kita monitor 
+
+![image](https://user-images.githubusercontent.com/99697182/174990851-d0176ace-a375-48c3-aabf-5694b356a339.png)
+
+klik run queries, dan save 
+
+![image](https://user-images.githubusercontent.com/99697182/174991088-7db0515d-7d6f-4643-be36-92bdc2cd8624.png)
+
+![image](https://user-images.githubusercontent.com/99697182/174991462-717f7f7a-ac12-419a-8902-245a498ca62e.png)
+
+![image](https://user-images.githubusercontent.com/99697182/174991496-c893bec0-49c0-4ed8-b4a0-f7beb1622d72.png)
+
+dan untuk memilih template grafana dashboard klik [ini](https://grafana.com/grafana/dashboards/)
+
+![image](https://user-images.githubusercontent.com/99697182/174992301-78de3ffb-e42b-4f71-9480-00c04139adca.png)
+
+saya akan menggunakan ini, copy saja kodenya : 11074, dan download json nya 
+
+
+![image](https://user-images.githubusercontent.com/99697182/174992233-77f2a9ef-e73c-4c4a-8272-a218dd24b465.png)
+
+![image](https://user-images.githubusercontent.com/99697182/174993138-ffef8122-8f74-4aa2-a977-36f4cdb03c3d.png)
+
+kemudian ke dashboard lagi dan klik import 
+
+![image](https://user-images.githubusercontent.com/99697182/174992922-6bb67de9-a7e7-41a9-9f07-27f05184cb7e.png)
+
+klik load dan masukan json nya
+
+pilih prometheus dan klik import
+
+![image](https://user-images.githubusercontent.com/99697182/174993382-d2f6117d-5c03-487d-b15e-243f0013b38b.png)
+
+![image](https://user-images.githubusercontent.com/99697182/174993524-11e34eb5-0abf-424e-9761-ea1742167a23.png)
+ 
+ Berhasil 🥳🥳🥳🥳
+
 
 
 
