@@ -803,7 +803,7 @@ pilih prometheus dan klik import
  Berhasil 🥳🥳🥳🥳
 
 
-
+Note : Kita bisa cek yml kita dengan [ini](http://www.yamllint.com/)
 
 
 
