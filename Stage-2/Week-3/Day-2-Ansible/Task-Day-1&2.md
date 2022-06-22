@@ -571,17 +571,30 @@ jadi ada 3 file
 
 ### Disini Saya akan mencoba install setup monitoring.yml
 
+kita buat file node-exporter.yml
+
+setelah itu kita masukan scriptnya untuk instalasi node exporter 
+
+```
+- hosts: all
+  become: true
+  gather_facts: yes
+  tasks:
+    - name: 'install node exporter'
+      shell: "docker run -d --name=node-exporter --net=\"host\" --pid=\"host\" -v \"/:/host:ro,rslave\" prom/node-exporter:latest --path.rootfs=/host"
+```
+
+ref: https://medium.com/nerd-for-tech/tutorial-how-to-deploy-prometheus-and-node-exporter-as-containers-on-a-remote-server-with-5-af5b449be49b
+
+![image](https://user-images.githubusercontent.com/99697182/174952827-5f4d805e-76a2-4d33-84cf-0cf4097372db.png)
+
+![image](https://user-images.githubusercontent.com/99697182/174953134-d008c18b-ede9-46da-a9db-15f6dff6262a.png)
+
+Setelah ini 
+
 kita buat file monitoring.yml nya
 
 ![image](https://user-images.githubusercontent.com/99697182/174919585-d751c32c-5ff1-4ac4-81cd-768c54d2ca9b.png)
-
-setelah itu kita masukan scriptnya untuk instalasi node exportir, promotheus dan grafana nya on top docker
-
-```
-
-```
-
-
 
 
 
