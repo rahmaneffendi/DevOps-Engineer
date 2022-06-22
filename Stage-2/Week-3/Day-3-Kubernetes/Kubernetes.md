@@ -110,7 +110,27 @@ echo "deb https://apt.kubernetes.io/ kubernetes-xenial main" | sudo tee /etc/apt
 sudo apt update -y; sudo apt -y install kubelet kubeadm kubectl
 ```
 
+![image](https://user-images.githubusercontent.com/99697182/175056134-da2bff56-99d6-4e48-a86c-8b574afe7d56.png)
 
+![image](https://user-images.githubusercontent.com/99697182/175056366-aef5781a-e2aa-4351-a35b-cd94967f6c79.png)
+
+![image](https://user-images.githubusercontent.com/99697182/175056462-52257727-cae1-4e7c-a341-6fa38c744a88.png)
+
+![image](https://user-images.githubusercontent.com/99697182/175056747-2054bf27-79c3-453a-b16f-08160b87ce49.png)
+
+Konfigurasi kubeadm untuk menginisiasi server manager
+
+```
+ip a = 103.226.139.195(saya)
+```
+
+```
+sudo kubeadm init --apiserver-advertise-address=103.226.139.195 --pod-network-cidr=192.168.0.0/16  --ignore-preflight-errors=all
+```
+
+![image](https://user-images.githubusercontent.com/99697182/175059676-1332db37-0d2b-4a01-a8ab-ae0d4421fcd7.png)
+
+![image](https://user-images.githubusercontent.com/99697182/175059795-f0123782-79a5-4582-8697-8154feb52d1f.png)
 
 
 
