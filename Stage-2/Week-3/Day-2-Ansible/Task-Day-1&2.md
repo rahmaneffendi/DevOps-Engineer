@@ -420,17 +420,6 @@ kemudian kita install
 
 ![image](https://user-images.githubusercontent.com/99697182/174827446-b23c2d96-40ec-4dc1-b827-8a3959cc9fd6.png)
 
-# Instalasi services node exporter, prometheus & Grafana
-
-ref : https://medium.com/nerd-for-tech/tutorial-how-to-deploy-prometheus-and-node-exporter-as-containers-on-a-remote-server-with-5-af5b449be49b
-
-Buat dahulu sebuah folder baru bernama files dan didalamnya buat file-file yang berisi services node exporter, prometheus & Grafana
-
-ket : files disini sudah default
-
-ouh iya, disini saya akan edit lagi File Inventory nya 
-
-![image](https://user-images.githubusercontent.com/99697182/174858781-741ce7af-65a6-44ad-bec1-fe13129f232f.png)
 
 ### Disini saya akan coba menambah user ke server monitor
 
@@ -489,8 +478,104 @@ kita coba pakai user baru nya dan berhasil
 
 ![image](https://user-images.githubusercontent.com/99697182/174862146-da249abb-20c6-4e8a-b165-54648b063d69.png)
 
+# Instalasi services node exporter, prometheus & Grafana
 
+ref : https://medium.com/nerd-for-tech/tutorial-how-to-deploy-prometheus-and-node-exporter-as-containers-on-a-remote-server-with-5-af5b449be49b
 
+ref : https://www.techgeeknext.com/tools/docker/install-grafana-using-docker
+
+ref : https://docs.google.com/presentation/d/16TGnZI9_ySiHXV7j5M072I80yLxMy3PUNN-GJ12BKX0/edit#slide=id.g98459a2884_1_5
+
+Buat dahulu sebuah folder baru bernama files dan didalamnya buat file-file yang berisi services node exporter, prometheus & Grafana
+
+ket : files disini sudah default
+
+ouh iya, disini saya akan edit lagi File Inventory nya 
+
+![image](https://user-images.githubusercontent.com/99697182/174858781-741ce7af-65a6-44ad-bec1-fe13129f232f.png)
+
+### Kita buat file konfigurasinya di direktori files(sudah default)
+
+![image](https://user-images.githubusercontent.com/99697182/174925218-1b9f7e42-c17c-465b-8f86-e4fce20ecf89.png)
+
+pertama kita buat node_exporter.service dan masukan konfigurasinya
+
+```
+[Unit]
+Description=Node Exporter
+After=network.target
+
+[Service]
+User=node_exporter
+Group=node_exporter
+Type=simple
+ExecStart=/usr/local/bin/node_exporter
+
+[Install]
+WantedBy=multi-user.target
+
+```
+
+![image](https://user-images.githubusercontent.com/99697182/174925431-38ae134e-3ce3-40bf-89c0-ee290968cbd8.png)
+
+kemudian kita buat prometheus.service
+
+```
+[Unit]
+Description=Prometheus
+After=network.target
+
+[Service]
+User=prometheus
+Group=prometheus
+Type=simple
+ExecStart=/usr/local/bin/prometheus \
+   --config.file /etc/prometheus/prometheus.yml \
+   --storage.tsdb.path /var/lib/prometheus/ \
+   --web.console.templates=/etc/prometheus/consoles \
+   --web.console.libraries=/etc/prometheus/console_libraries
+   
+[Install]
+WantedBy=multi-user.target
+
+```
+
+![image](https://user-images.githubusercontent.com/99697182/174925703-1badccc1-2950-4ebd-b554-15b49bd429c2.png)
+
+kemudian kita buat prometheus.yml (untuk menargetkan ip yang ingin di monitor)
+
+konfigurasi dibawah ini sudah default 
+
+```
+global:
+ scrape_interval: 10s
+scrape_configs:
+ - job_name: 'prometheus_metrics'
+   scrape_interval: 5s
+   static_configs:
+     - targets: ['localhost:9090']
+ - job_name: 'node_exporter_metrics'
+   scrape_interval: 5s
+   static_configs:
+    - targets: ['localhost:9100','103.55.37.191:9100']
+```
+![image](https://user-images.githubusercontent.com/99697182/174926976-b3d13278-17f3-4efb-a33a-c27466b72e57.png)
+
+jadi ada 3 file 
+
+![image](https://user-images.githubusercontent.com/99697182/174927046-f4844c06-62bb-4d71-bba9-ef33e368ba02.png)
+
+### Disini Saya akan mencoba install setup monitoring.yml
+
+kita buat file monitoring.yml nya
+
+![image](https://user-images.githubusercontent.com/99697182/174919585-d751c32c-5ff1-4ac4-81cd-768c54d2ca9b.png)
+
+setelah itu kita masukan scriptnya untuk instalasi node exportir, promotheus dan grafana nya on top docker
+
+```
+
+```
 
 
 
