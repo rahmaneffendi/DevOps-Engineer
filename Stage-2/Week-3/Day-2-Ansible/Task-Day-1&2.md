@@ -701,8 +701,19 @@ dan jika saya cek
 
 ![image](https://user-images.githubusercontent.com/99697182/174974168-7f6fbbe4-38be-4722-b823-0ae51bde7392.png)
 
+disini saya akan menghapus container , image & foldernya dulu
 
+![image](https://user-images.githubusercontent.com/99697182/174978189-959bdda1-3e2d-4da4-803c-32a0cfe5857f.png)
 
+![image](https://user-images.githubusercontent.com/99697182/174979279-03250fb3-3b86-48d2-91f5-8ce4b055dd07.png)
+
+![image](https://user-images.githubusercontent.com/99697182/174980025-dac62f50-428b-488f-98c3-acd678715072.png)
+
+disini saya akan mempelajari lagi ansible nya
+
+ref : https://docs.ansible.com/ansible/2.5/modules/docker_container_module.html
+
+disini saya akan mengulang script nya kembali 
 
 
 
