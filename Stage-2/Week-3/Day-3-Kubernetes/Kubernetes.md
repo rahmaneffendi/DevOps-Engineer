@@ -148,6 +148,12 @@ journalctl -xeu kubelet
 
 disini ada error
 
+saya cek esok harinya
+
+![image](https://user-images.githubusercontent.com/99697182/175215102-af43dd1b-0a4c-4cc0-87a3-5e6d1036f427.png)
+
+![image](https://user-images.githubusercontent.com/99697182/175215334-8418cc10-4837-4bdd-866c-8b2d042795fb.png)
+
 
 
 
