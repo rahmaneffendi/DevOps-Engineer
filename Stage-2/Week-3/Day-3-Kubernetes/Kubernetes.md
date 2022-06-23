@@ -326,6 +326,10 @@ dan ketika saya melihat hasilnya ternyata masih blum jalan
 
 ![image](https://user-images.githubusercontent.com/99697182/175326976-7cc2f10d-842e-43f8-b1f5-16ed5e528cdf.png)
 
+![image](https://user-images.githubusercontent.com/99697182/175341247-bec7f2f8-e101-4248-982c-dc72b1d4999e.png)
+
+![image](https://user-images.githubusercontent.com/99697182/175341375-46f943e2-cc95-4ae3-870a-2174b75d2f3c.png)
+
 ![image](https://user-images.githubusercontent.com/99697182/175328644-4471fa48-4a16-4b04-a72c-5c0422253e59.png)
 
 saya coba cek nginx nya dan ngga bisa juga
