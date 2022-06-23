@@ -214,7 +214,7 @@ sudo kubectl get pods --all-namespaces
 
 ![image](https://user-images.githubusercontent.com/99697182/175254000-74ccd60d-e75f-4e60-9323-23648f7fe089.png)
 
-
+#### Disini Pastikan server worker 1 & 2 sudah terinstall kubernetes juga, dan ngga usah install cni nya
 
 
 
