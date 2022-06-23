@@ -214,7 +214,41 @@ sudo kubectl get pods --all-namespaces
 
 ![image](https://user-images.githubusercontent.com/99697182/175254000-74ccd60d-e75f-4e60-9323-23648f7fe089.png)
 
-#### Disini Pastikan server worker 1 & 2 sudah terinstall kubernetes juga, dan ngga usah install cni nya
+#### Disini Pastikan server worker 1 & 2 sudah terinstall kubernetes juga, dan ngga usah init kubeadm nya
+
+Lakukan join cluster dengan perintah berikut:
+
+```
+kubeadm token create --print-join-command
+```
+
+![image](https://user-images.githubusercontent.com/99697182/175276662-3f6a28aa-8e9a-4c04-830a-f9dd05a47d9a.png)
+
+Lalu copy hasil output berikut ke server worker 1 dan 2
+
+```
+kubeadm join *****
+```
+
+Worker 1
+
+![image](https://user-images.githubusercontent.com/99697182/175277220-52268b7a-2eee-4949-a3cf-f94d9a3bd385.png)
+
+Worker 2
+
+![image](https://user-images.githubusercontent.com/99697182/175277494-ee5a9727-7719-4b07-927c-24e7c4ea19c8.png)
+
+Cek koneksi nya apakah sudah terkoneksi dengan cluster menggunakan perintah:
+
+```
+kubectl get nodes
+```
+
+![image](https://user-images.githubusercontent.com/99697182/175277752-781c70bb-a2f1-4736-bd98-cf56703a136f.png)
+
+![image](https://user-images.githubusercontent.com/99697182/175277878-a5f5f37c-0574-415e-b698-e681f64dcc82.png)
+
+
 
 
 
