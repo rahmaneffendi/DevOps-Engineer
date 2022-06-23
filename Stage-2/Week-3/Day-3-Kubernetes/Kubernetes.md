@@ -164,6 +164,13 @@ kubeadm reset
 
 dan akan saya coba lagi insiasi kubeadm nya, dan masih error juga
 
+kemudian saya cek di stack overflow, dan megikuti instruksinya [ini](https://stackoverflow.com/questions/54424269/how-to-fix-the-kubelet-is-unhealthy-due-to-a-misconfiguration-of-the-node-in-so)
+
+![image](https://user-images.githubusercontent.com/99697182/175233724-6c3c06d7-5f21-47ca-b236-e2aa15f6ced4.png)
+
+saya reset kubeadm nya lagi dan coba mulai init lagi, dan masih tetap error
+
+
 
 
 
