@@ -248,8 +248,9 @@ kubectl get nodes
 
 ![image](https://user-images.githubusercontent.com/99697182/175277878-a5f5f37c-0574-415e-b698-e681f64dcc82.png)
 
+# Deploy Simple Aplication (Nginx)
 
-### Deploy nginx, create terlebih dahulu
+Deploy nginx, create terlebih dahulu
 
 ```
 kubectl create deploy nginx --image nginx
@@ -268,6 +269,8 @@ kubectl get svc
 ```
 
 ![image](https://user-images.githubusercontent.com/99697182/175307751-1d799da7-12be-4203-ad36-72993498509e.png)
+
+# Deploy Aplikasi Microservice
 
 
 
