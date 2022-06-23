@@ -272,6 +272,65 @@ kubectl get svc
 
 # Deploy Aplikasi Microservice
 
+Clone aplikasi microservices
+
+```
+git clone https://github.com/dumbwaysdev/dumbways-microservices.git
+```
+
+![image](https://user-images.githubusercontent.com/99697182/175316838-0659b0fd-f519-462f-9694-9afb649e80b2.png)
+
+Masuk ke directory aplikasi microservices dan edit docker-compose dan kubernetes.yml nya
+
+![image](https://user-images.githubusercontent.com/99697182/175317202-1b9af2e6-e6fa-4c62-945a-065ec1520449.png)
+
+disitu saya ganti sgnd dan suganda menjadi arahmane (username di github saya)
+
+disini kita login ke docker nya
+
+![image](https://user-images.githubusercontent.com/99697182/175320082-9ec91705-2d46-4791-9335-c6676d949212.png)
+
+build docker compose
+
+```
+docker-compose build
+```
+
+![image](https://user-images.githubusercontent.com/99697182/175321160-729a6a92-5412-4bbd-926b-00c53e1f5889.png)
+
+![image](https://user-images.githubusercontent.com/99697182/175321319-8468e83f-23ea-40ae-8561-2ebdd05dbc62.png)
+
+![image](https://user-images.githubusercontent.com/99697182/175322764-ab3cfe69-2402-4a45-affe-3da38b411fc5.png)
+
+Jika sudah selesai di build sekarang push ke dockerhub
+
+![image](https://user-images.githubusercontent.com/99697182/175323024-eede6e53-45a7-4ff4-b600-6af741e59874.png)
+
+```
+docker push arahmane/todo-user:latest; docker push arahmane/todo-todo:latest; docker push arahmane/todo-skill:latest; docker push arahmane/todo-services:latest; docker push arahmane/todo-profile:latest
+```
+
+![image](https://user-images.githubusercontent.com/99697182/175325723-20f7445f-f54b-42c8-aaee-7685bdcca6bd.png)
+
+Sekarang jalankan perintah berikut untuk mendeploy:
+
+```
+kubectl apply -f kubernetes.yml
+```
+
+![image](https://user-images.githubusercontent.com/99697182/175326397-9ef79b2f-581e-4a11-8994-220fc4463ff4.png)
+
+dan ketika saya melihat hasilnya ternyata masih blum jalan
+
+![image](https://user-images.githubusercontent.com/99697182/175326583-9bd48c5b-59c5-4656-a3e2-086b803b1573.png)
+
+![image](https://user-images.githubusercontent.com/99697182/175326976-7cc2f10d-842e-43f8-b1f5-16ed5e528cdf.png)
+
+saya coba cek nginx nya dan ngga bisa juga
+
+![image](https://user-images.githubusercontent.com/99697182/175328050-66e054ef-b4a1-4530-bc5d-e2570029970b.png)
+
+
 
 
 
