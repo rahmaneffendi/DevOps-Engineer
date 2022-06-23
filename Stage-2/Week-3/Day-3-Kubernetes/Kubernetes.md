@@ -154,6 +154,15 @@ saya cek esok harinya
 
 ![image](https://user-images.githubusercontent.com/99697182/175215334-8418cc10-4837-4bdd-866c-8b2d042795fb.png)
 
+disini saya akan mengulangi inisiasi kubeadm, dan masih gagal lagi, kemudian saya coba reset
+
+```
+kubeadm reset
+```
+
+![image](https://user-images.githubusercontent.com/99697182/175217988-bad01b46-7bd7-404e-9f03-16efc211fbbe.png)
+
+dan akan saya coba lagi insiasi kubeadm nya, dan masih error juga
 
 
 
