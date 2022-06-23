@@ -170,8 +170,49 @@ kemudian saya cek di stack overflow, dan megikuti instruksinya [ini](https://sta
 
 saya reset kubeadm nya lagi dan coba mulai init lagi, dan masih tetap error
 
+Sekarang saya mencob membuat server lagi dan memulai dari awal denga server:
 
+Server Manager (manager-rahman), user = menej, pw = Sembarang1, Ip: 103.186.1.60
 
+dan setelah saya coba ternyata masih gagal,  kemudian saya coba update & upgrade, dan masih tetap gagal
+
+#### Mencoba cara lain
+
+ref : https://www.billysoftacademy.com/learn-how-to-install-kubernetes-on-linux-ubuntu-20-04-lts-in-the-cloud-on-aws/
+
+disini saya akan membuat server lagi dengan ubuntu 20.04 : Server Manager (manager-rahman), user = menej, pw = Sembarang1, Ip: 103.183.74.181
+
+kemudian sampe di tahap kubeadm ini, saya berhasil, dan saya akan copy ini di perintah selanjutnya
+
+![image](https://user-images.githubusercontent.com/99697182/175252217-3a0f09c4-f2e0-4e7d-a6b3-bc66e2ca50b5.png)
+
+```
+mkdir -p $HOME/.kube
+  sudo cp -i /etc/kubernetes/admin.conf $HOME/.kube/config
+  sudo chown $(id -u):$(id -g) $HOME/.kube/config
+```
+
+![image](https://user-images.githubusercontent.com/99697182/175252522-f3a9e6bb-4020-4d46-b87f-0cf86798b45a.png)
+
+Instalasi CNI Flannel (disini saya ngga pake calico)
+
+```
+sudo kubectl apply -f https://raw.githubusercontent.com/coreos/flannel/master/Documentation/kube-flannel.yml
+```
+
+![image](https://user-images.githubusercontent.com/99697182/175252953-3c0088c1-83a2-4c94-9529-551e8ed4569a.png)
+
+```
+sudo kubectl apply -f https://raw.githubusercontent.com/coreos/flannel/master/Documentation/k8s-manifests/kube-flannel-rbac.yml
+```
+
+![image](https://user-images.githubusercontent.com/99697182/175253491-a008b493-ffa9-4dd0-a468-e25aac96f963.png)
+
+```
+sudo kubectl get pods --all-namespaces
+```
+
+![image](https://user-images.githubusercontent.com/99697182/175254000-74ccd60d-e75f-4e60-9323-23648f7fe089.png)
 
 
 
