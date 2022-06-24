@@ -578,9 +578,17 @@ disini saya akan join cluster
 kubeadm token create --print-join-command
 ```
 
-
+![image](https://user-images.githubusercontent.com/99697182/175458411-5297220e-12d0-4361-9b48-48c69cf985aa.png)
 
 worker 1
 
+![image](https://user-images.githubusercontent.com/99697182/175458548-98fe5276-edca-4e2b-aff0-28ff71b6b68c.png)
 
 worker 2
+
+![image](https://user-images.githubusercontent.com/99697182/175458575-1c071f04-d193-4038-8ee5-acb5dd1be118.png)
+
+kita cek 
+
+![image](https://user-images.githubusercontent.com/99697182/175458638-12104a09-40c4-4a49-9dc9-20751623750f.png)
+
