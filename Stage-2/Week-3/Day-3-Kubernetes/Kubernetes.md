@@ -592,3 +592,41 @@ kita cek
 
 ![image](https://user-images.githubusercontent.com/99697182/175458638-12104a09-40c4-4a49-9dc9-20751623750f.png)
 
+![image](https://user-images.githubusercontent.com/99697182/175458911-09194a25-af81-495b-b290-05bb7a66ff73.png)
+
+## Deploy Simple Aplikasi
+
+![image](https://user-images.githubusercontent.com/99697182/175459087-3580d72c-2def-4f84-8494-0ecbbcca2f47.png)
+
+```
+kubectl create deploy nginx --image nginx
+```
+
+![image](https://user-images.githubusercontent.com/99697182/175459134-ec3671a8-2e2d-4479-92d3-c05f20bda78c.png)
+
+```
+kubectl expose deploy nginx --port 80 --type NodePort
+```
+
+![image](https://user-images.githubusercontent.com/99697182/175459202-cf85208c-65a8-49de-b802-672a2bb27340.png)
+
+```
+kubectl get svc
+```
+
+![image](https://user-images.githubusercontent.com/99697182/175459282-d95f7e64-5215-4f57-a5a4-35b7f912edbb.png)
+
+```
+kubectl describe pod nama pod
+```
+
+![image](https://user-images.githubusercontent.com/99697182/175459419-ded290d9-ecc2-4701-b9b6-fc2eaf9869d7.png)
+
+![image](https://user-images.githubusercontent.com/99697182/175459462-b9e6b852-cf1a-409b-8075-785836e0728b.png)
+
+nginx nya berjalan pada worker 2 
+
+kita cek pada browser : 103.181.143.28:31976
+
+![image](https://user-images.githubusercontent.com/99697182/175459678-e3031a3c-7460-4a7c-a453-c58a309fccb1.png)
+
