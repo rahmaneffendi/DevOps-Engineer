@@ -180,6 +180,41 @@ dan setelah saya coba ternyata masih gagal,  kemudian saya coba update & upgrade
 
 ref : https://www.billysoftacademy.com/learn-how-to-install-kubernetes-on-linux-ubuntu-20-04-lts-in-the-cloud-on-aws/
 
+```
+sudo su
+sudo apt-get update && apt-get upgrade
+sudo reboot
+sudo apt-get install -y apt-transport-https
+sudo apt-get install docker.io
+sudo systemctl start docker
+sudo systemctl enable docker
+sudo apt-get install curl
+sudo curl -s https://packages.cloud.google.com/apt/doc/apt-key.gpg |sudo apt-key add
+chmod 777 /etc/apt/sources.list.d
+sudo apt-get install nano
+nano /etc/apt/sources.list.d/kubernetes.list
+
+  deb https://apt.kubernetes.io/ kubernetes-xenial main
+  
+sudo apt-get update
+sudo apt-get install -y kubelet kubeadm kubectl kubernetes-cni
+sudo swapoff -a
+
+sudo kubeadm init
+
+RUN THE THREE COMMANDS BELOW "START USING YOUR CLUSTER" (COPY AND PASTE THE
+COMMANDS
+
+sudo kubectl apply -f
+https://raw.githubusercontent.com/coreos/flannel/master/Documentation/kube-flannel.yml
+
+sudo kubectl apply -f
+https://raw.githubusercontent.com/coreos/flannel/master/Documentation/k8s-manifests/kube-
+flannel-rbac.yml
+
+sudo kubectl get pods --all-namespaces
+```
+
 disini saya akan membuat server lagi dengan ubuntu 20.04 : Server Manager (manager-rahman), user = menej, pw = Sembarang1, Ip: 103.183.74.181
 
 kemudian sampe di tahap kubeadm ini, saya berhasil, dan saya akan copy ini di perintah selanjutnya
@@ -358,6 +393,9 @@ kubeadmn reset .
 sudo kubeadm init --pod-network-cidr=192.168.0.0/16
 ```
 
+
+
+
 ![image](https://user-images.githubusercontent.com/99697182/175439074-ffc34725-df3f-4ff4-87da-b64ce03cadcb.png)
 
 ```
@@ -389,7 +427,7 @@ saya coba lagi
 
 ![image](https://user-images.githubusercontent.com/99697182/175439470-a6e440dc-3b5d-4272-a546-d51b4159d217.png)
 
-
+1
 ```
 kubectl create -f https://projectcalico.docs.tigera.io/manifests/custom-resources.yaml
 ```
@@ -408,6 +446,7 @@ sambil menunggu, saya akan Download the custom resources necessary to configure 
 
 ref : https://projectcalico.docs.tigera.io/getting-started/kubernetes/self-managed-onprem/onpremises
 
+2
 ```
 curl https://projectcalico.docs.tigera.io/manifests/custom-resources.yaml -O
 ```
@@ -462,7 +501,7 @@ server baru :
 
 worker 1 , user = wor1, pw = Sembarang1, ip = 103.171.85.240
 
-worker 2 , user = wor2, pw = Sembarang1, ip =
+worker 2 , user = wor2, pw = Sembarang1, ip = 103.181.143.28
 
 disini saya mulai dari awal lagi, install nya menggunakan tutorial yt, dan calico nya menggunakan versi terbaru
 
@@ -486,14 +525,50 @@ sudo apt-get update
 sudo apt-get install -y kubelet kubeadm kubectl kubernetes-cni
 sudo swapoff -a
 
-kubeadm init
+```
+
+dikarenakan saya dapat masalah lagi karena tidak sengaja mereboot server manager, jadi saya akan buat server manager lagi
+
+manager, user = menej, pw = Sembarang1, ip = 103.186.1.89
+
+```
+sudo su
+sudo apt-get update && apt-get upgrade
+sudo reboot
+sudo apt-get install -y apt-transport-https
+sudo apt-get install docker.io
+sudo systemctl start docker
+sudo systemctl enable docker
+sudo apt-get install curl
+sudo curl -s https://packages.cloud.google.com/apt/doc/apt-key.gpg |sudo apt-key add
+chmod 777 /etc/apt/sources.list.d
+sudo apt-get install nano
+nano /etc/apt/sources.list.d/kubernetes.list
+
+  deb https://apt.kubernetes.io/ kubernetes-xenial main
+  
+sudo apt-get update
+sudo apt-get install -y kubelet kubeadm kubectl kubernetes-cni
+sudo swapoff -a
+
+sudo kubeadm init --pod-network-cidr=192.168.0.0/16
 
 RUN THE THREE COMMANDS BELOW "START USING YOUR CLUSTER" (COPY AND PASTE THE
 COMMANDS
 
+kubectl create -f https://projectcalico.docs.tigera.io/manifests/tigera-operator.yaml
+
+kubectl create -f https://projectcalico.docs.tigera.io/manifests/custom-resources.yaml
+
+kubectl create -f custom-resources.yaml
+
+watch kubectl get pods -n calico-system
+
+kubectl taint nodes --all node-role.kubernetes.io/master-
+
+kubectl get nodes -o wide
 
 sudo kubectl get pods --all-namespaces
-
 ```
 
 worker 1
