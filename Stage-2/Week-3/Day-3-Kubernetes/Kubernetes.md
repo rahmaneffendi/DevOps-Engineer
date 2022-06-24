@@ -653,8 +653,21 @@ Build docker compose
 ```
 docker-compose build
 ```
+![image](https://user-images.githubusercontent.com/99697182/175462548-f2571ecb-2365-490e-aec6-e4c269b4911f.png)
 
+Sekarang jalankan perintah berikut untuk mendeploy:
 
+```
+kubectl apply -f kubernetes.yml
+```
+
+![image](https://user-images.githubusercontent.com/99697182/175462654-e6ab2d9a-e2ae-452b-b644-88264ffab8b8.png)
+
+kita cek hasilnya
+
+![image](https://user-images.githubusercontent.com/99697182/175462980-d27ff744-392b-433f-9222-7a7d68794d46.png)
+
+![image](https://user-images.githubusercontent.com/99697182/175463030-0f7356ca-bc43-4bbc-816b-722d056a3994.png)
 
 
 
