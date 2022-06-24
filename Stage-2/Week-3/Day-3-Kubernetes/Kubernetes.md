@@ -336,9 +336,72 @@ saya coba cek nginx nya dan ngga bisa juga
 
 ![image](https://user-images.githubusercontent.com/99697182/175328050-66e054ef-b4a1-4530-bc5d-e2570029970b.png)
 
+ok Sekarang saya mau menreset ulang kube adm nya
 
+![image](https://user-images.githubusercontent.com/99697182/175438771-282cd3f1-4342-494d-945f-e8698e7803a2.png)
 
+dan install ulang, kali ini saya menggunakan CNI calico
 
+ref : https://projectcalico.docs.tigera.io/getting-started/kubernetes/quickstart
 
+```
+kubeadmn reset .
+```
 
+```
+sudo kubeadm init --pod-network-cidr=192.168.0.0/16
+```
+
+![image](https://user-images.githubusercontent.com/99697182/175439074-ffc34725-df3f-4ff4-87da-b64ce03cadcb.png)
+
+```
+kubectl create -f https://projectcalico.docs.tigera.io/manifests/tigera-operator.yaml
+```
+
+![image](https://user-images.githubusercontent.com/99697182/175439356-981084fb-77d3-4bb4-aec5-fbaa2beb27eb.png)
+
+disini saya akan fix permission nya
+
+```
+unset KUBECONFIG
+export KUBECONFIG=/etc/kubernetes/admin.conf
+mv  $HOME/.kube $HOME/.kube.bak
+mkdir $HOME/.kube
+sudo cp -i /etc/kubernetes/admin.conf $HOME/.kube/config
+sudo chown $(id -u):$(id -g) $HOME/.kube/config
+```
+
+![image](https://user-images.githubusercontent.com/99697182/175439403-77d52651-985b-4f25-a780-746403ae3bbc.png)
+
+saya coba lagi
+
+![image](https://user-images.githubusercontent.com/99697182/175439470-a6e440dc-3b5d-4272-a546-d51b4159d217.png)
+
+```
+kubectl create -f https://projectcalico.docs.tigera.io/manifests/custom-resources.yaml
+```
+
+![image](https://user-images.githubusercontent.com/99697182/175439659-7de006ac-8746-4b39-8e29-794987b5a465.png)
+
+kemudian
+
+```
+watch kubectl get pods -n calico-system
+```
+
+![image](https://user-images.githubusercontent.com/99697182/175446310-faeceb5b-2990-442e-aa8a-d7084d86c0cb.png)
+
+sambil menunggu, saya akan Download the custom resources necessary to configure Calico
+
+ref : https://projectcalico.docs.tigera.io/getting-started/kubernetes/self-managed-onprem/onpremises
+
+```
+curl https://projectcalico.docs.tigera.io/manifests/custom-resources.yaml -O
+```
+
+saya cek lagi
+
+![image](https://user-images.githubusercontent.com/99697182/175446457-f973e38d-8067-44de-a2ee-0b2c724f0248.png)
+
+dan masih pending, disini saya mulai ulang lagi dengan reset kubeadmn nya 
 
