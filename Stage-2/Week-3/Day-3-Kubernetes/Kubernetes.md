@@ -630,3 +630,82 @@ kita cek pada browser : 103.181.143.28:31976
 
 ![image](https://user-images.githubusercontent.com/99697182/175459678-e3031a3c-7460-4a7c-a453-c58a309fccb1.png)
 
+# Deploy Aplikasi Microservice
+
+Clone aplikasi microservices
+
+```
+git clone https://github.com/dumbwaysdev/dumbways-microservices.git
+```
+
+![image](https://user-images.githubusercontent.com/99697182/175460346-f0081e3e-3afb-4e3b-a6ad-5580f058dcd5.png)
+
+Masuk ke directory aplikasi microservices dan edit docker-compose dan kubernetes.yml nya
+
+disini, saya edit suganda dan sgnd menjadi arahmane
+
+Sekarang login terlebih dahulu ke docker hub
+
+![image](https://user-images.githubusercontent.com/99697182/175461033-44c13077-5ebe-417d-8cd1-624bc04bb74f.png)
+
+Build docker compose
+
+```
+docker-compose build
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
