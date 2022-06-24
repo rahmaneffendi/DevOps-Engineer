@@ -336,13 +336,19 @@ saya coba cek nginx nya dan ngga bisa juga
 
 ![image](https://user-images.githubusercontent.com/99697182/175328050-66e054ef-b4a1-4530-bc5d-e2570029970b.png)
 
+### ok Sekarang saya mau menreset ulang kube adm nya
+
+#### KETERANGAN : GUNAKAN Container Network Interface (CNI) CALICO VERSI TERBARU [PROJECTCALICO](https://projectcalico.docs.tigera.io/getting-started/kubernetes/self-managed-onprem/onpremises)
+
+ref : https://projectcalico.docs.tigera.io/getting-started/kubernetes/quickstart
+
 ok Sekarang saya mau menreset ulang kube adm nya
 
 ![image](https://user-images.githubusercontent.com/99697182/175438771-282cd3f1-4342-494d-945f-e8698e7803a2.png)
 
 dan install ulang, kali ini saya menggunakan CNI calico
 
-ref : https://projectcalico.docs.tigera.io/getting-started/kubernetes/quickstart
+
 
 ```
 kubeadmn reset .
@@ -412,3 +418,85 @@ saya cek lagi
 
 dan masih pending, disini saya mulai ulang lagi dengan reset kubeadmn nya 
 
+saya coba lanjut dulu aja
+
+```
+kubectl taint nodes --all node-role.kubernetes.io/master-
+```
+
+![image](https://user-images.githubusercontent.com/99697182/175449135-cd891f94-73c6-438f-b3a1-c1ad1d7c7bd4.png)
+
+Confirm that you now have a node in your cluster with the following command.
+
+```
+kubectl get nodes -o wide
+```
+
+![image](https://user-images.githubusercontent.com/99697182/175449210-3bcbfe57-1700-4427-b220-e1f421192288.png)
+
+```
+kubectl get pods --all-namespaces
+```
+
+![image](https://user-images.githubusercontent.com/99697182/175449428-071099d2-e015-44e1-80c0-b936fe518d7a.png)
+
+disini saya akan join cluster 
+
+```
+kubeadm token create --print-join-command
+```
+
+![image](https://user-images.githubusercontent.com/99697182/175449905-3766385c-4363-402b-a24a-c8c572724df2.png)
+
+CAT : Disini Saya akan mereset kubeadm di worker1 & 2
+
+![image](https://user-images.githubusercontent.com/99697182/175450495-6da3fe4c-1244-4e5e-921a-9331930ca46c.png)
+
+dikarenakan keterangan cpu nya ngga cukup, jadi saya akan membuat ulang servernya
+
+![image](https://user-images.githubusercontent.com/99697182/175451087-ae82c102-e605-40fb-8d9c-5c8287ca9a90.png)
+
+server baru :
+
+![image](https://user-images.githubusercontent.com/99697182/175451521-944b3d79-7e5a-42b2-8b0b-4871f3eeb3b7.png)
+
+worker 1 , user = wor1, pw = Sembarang1, ip = 103.171.85.240
+
+worker 2 , user = wor2, pw = Sembarang1, ip =
+
+disini saya mulai dari awal lagi, install nya menggunakan tutorial yt, dan calico nya menggunakan versi terbaru
+
+```
+sudo su
+sudo apt-get update && apt-get upgrade
+sudo reboot
+sudo apt-get install -y apt-transport-https
+sudo apt-get install docker.io
+sudo systemctl start docker
+sudo systemctl enable docker
+sudo apt-get install curl
+sudo curl -s https://packages.cloud.google.com/apt/doc/apt-key.gpg |sudo apt-key add
+chmod 777 /etc/apt/sources.list.d
+sudo apt-get install nano
+nano /etc/apt/sources.list.d/kubernetes.list
+
+  deb https://apt.kubernetes.io/ kubernetes-xenial main
+  
+sudo apt-get update
+sudo apt-get install -y kubelet kubeadm kubectl kubernetes-cni
+sudo swapoff -a
+
+kubeadm init
+
+RUN THE THREE COMMANDS BELOW "START USING YOUR CLUSTER" (COPY AND PASTE THE
+COMMANDS
+
+
+sudo kubectl get pods --all-namespaces
+
+```
+
+worker 1
+
+
+worker 2
