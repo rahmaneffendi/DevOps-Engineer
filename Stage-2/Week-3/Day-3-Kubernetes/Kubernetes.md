@@ -378,6 +378,12 @@ saya coba lagi
 ![image](https://user-images.githubusercontent.com/99697182/175439470-a6e440dc-3b5d-4272-a546-d51b4159d217.png)
 
 ```
+mkdir -p $HOME/.kube
+sudo cp -i /etc/kubernetes/admin.conf $HOME/.kube/config
+sudo chown $(id -u):$(id -g) $HOME/.kube/config
+```
+
+```
 kubectl create -f https://projectcalico.docs.tigera.io/manifests/custom-resources.yaml
 ```
 
