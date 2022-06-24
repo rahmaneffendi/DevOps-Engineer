@@ -571,6 +571,15 @@ kubectl get nodes -o wide
 sudo kubectl get pods --all-namespaces
 ```
 
+
+disini saya akan join cluster 
+
+```
+kubeadm token create --print-join-command
+```
+
+
+
 worker 1
 
 
