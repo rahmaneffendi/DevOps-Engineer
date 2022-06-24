@@ -669,6 +669,7 @@ kita cek hasilnya
 
 ![image](https://user-images.githubusercontent.com/99697182/175463030-0f7356ca-bc43-4bbc-816b-722d056a3994.png)
 
+![image](https://user-images.githubusercontent.com/99697182/175463202-c2f7179b-409a-49f0-b026-f6ca40f3197e.png)
 
 
 
