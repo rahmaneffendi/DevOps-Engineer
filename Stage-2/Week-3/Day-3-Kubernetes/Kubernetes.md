@@ -355,6 +355,12 @@ sudo kubeadm init --pod-network-cidr=192.168.0.0/16
 ![image](https://user-images.githubusercontent.com/99697182/175439074-ffc34725-df3f-4ff4-87da-b64ce03cadcb.png)
 
 ```
+mkdir -p $HOME/.kube
+sudo cp -i /etc/kubernetes/admin.conf $HOME/.kube/config
+sudo chown $(id -u):$(id -g) $HOME/.kube/config
+```
+
+```
 kubectl create -f https://projectcalico.docs.tigera.io/manifests/tigera-operator.yaml
 ```
 
@@ -377,11 +383,6 @@ saya coba lagi
 
 ![image](https://user-images.githubusercontent.com/99697182/175439470-a6e440dc-3b5d-4272-a546-d51b4159d217.png)
 
-```
-mkdir -p $HOME/.kube
-sudo cp -i /etc/kubernetes/admin.conf $HOME/.kube/config
-sudo chown $(id -u):$(id -g) $HOME/.kube/config
-```
 
 ```
 kubectl create -f https://projectcalico.docs.tigera.io/manifests/custom-resources.yaml
