@@ -18,7 +18,7 @@ Instructions
 
 - Clone housy-frontend https://github.com/dumbwaysdev/housy-frontend
 
-- Clone housy-backend https://github.com/dumbwaysdev/housy-frontend
+- Clone housy-backend https://github.com/dumbwaysdev/housy-backend
 
 - Change git remote to your own repository
 
