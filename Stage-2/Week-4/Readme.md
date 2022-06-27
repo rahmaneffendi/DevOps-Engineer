@@ -44,8 +44,6 @@ Requirements
 
 - Server CI/CD , 1 Core 2Gb RAM
 
-- Server Database, 1 Core 1Gb RAM
-
 - For disk use default Instructions
 
 - Create multiple server with load balancing (Frontend and Backend)
