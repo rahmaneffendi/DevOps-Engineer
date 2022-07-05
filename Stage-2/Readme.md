@@ -14,5 +14,5 @@ Ada 8 Materi Di Stage 2
 
 [KUBERNETES](https://github.com/rahmaneffendi/DevOps-Engineer-Training/tree/main/Stage-2/Week-3/Day-3-Kubernetes)
 
-FINAL TASK
+[FINAL TASK](https://github.com/rahmaneffendi/DevOps-Engineer-Training/tree/main/Stage-2/Week-4/Final-Task)
 
