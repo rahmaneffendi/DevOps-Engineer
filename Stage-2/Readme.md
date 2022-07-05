@@ -1,6 +1,6 @@
 Ada 8 Materi Di Stage 2 
 
-<li>[Cloud Computing](https://github.com/rahmaneffendi/DevOps-Engineer-Training/tree/main/Stage-2/Week-1/Day-1-Cloud-Computing)
+[Cloud Computing](https://github.com/rahmaneffendi/DevOps-Engineer-Training/tree/main/Stage-2/Week-1/Day-1-Cloud-Computing)
 
 <li>[Manage Code & Database](https://github.com/rahmaneffendi/DevOps-Engineer-Training/tree/main/Stage-2/Week-1/Day-2-Manage-Code-%26-Database)
 
