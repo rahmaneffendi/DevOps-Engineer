@@ -6,7 +6,7 @@ There are 2 stages; They are :
 
 ## Stage 1
 
-1. Introduction to DevOps
+1.INTRODUCTION TO DEVOPS
 
 2. Basic Shell & Computer Networking
 
