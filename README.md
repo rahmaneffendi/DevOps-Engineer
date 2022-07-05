@@ -6,19 +6,19 @@ There are 2 stages; They are :
 
 ## Stage 1
 
-1.INTRODUCTION TO DEVOPS
+[INTRODUCTION TO DEVOPS](https://github.com/rahmaneffendi/DevOps-Engineer-Training/tree/main/Stage-1/Day-1-Introduction%20to%20DevOps)
 
-2. Basic Shell & Computer Networking
+[BASIC SHELL & COMPUTER NETWORKING](https://github.com/rahmaneffendi/DevOps-Engineer-Training/tree/main/Stage-1/Day-2-Basic%20Shell%20and%20Computer%20Networking)
 
-3. Understand Application in Server
+[UNDERSTAND APPLICATION IN SERVER](https://github.com/rahmaneffendi/DevOps-Engineer-Training/tree/main/Stage-1/Day-3-Understand%20Application%20in%20Server)
 
-4. VCS(Version Control System) With Git
+[VERSION CONTROL SYSTEM WITH GIT](https://github.com/rahmaneffendi/DevOps-Engineer-Training/tree/main/Stage-1/Day-4-Version%20Control%20System%20With%20Git)
 
-5. CI/CD
+[CI CD ](https://github.com/rahmaneffendi/DevOps-Engineer-Training/tree/main/Stage-1/Day-5-CI%26CD%20With%20Cloudflare%20Pages)
 
-6. Manage Server With Terminal
+[MANAGE SERVER WITH TERMINAL](https://github.com/rahmaneffendi/DevOps-Engineer-Training/tree/main/Stage-1/Day-6-Manage%20Server%20With%20Terminal)
 
-7. Web Server & Load Balancing 
+[WEB SERVER & LOAD BALANCING](https://github.com/rahmaneffendi/DevOps-Engineer-Training/tree/main/Stage-1/Day-7-Web%20Server%20%26%20Load%20Balancing) 
 
 ## Stage 2
 
