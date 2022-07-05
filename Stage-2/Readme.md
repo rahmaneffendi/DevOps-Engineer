@@ -1,4 +1,4 @@
-Ada 8 Materi Di Stage 2 
+THERE ARE 8 LESSONS HERE
 
 [CLOUD COMPUTING](https://github.com/rahmaneffendi/DevOps-Engineer-Training/tree/main/Stage-2/Week-1/Day-1-Cloud-Computing)
 
