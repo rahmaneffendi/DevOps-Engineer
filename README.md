@@ -22,18 +22,18 @@ There are 2 stages; They are :
 
 ## Stage 2
 
-1. Cloud Computing
+[CLOUD COMPUTING](https://github.com/rahmaneffendi/DevOps-Engineer-Training/tree/main/Stage-2/Week-1/Day-1-Cloud-Computing)
 
-2. Manage Code & Data Base
+[MANAGE CODE & DATABASE](https://github.com/rahmaneffendi/DevOps-Engineer-Training/tree/main/Stage-2/Week-1/Day-2-Manage-Code-%26-Database)
 
-3. Docker
+[DOCKER](https://github.com/rahmaneffendi/DevOps-Engineer-Training/tree/main/Stage-2/Week-2/Day-1-Docker)
 
-4. Docker Swarm
+[DOCKER SWARM](https://github.com/rahmaneffendi/DevOps-Engineer-Training/tree/main/Stage-2/Week-2/Day-2-Docker-Swarm)
 
-5. CI/CD With Jenkins
+[CICD WITH JENKINS](https://github.com/rahmaneffendi/DevOps-Engineer-Training/tree/main/Stage-2/Week-2/Day-3-CICD-With-Jenkins)
 
-6. Monitoring Server
+[MONITORING SERVER + ANSIBLE](https://github.com/rahmaneffendi/DevOps-Engineer-Training/tree/main/Stage-2/Week-3/Day-2-Ansible)
 
-7. Ansible
+[KUBERNETES](https://github.com/rahmaneffendi/DevOps-Engineer-Training/tree/main/Stage-2/Week-3/Day-3-Kubernetes)
 
-8. Kubernetes 
+[FINAL TASK](https://github.com/rahmaneffendi/DevOps-Engineer-Training/tree/main/Stage-2/Week-4/Final-Task)
