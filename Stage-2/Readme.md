@@ -1,17 +1,17 @@
 Ada 8 Materi Di Stage 2 
 
-[Cloud Computing](https://github.com/rahmaneffendi/DevOps-Engineer-Training/tree/main/Stage-2/Week-1/Day-1-Cloud-Computing)
+[CLOUD COMPUTING](https://github.com/rahmaneffendi/DevOps-Engineer-Training/tree/main/Stage-2/Week-1/Day-1-Cloud-Computing)
 
-<li>[Manage Code & Database](https://github.com/rahmaneffendi/DevOps-Engineer-Training/tree/main/Stage-2/Week-1/Day-2-Manage-Code-%26-Database)<li>
+[MANAGE CODE & DATABASE](https://github.com/rahmaneffendi/DevOps-Engineer-Training/tree/main/Stage-2/Week-1/Day-2-Manage-Code-%26-Database)
 
-<li>[Docker](https://github.com/rahmaneffendi/DevOps-Engineer-Training/tree/main/Stage-2/Week-2/Day-1-Docker)
+[DOCKER](https://github.com/rahmaneffendi/DevOps-Engineer-Training/tree/main/Stage-2/Week-2/Day-1-Docker)
 
-<li>[Docker Swarm](https://github.com/rahmaneffendi/DevOps-Engineer-Training/tree/main/Stage-2/Week-2/Day-2-Docker-Swarm)
+[DOCKER SWARM](https://github.com/rahmaneffendi/DevOps-Engineer-Training/tree/main/Stage-2/Week-2/Day-2-Docker-Swarm)
 
-<li>[CiCd With Jenkins](https://github.com/rahmaneffendi/DevOps-Engineer-Training/tree/main/Stage-2/Week-2/Day-3-CICD-With-Jenkins)
+[CICD WITH JENKINS](https://github.com/rahmaneffendi/DevOps-Engineer-Training/tree/main/Stage-2/Week-2/Day-3-CICD-With-Jenkins)
 
-<li>[Monitoring Server + Ansible](https://github.com/rahmaneffendi/DevOps-Engineer-Training/tree/main/Stage-2/Week-3/Day-2-Ansible)
+[MONITORING SERVER + ANSIBLE](https://github.com/rahmaneffendi/DevOps-Engineer-Training/tree/main/Stage-2/Week-3/Day-2-Ansible)
 
-<li>[Kubernetes](https://github.com/rahmaneffendi/DevOps-Engineer-Training/tree/main/Stage-2/Week-3/Day-3-Kubernetes)
+[KUBERNETES](https://github.com/rahmaneffendi/DevOps-Engineer-Training/tree/main/Stage-2/Week-3/Day-3-Kubernetes)
 
 
