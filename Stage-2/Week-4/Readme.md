@@ -26,12 +26,6 @@ Instructions
 
 # 2.SERVER
 
-Before you start the task, please read this:
-
-- Please screenshot the command - step by step
-
-- Describe the process in your final task repository
-
 Requirements
 
 - Dont use App Catalog in IDCH
@@ -54,12 +48,6 @@ Requirements
 
 # 3.USER
 
-Before you start the task, please read this:
-
-- Please screenshot the command - step by step
-
-- Describe the process in your final task repository
-
 Requirements
 
 - Custom user for every server with password
@@ -71,12 +59,6 @@ Requirements
 - Disable sign in without password
 
 # 4.SSH
-
-Before you start the task, please read this:
-
-- Please screenshot the command - step by step
-
-- Describe the process in your final task repository
 
 Requirements
 
@@ -93,12 +75,6 @@ Instructions
 - Use the same SSH Key for CI/CD
 
 # 5.DATABASE
-
-Before you start the task, please read this:
-
-- Please screenshot the command - step by step
-
-- Describe the process in your final task repository
 
 Requirements
 
@@ -117,12 +93,6 @@ Instructions
 - Alternative to convert MySQL database to PostgreSQL : https://pgloader.io
 
 # 6.WEB SERVER
-
-Before you start the task, please read this:
-
-- Please screenshot the command - step by step
-
-- Describe the process in your final task repository
 
 Requirements
 
@@ -152,12 +122,6 @@ Instructions
 
 # 7.DEPLOYMENT
 
-Before you start the task, please read this:
-
-- Please screenshot the command - step by step
-
-- Describe the process in your final task repository
-
 Requirements
 
 - Deployment housy frontend
@@ -182,12 +146,6 @@ Instructions
 
 # 8.CI/CD
 
-Before you start the task, please read this:
-
-- Please screenshot the command - step by step
-
-- Describe the process in your final task repository
-
 Requirements
 
 - Auto deployment for applications
@@ -206,12 +164,6 @@ Instructions
 
 # 9.MONITORING
 
-Before you start the task, please read this:
-
-- Please screenshot the command - step by step
-
-- Describe the process in your final task repository
-
 Requirements
 
 - Monitoring multiple server
@@ -223,12 +175,6 @@ Instructions
 - Integration monitoring to all of servers
 
 # 10.AUTH
-
-Before you start the task, please read this:
-
-- Please screenshot the command - step by step
-
-- Describe the process in your final task repository
 
 Requirements
 
