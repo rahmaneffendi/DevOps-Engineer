@@ -1,12 +1,12 @@
 # Final Task 
 
-# 1.REPOSITORY
-
 Before you start the task, please read this:
 
 - Please screenshot the command - step by step
 
 - Describe the process in your final task repository
+
+# 1.REPOSITORY
 
 Requirements
 
